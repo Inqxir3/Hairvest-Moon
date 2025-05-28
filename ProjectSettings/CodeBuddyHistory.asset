@@ -1,0 +1,856 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 53
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1841772381, guid: c26a3580856bebf4f9f37e7b8a655bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openAiAssistantHistory: []
+  openAiCompletionsHistory: []
+  ollamaHistory: []
+  deepseekHistory:
+  - Id: d86f2ac2-db79-42a0-a235-751bfc41a99e
+    Name: '"Refactoring Player Controller for Clean Input Modes in Unity"'
+    ProjectContext: "Class: BoolEvent : ScriptableObject\r\nMethods:\r\n- Raise(bool
+      value) : void\r\n- Register(Action`1 callback) : void\r\n- Unregister(Action`1
+      callback) : void\r\n\r\nClass: CropData : ScriptableObject\r\nFields:\r\n-
+      cropName : string\r\n- growthStages : Sprite[]\r\n- growthDuration : int\r\n\r\nClass:
+      DebugUIOverlay : MonoBehaviour\r\nProperties:\r\n- static Instance : DebugUIOverlay\r\nMethods:\r\n-
+      ShowLastAction(string text) : void\r\n\r\nClass: FarmTileDataManager : MonoBehaviour\r\nDescription:
+      Stores logical gameplay state for each farm tile. Tracks tilling, watering,
+      and crop growth. Interfaces with tilemaps and farming tools to apply gameplay
+      effects. \r\nProperties:\r\n- static Instance : FarmTileDataManager\r\nMethods:\r\n-
+      IsTileTillable(Vector3Int pos) : bool\r\n- GetTileData(Vector3Int pos) : FarmTileData\r\n-
+      SetTilled(Vector3Int pos, bool value) : void\r\n- SetWatered(Vector3Int pos,
+      bool value) : void\r\n- IsTilled(Vector3Int pos) : bool\r\n- IsWatered(Vector3Int
+      pos) : bool\r\n\r\nClass: FarmTileData\r\nFields:\r\n- isTilled : bool\r\n-
+      isWatered : bool\r\n- plantedCrop : CropData\r\n- growthDays : int\r\nMethods:\r\n-
+      HasRipeCrop() : bool\r\n\r\nClass: FarmToolHandler : MonoBehaviour\r\nDescription:
+      Handles fixed tool interactions (Hoe, Water, Plant, Harvest). Supports hold-to-interact
+      with a world-space slider anchored to the currently targeted tile. \r\nProperties:\r\n-
+      static CurrentSlot : ToolSlot\r\n\r\nClass: GameManager : MonoBehaviour\r\nProperties:\r\n-
+      static Instance : GameManager\r\n\r\nClass: GameStateManager : MonoBehaviour\r\nProperties:\r\n-
+      static Instance : GameStateManager\r\n- CurrentState : GameState\r\nMethods:\r\n-
+      SetState(GameState newState) : void\r\n- IsGameplay() : bool\r\n\r\nClass:
+      GameTimeManager : MonoBehaviour\r\nProperties:\r\n- static Instance : GameTimeManager\r\n-
+      CurrentHour : int\r\n- CurrentMinute : int\r\n- Day : int\r\nMethods:\r\n-
+      IsNight() : bool\r\n- GetFormattedTime() : string\r\n\r\nClass: InputManager
+      : MonoBehaviour\r\nDescription: Manages player input and exposes clean event-based
+      API Automatically hooks up to InputSystem_Actions Emits movement vector and
+      events like Interact, Attack, Jump, etc. \r\nProperties:\r\n- static Instance
+      : InputManager\r\n- MoveInput : Vector2\r\n- LookInput : Vector2\r\n- CurrentControlScheme
+      : string\r\nMethods:\r\n- OnMove(CallbackContext context) : void\r\n- OnLook(CallbackContext
+      context) : void\r\n- OnGamepadLook(CallbackContext context) : void\r\n- OnAttack(CallbackContext
+      context) : void\r\n- OnInteract(CallbackContext context) : void\r\n- OnJump(CallbackContext
+      context) : void\r\n- OnCrouch(CallbackContext context) : void\r\n- OnNext(CallbackContext
+      context) : void\r\n- OnPrevious(CallbackContext context) : void\r\n- OnSprint(CallbackContext
+      context) : void\r\n- IsUsingGamepad() : bool\r\n- IsUsingMouse() : bool\r\n\r\nClass:
+      InteractionTargetingSystem : MonoBehaviour\r\nDescription: Handles tile highlighting
+      for interaction. Supports distinct logic for mouse, gamepad, and movement-only
+      modes. \r\nFields:\r\n- selectionHighlightTilemap : Tilemap\r\n- Grid : Grid\r\n-
+      highlightTile : Tile\r\n- highlightRange : int\r\n- coneSize : Vector2Int\r\n-
+      footPositionOffset : float\r\n- mouseTargetMaxDistance : float\r\n- drawDebugGizmos
+      : bool\r\n- gizmoColor : Color\r\nProperties:\r\n- static Instance : InteractionTargetingSystem\r\n-
+      CurrentTargetedTile : Nullable`1\r\n\r\nClass: Player_Controller : MonoBehaviour\r\nProperties:\r\n-
+      static Facing : Directions\r\n- static Position : Vector3\r\n- static IsStationary
+      : bool\r\n- static IsUsingLookDirection : bool\r\n\r\nClass: PlayerFormData\r\nFields:\r\n-
+      FormType : PlayerForm\r\n- VisualRoot : GameObject\r\n- Animator : Animator\r\n-
+      Renderer : SpriteRenderer\r\n- MoveSpeed : float\r\n\r\nClass: PlayerStateController
+      : MonoBehaviour\r\nProperties:\r\n- static Instance : PlayerStateController\r\n-
+      CurrentForm : PlayerForm\r\n- CurrentAnimator : Animator\r\n- CurrentSpriteRenderer
+      : SpriteRenderer\r\n- MoveSpeed : float\r\nMethods:\r\n- EnterWerewolfForm()
+      : void\r\n- ExitWerewolfForm() : void\r\n- IsWerewolf() : bool\r\n\r\nClass:
+      CodeBuddyDemo : MonoBehaviour\r\nNamespace: CodeBuddy.Demo\r\nMethods:\r\n-
+      JoinDiscord() : void\r\n- OpenDocumentation() : void\r\n\r\nClass: Setup\r\nNamespace:
+      Merkab\r\nMethods:\r\n- static CreateDefaultFolders() : void\r\n- static ImportMyFavoriteAssets()
+      : void\r\n- static ImportBasics() : void\r\n- static InstallUnityAINavigation()
+      : void\r\n- static InstallOpenSource() : void\r\n\r\nClass: Assets\r\nNamespace:
+      Merkab\r\nMethods:\r\n- static ImportAssets(string asset, string subfolder,
+      string folder) : void\r\n\r\nInterface: IAgentOverride\r\nNamespace: NavMeshPlus.Extensions\r\nMethods:\r\n-
+      UpdateAgent() : void\r\n\r\nClass: AgentDefaultOverride\r\nNamespace: NavMeshPlus.Extensions\r\nMethods:\r\n-
+      UpdateAgent() : void\r\n\r\nClass: AgentOverride2d : MonoBehaviour\r\nNamespace:
+      NavMeshPlus.Extensions\r\nProperties:\r\n- Agent : NavMeshAgent\r\n- agentOverride
+      : IAgentOverride\r\n\r\nClass: AgentRotate2d : MonoBehaviour\r\nNamespace:
+      NavMeshPlus.Extensions\r\n\r\nClass: AgentRotateSmooth2d : MonoBehaviour\r\nNamespace:
+      NavMeshPlus.Extensions\r\nFields:\r\n- angularSpeed : float\r\n\r\nClass: CollectSources2d
+      : NavMeshExtension\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+      overrideByGrid : bool\r\n- useMeshPrefab : GameObject\r\n- compressBounds :
+      bool\r\n- overrideVector : Vector3\r\nMethods:\r\n- CalculateWorldBounds(NavMeshSurface
+      surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n- CollectSources(NavMeshSurface
+      surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n\r\nClass:
+      CollectSourcesCache2d : NavMeshExtension\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+      IsDirty : bool\r\n- SourcesCount : int\r\n- CahcheCount : int\r\n- Cache :
+      List`1\r\nMethods:\r\n- AddSource(GameObject gameObject, NavMeshBuildSource
+      source) : bool\r\n- UpdateSource(GameObject gameObject) : bool\r\n- RemoveSource(GameObject
+      gameObject) : bool\r\n- UpdateNavMesh(NavMeshData data) : AsyncOperation\r\n-
+      UpdateNavMesh() : AsyncOperation\r\n- CollectSources(NavMeshSurface surface,
+      List`1 sources, NavMeshBuilderState navMeshState) : void\r\n- PostCollectSources(NavMeshSurface
+      surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n\r\nClass:
+      CollectTilemapSourcesCache2d : NavMeshExtension\r\nNamespace: NavMeshPlus.Extensions\r\nMethods:\r\n-
+      UpdateNavMesh(NavMeshData data) : AsyncOperation\r\n- UpdateNavMesh() : AsyncOperation\r\n-
+      PostCollectSources(NavMeshSurface surface, List`1 sources, NavMeshBuilderState
+      navNeshState) : void\r\n\r\nClass: NavMeshAgentAttribute : PropertyAttribute\r\nNamespace:
+      NavMeshPlus.Extensions\r\n\r\nClass: NavMeshAreaAttribute : PropertyAttribute\r\nNamespace:
+      NavMeshPlus.Extensions\r\nDescription: See also NavMeshAreaAttributePropertyDrawer
+      \r\n\r\nClass: NavMeshBuilder2dState\r\nNamespace: NavMeshPlus.Extensions\r\nFields:\r\n-
+      spriteMeshMap : Dictionary`2\r\n- coliderMeshMap : Dictionary`2\r\n- lookupCallback
+      : Action`2\r\n- defaultArea : int\r\n- layerMask : int\r\n- agentID : int\r\n-
+      overrideByGrid : bool\r\n- useMeshPrefab : GameObject\r\n- compressBounds :
+      bool\r\n- overrideVector : Vector3\r\n- CollectGeometry : NavMeshCollectGeometry\r\n-
+      CollectObjects : CollectObjects\r\n- parent : GameObject\r\n- hideEditorLogs
+      : bool\r\nProperties:\r\n- Root : IEnumerable`1\r\nMethods:\r\n- GetMesh(Sprite
+      sprite) : Mesh\r\n- GetMesh(Collider2D collider) : Mesh\r\n- SetRoot(IEnumerable`1
+      root) : void\r\n- GetRoot() : IEnumerable`1\r\n- Dispose() : void\r\n\r\nClass:
+      NavMeshBuilder2d\r\nNamespace: NavMeshPlus.Extensions\r\nMethods:\r\n- static
+      CollectSources(List`1 sources, NavMeshBuilder2dState builder) : void\r\n- static
+      CollectSources(GameObject root, List`1 sources, NavMeshBuilder2dState builder)
+      : void\r\n- static CollectSources(List`1 sources, NavMeshBuilder2dState builder,
+      NavMeshModifier modifier, int area) : void\r\n- static CollectSources(List`1
+      sources, SpriteRenderer spriteRenderer, int area, NavMeshBuilder2dState builder)
+      : void\r\n- static CollectSources(List`1 sources, Collider2D collider, int
+      area, NavMeshBuilder2dState builder) : void\r\n- static CollectTileSources(List`1
+      sources, Tilemap tilemap, int area, NavMeshBuilder2dState builder) : void\r\n-
+      static GetCellTransformMatrix(Tilemap tilemap, Vector3 scale, Vector3Int vec3int)
+      : Matrix4x4\r\n\r\nClass: NavMeshBuilderState\r\nNamespace: NavMeshPlus.Extensions\r\nFields:\r\n-
+      worldToLocal : Matrix4x4\r\n- worldBounds : Bounds\r\n- roots : IEnumerable`1\r\nMethods:\r\n-
+      GetExtraState(bool dispose) : T\r\n- Dispose() : void\r\n\r\nClass: CompositeDisposable\r\nNamespace:
+      NavMeshPlus.Extensions\r\nMethods:\r\n- Add(IDisposable dispose) : void\r\n-
+      Add(Object dispose) : void\r\n- Dispose() : void\r\n\r\nClass: NavMeshExtension
+      : MonoBehaviour\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n- Order
+      : int\r\n- NavMeshSurfaceOwner : NavMeshSurface\r\nMethods:\r\n- CollectSources(NavMeshSurface
+      surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n- CalculateWorldBounds(NavMeshSurface
+      surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n- PostCollectSources(NavMeshSurface
+      surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n\r\nInterface:
+      INavMeshExtensionsProvider\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+      Count : int\r\n- Item : NavMeshExtension\r\nMethods:\r\n- Add(NavMeshExtension
+      extension, int order) : void\r\n- Remove(NavMeshExtension extension) : void\r\n\r\nClass:
+      NavMeshExtensionMeta\r\nNamespace: NavMeshPlus.Extensions\r\nFields:\r\n- order
+      : int\r\n- extension : NavMeshExtension\r\n\r\nClass: NavMeshExtensionsProvider\r\nNamespace:
+      NavMeshPlus.Extensions\r\nProperties:\r\n- Item : NavMeshExtension\r\n- Count
+      : int\r\nMethods:\r\n- Add(NavMeshExtension extension, int order) : void\r\n-
+      Remove(NavMeshExtension extension) : void\r\n\r\nClass: NavMeshLink : MonoBehaviour\r\nNamespace:
+      NavMeshPlus.Components\r\nProperties:\r\n- agentTypeID : int\r\n- startPoint
+      : Vector3\r\n- endPoint : Vector3\r\n- width : float\r\n- costModifier : int\r\n-
+      bidirectional : bool\r\n- autoUpdate : bool\r\n- area : int\r\nMethods:\r\n-
+      UpdateLink() : void\r\n\r\nClass: NavMeshModifier : MonoBehaviour\r\nNamespace:
+      NavMeshPlus.Components\r\nProperties:\r\n- overrideArea : bool\r\n- area :
+      int\r\n- ignoreFromBuild : bool\r\n- static activeModifiers : List`1\r\nMethods:\r\n-
+      AffectsAgentType(int agentTypeID) : bool\r\n\r\nClass: NavMeshModifierTilemap
+      : MonoBehaviour\r\nNamespace: NavMeshPlus.Components\r\nMethods:\r\n- GetModifierMap()
+      : Dictionary`2\r\n- CacheModifiers() : void\r\n- HasDuplicateTileModifiers()
+      : bool\r\n- TryGetTileModifier(Vector3Int coords, Tilemap tilemap, TileModifier&
+      modifier) : bool\r\n- AffectsAgentType(int agentTypeID) : bool\r\n\r\nClass:
+      NavMeshModifierVolume : MonoBehaviour\r\nNamespace: NavMeshPlus.Components\r\nProperties:\r\n-
+      size : Vector3\r\n- center : Vector3\r\n- area : int\r\n- static activeModifiers
+      : List`1\r\nMethods:\r\n- AffectsAgentType(int agentTypeID) : bool\r\n\r\nClass:
+      NavMeshSurface : MonoBehaviour\r\nNamespace: NavMeshPlus.Components\r\nProperties:\r\n-
+      agentTypeID : int\r\n- collectObjects : CollectObjects\r\n- size : Vector3\r\n-
+      center : Vector3\r\n- layerMask : LayerMask\r\n- useGeometry : NavMeshCollectGeometry\r\n-
+      defaultArea : int\r\n- ignoreNavMeshAgent : bool\r\n- ignoreNavMeshObstacle
+      : bool\r\n- overrideTileSize : bool\r\n- tileSize : int\r\n- overrideVoxelSize
+      : bool\r\n- voxelSize : float\r\n- buildHeightMesh : bool\r\n- minRegionArea
+      : float\r\n- hideEditorLogs : bool\r\n- navMeshData : NavMeshData\r\n- navMeshDataInstance
+      : NavMeshDataInstance\r\n- NevMeshExtensions : INavMeshExtensionsProvider\r\n-
+      static activeSurfaces : List`1\r\nMethods:\r\n- AddData() : void\r\n- RemoveData()
+      : void\r\n- GetBuildSettings() : NavMeshBuildSettings\r\n- BuildNavMesh() :
+      void\r\n- BuildNavMeshAsync() : AsyncOperation\r\n- UpdateNavMesh(NavMeshData
+      data) : AsyncOperation\r\n- static GetWorldBounds(Matrix4x4 mat, Bounds bounds)
+      : Bounds\r\n- CalculateWorldBounds(List`1 sources) : Bounds\r\n\r\nClass: RootSources2d
+      : NavMeshExtension\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+      RootSources : List`1\r\nMethods:\r\n- CollectSources(NavMeshSurface surface,
+      List`1 sources, NavMeshBuilderState navNeshState) : void\r\n\r\nClass: RotateAgentInstantly\r\nNamespace:
+      NavMeshPlus.Extensions\r\nMethods:\r\n- UpdateAgent() : void\r\n\r\nClass:
+      RotateAgentSmoothly\r\nNamespace: NavMeshPlus.Extensions\r\nFields:\r\n- rotateSpeed
+      : float\r\nMethods:\r\n- UpdateAgent() : void\r\n\r\nClass: Demo_Camera : MonoBehaviour\r\nNamespace:
+      SpriteShadersUltimate.Demo\r\n\r\nClass: Demo_ColorPicker : MonoBehaviour\r\nNamespace:
+      SpriteShadersUltimate.Demo\r\nFields:\r\n- targetMaterial : Material\r\n- propertyName
+      : string\r\nMethods:\r\n- SetTarget(Material newMaterial, string newProperty,
+      string shaderName) : void\r\n- LoadColor(Color color) : void\r\n- UpdateColor(float
+      hue, float saturation) : void\r\n- SliderChanged() : void\r\n- OnPointerEnter(PointerEventData
+      eventData) : void\r\n- OnPointerExit(PointerEventData eventData) : void\r\n\r\nClass:
+      Demo_Display : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nDescription:
+      Selected: \r\nFields:\r\n- static selected : Demo_Display - Selected: \r\n-
+      firstProperty : string\r\n- ignorePlayer : bool\r\n- cycleTime : float\r\nMethods:\r\n-
+      ChangeIndex() : void\r\n- HasAlternatives() : bool\r\n- UpdateIndex() : void\r\n-
+      Select() : void\r\n- Deselect() : void\r\n- ResetMaterial() : void\r\n- InstantiateMaterial()
+      : Material\r\n\r\nClass: Demo_DisplayTitle : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+      target : Transform\r\n\r\nClass: Demo_FloatPicker : MonoBehaviour\r\nNamespace:
+      SpriteShadersUltimate.Demo\r\nFields:\r\n- targetMaterial : Material\r\n- propertyName
+      : string\r\nMethods:\r\n- SetTarget(Material newMaterial, string newProperty,
+      string shaderName) : void\r\n- LoadFloat(float floatValue) : void\r\n- UpdateFloat(float
+      floatValue) : void\r\n- SliderChanged() : void\r\n\r\nClass: Demo_GUI : MonoBehaviour\r\nNamespace:
+      SpriteShadersUltimate.Demo\r\nFields:\r\n- static instance : Demo_GUI\r\nMethods:\r\n-
+      CreateTitle(string title, Transform target) : void\r\n- UpdateHud() : void\r\n-
+      static IsKeyword(string propName) : bool\r\n- BackButton() : void\r\n- ResetMaterialButton()
+      : void\r\n- AlternativeButton() : void\r\n- UpdateScroll() : void\r\n\r\nClass:
+      Demo_Player : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+      static instance : Demo_Player\r\n- idleSprites : List`1\r\n- runningSprites
+      : List`1\r\n- hurtSprites : List`1\r\n- ignoreMaterials : bool\r\nMethods:\r\n-
+      GetHurt(Vector2 velocity) : void\r\n- ApplyMaterial(Material material) : void\r\n-
+      SnapPosition(Vector3 newPosition) : void\r\n- ResetPosition() : void\r\n- ResetMaterial()
+      : void\r\n\r\nClass: Demo_Shaders : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+      static instance : Demo_Shaders\r\n- static zoomFactor : float\r\nMethods:\r\n-
+      AllowMovement() : bool\r\n- FadeInGUI() : bool\r\n\r\nClass: Demo_SpriteFader
+      : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nMethods:\r\n- SetFade(bool
+      fadeState) : void\r\n\r\nClass: Demo_Trigger : MonoBehaviour\r\nNamespace:
+      SpriteShadersUltimate.Demo\r\nFields:\r\n- events : List`1\r\nMethods:\r\n-
+      ChangeState(bool isActive) : void\r\n\r\nClass: Demo_TriggerEvent\r\nNamespace:
+      SpriteShadersUltimate.Demo\r\nFields:\r\n- delay : float\r\n- fader : ShaderFaderSSU\r\n-
+      faderState : bool\r\n- negateState : bool\r\n- snapPlayer : bool\r\n- isRelative
+      : bool\r\n- snapPosition : Vector3\r\n- hurtPlayer : bool\r\n- velocity : Vector2\r\nMethods:\r\n-
+      Play(Transform source) : void\r\n\r\nClass: Demo_VectorFollow : MonoBehaviour\r\nNamespace:
+      SpriteShadersUltimate.Demo\r\nFields:\r\n- propertyName : string - Public:
+      \r\n- trackedTransform : Transform\r\n\r\nClass: Demo_VectorPicker : MonoBehaviour\r\nNamespace:
+      SpriteShadersUltimate.Demo\r\nFields:\r\n- targetMaterial : Material\r\n- propertyName
+      : string\r\nMethods:\r\n- SetTarget(Material newMaterial, string newProperty,
+      string shaderName) : void\r\n- LoadVector(Vector2 vectorValue) : void\r\n-
+      UpdateVector(Vector2 vectorValue) : void\r\n- SliderChanged() : void\r\n\r\nClass:
+      ImageSSU : InstancerSSU\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+      updateChanges : bool - Updates material when RectTransform changes. \r\nMethods:\r\n-
+      UpdateMaterial() : void\r\n\r\nClass: InteractiveSquishSSU : MonoBehaviour\r\nFields:\r\n-
+      squishSpeed : float\r\n- staySquished : bool\r\n- squishDuration : float\r\n\r\nClass:
+      InteractiveWindSSU : InstancerSSU\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+      rotationFactor : float\r\n- bendInSpeed : float\r\n- bendOutSpeed : float\r\n-
+      stayBent : bool\r\n- minBendSpeed : float\r\n- hyperPerformanceMode : bool\r\n-
+      randomOffsetZ : bool\r\n- customMaterial : bool\r\n- inactiveShader : string\r\n-
+      inactiveMaterial : Material\r\n- randomizeWiggle : bool\r\n- allowCustomLayer
+      : bool\r\nMethods:\r\n- UpdateShader() : void\r\n- static DefaultCollider(BoxCollider2D
+      box) : void\r\n\r\nClass: WindManagerSSU : MonoBehaviour\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+      windNoiseScale : float\r\n- windNoiseSpeed : float\r\n- windIntensityFrom :
+      float\r\n- windIntensityTo : float\r\nMethods:\r\n- ModifyIfChanged(Single&
+      currentValue, Single& oldValue, string globalShaderName) : void\r\n\r\nClass:
+      WindParallaxSSU : MonoBehaviour\r\nNamespace: SpriteShadersUltimate\r\n\r\nClass:
+      InstancerSSU : MonoBehaviour\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+      runtimeMaterial : Material\r\n\r\nClass: MaterialInstancerSSU : InstancerSSU\r\nNamespace:
+      SpriteShadersUltimate\r\n\r\nClass: ShaderFaderSSU : MonoBehaviour\r\nNamespace:
+      SpriteShadersUltimate\r\nFields:\r\n- automaticFading : bool - Fading: \r\n-
+      isFaded : bool\r\n- fadeValue : float\r\n- duration : float\r\n- unscaledTime
+      : bool\r\n- fadeCurve : AnimationCurve\r\n- getChildObjects : bool - Materials:
+      \r\n- poolMaterials : bool\r\n- renderers : List`1\r\n- graphics : List`1\r\n-
+      floatProperties : List`1 - Properties: \r\n- vectorProperties : List`1\r\n-
+      colorProperties : List`1\r\nMethods:\r\n- UpdateMaterials() : void\r\n- UpdateSingleMaterial(Material
+      mat, float fadeFactor) : void\r\n- ReloadMaterials() : void\r\n\r\nClass: BaseFaderSSU\r\nNamespace:
+      SpriteShadersUltimate\r\nFields:\r\n- propertyName : string\r\n- fromTime :
+      float\r\n- toTime : float\r\n\r\nClass: FloatFaderSSU : BaseFaderSSU\r\nNamespace:
+      SpriteShadersUltimate\r\nFields:\r\n- fromValue : float\r\n- toValue : float\r\n\r\nClass:
+      VectorFaderSSU : BaseFaderSSU\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+      fromValue : Vector4\r\n- toValue : Vector4\r\n\r\nClass: ColorFaderSSU : BaseFaderSSU\r\nNamespace:
+      SpriteShadersUltimate\r\nFields:\r\n- fromValue : Color\r\n- toValue : Color\r\n\r\nClass:
+      SpriteSheetSSU : MonoBehaviour\r\nNamespace: SpriteShadersUltimate\r\nDescription:
+      Attach this to sprite renderers or images with a sprite shaders ultimate material.
+      Enable Sprite Sheet Fix and let this component update the Sprite Sheet Rect
+      variable. \r\nFields:\r\n- updateChanges : bool\r\nMethods:\r\n- UpdateSpriteRect()
+      : void\r\n- static GetSheetVector(Sprite sprite) : Vector4\r\n\r\nClass: UnscaledTimeSSU
+      : MonoBehaviour\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n- dontDestroyOnLoad
+      : bool\r\n\r\n"
+    Messages:
+    - Id: 
+      Role: system
+      Content: "I want you to write clean Unity Engine C# code by request and have
+        a conversation with me about my project or unity in general.\r\nBe very concise
+        in your responses.\r\nThe code must follow Unity Codestyle. \r\nIn case of
+        a class or method add a comment section to it. \r\nDo not comment on every
+        line of code. \r\nYou must add comments to the class itself and all public
+        members of the class. \r\nInclude all necessary namespaces for the code to
+        compile.\r\nYou must ask for source code file if I ask you to modify existing
+        code and you dont have it in the conversation.\r\nUnity version to use: 6000.0.32f1"
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: user
+      Content: "Here is what I have in my project:\r\nClass: BoolEvent : ScriptableObject\r\nMethods:\r\n-
+        Raise(bool value) : void\r\n- Register(Action`1 callback) : void\r\n- Unregister(Action`1
+        callback) : void\r\n\r\nClass: CropData : ScriptableObject\r\nFields:\r\n-
+        cropName : string\r\n- growthStages : Sprite[]\r\n- growthDuration : int\r\n\r\nClass:
+        DebugUIOverlay : MonoBehaviour\r\nProperties:\r\n- static Instance : DebugUIOverlay\r\nMethods:\r\n-
+        ShowLastAction(string text) : void\r\n\r\nClass: FarmTileDataManager : MonoBehaviour\r\nDescription:
+        Stores logical gameplay state for each farm tile. Tracks tilling, watering,
+        and crop growth. Interfaces with tilemaps and farming tools to apply gameplay
+        effects. \r\nProperties:\r\n- static Instance : FarmTileDataManager\r\nMethods:\r\n-
+        IsTileTillable(Vector3Int pos) : bool\r\n- GetTileData(Vector3Int pos) :
+        FarmTileData\r\n- SetTilled(Vector3Int pos, bool value) : void\r\n- SetWatered(Vector3Int
+        pos, bool value) : void\r\n- IsTilled(Vector3Int pos) : bool\r\n- IsWatered(Vector3Int
+        pos) : bool\r\n\r\nClass: FarmTileData\r\nFields:\r\n- isTilled : bool\r\n-
+        isWatered : bool\r\n- plantedCrop : CropData\r\n- growthDays : int\r\nMethods:\r\n-
+        HasRipeCrop() : bool\r\n\r\nClass: FarmToolHandler : MonoBehaviour\r\nDescription:
+        Handles fixed tool interactions (Hoe, Water, Plant, Harvest). Supports hold-to-interact
+        with a world-space slider anchored to the currently targeted tile. \r\nProperties:\r\n-
+        static CurrentSlot : ToolSlot\r\n\r\nClass: GameManager : MonoBehaviour\r\nProperties:\r\n-
+        static Instance : GameManager\r\n\r\nClass: GameStateManager : MonoBehaviour\r\nProperties:\r\n-
+        static Instance : GameStateManager\r\n- CurrentState : GameState\r\nMethods:\r\n-
+        SetState(GameState newState) : void\r\n- IsGameplay() : bool\r\n\r\nClass:
+        GameTimeManager : MonoBehaviour\r\nProperties:\r\n- static Instance : GameTimeManager\r\n-
+        CurrentHour : int\r\n- CurrentMinute : int\r\n- Day : int\r\nMethods:\r\n-
+        IsNight() : bool\r\n- GetFormattedTime() : string\r\n\r\nClass: InputManager
+        : MonoBehaviour\r\nDescription: Manages player input and exposes clean event-based
+        API Automatically hooks up to InputSystem_Actions Emits movement vector and
+        events like Interact, Attack, Jump, etc. \r\nProperties:\r\n- static Instance
+        : InputManager\r\n- MoveInput : Vector2\r\n- LookInput : Vector2\r\n- CurrentControlScheme
+        : string\r\nMethods:\r\n- OnMove(CallbackContext context) : void\r\n- OnLook(CallbackContext
+        context) : void\r\n- OnGamepadLook(CallbackContext context) : void\r\n- OnAttack(CallbackContext
+        context) : void\r\n- OnInteract(CallbackContext context) : void\r\n- OnJump(CallbackContext
+        context) : void\r\n- OnCrouch(CallbackContext context) : void\r\n- OnNext(CallbackContext
+        context) : void\r\n- OnPrevious(CallbackContext context) : void\r\n- OnSprint(CallbackContext
+        context) : void\r\n- IsUsingGamepad() : bool\r\n- IsUsingMouse() : bool\r\n\r\nClass:
+        InteractionTargetingSystem : MonoBehaviour\r\nDescription: Handles tile highlighting
+        for interaction. Supports distinct logic for mouse, gamepad, and movement-only
+        modes. \r\nFields:\r\n- selectionHighlightTilemap : Tilemap\r\n- Grid : Grid\r\n-
+        highlightTile : Tile\r\n- highlightRange : int\r\n- coneSize : Vector2Int\r\n-
+        footPositionOffset : float\r\n- mouseTargetMaxDistance : float\r\n- drawDebugGizmos
+        : bool\r\n- gizmoColor : Color\r\nProperties:\r\n- static Instance : InteractionTargetingSystem\r\n-
+        CurrentTargetedTile : Nullable`1\r\n\r\nClass: Player_Controller : MonoBehaviour\r\nProperties:\r\n-
+        static Facing : Directions\r\n- static Position : Vector3\r\n- static IsStationary
+        : bool\r\n- static IsUsingLookDirection : bool\r\n\r\nClass: PlayerFormData\r\nFields:\r\n-
+        FormType : PlayerForm\r\n- VisualRoot : GameObject\r\n- Animator : Animator\r\n-
+        Renderer : SpriteRenderer\r\n- MoveSpeed : float\r\n\r\nClass: PlayerStateController
+        : MonoBehaviour\r\nProperties:\r\n- static Instance : PlayerStateController\r\n-
+        CurrentForm : PlayerForm\r\n- CurrentAnimator : Animator\r\n- CurrentSpriteRenderer
+        : SpriteRenderer\r\n- MoveSpeed : float\r\nMethods:\r\n- EnterWerewolfForm()
+        : void\r\n- ExitWerewolfForm() : void\r\n- IsWerewolf() : bool\r\n\r\nClass:
+        CodeBuddyDemo : MonoBehaviour\r\nNamespace: CodeBuddy.Demo\r\nMethods:\r\n-
+        JoinDiscord() : void\r\n- OpenDocumentation() : void\r\n\r\nClass: Setup\r\nNamespace:
+        Merkab\r\nMethods:\r\n- static CreateDefaultFolders() : void\r\n- static
+        ImportMyFavoriteAssets() : void\r\n- static ImportBasics() : void\r\n- static
+        InstallUnityAINavigation() : void\r\n- static InstallOpenSource() : void\r\n\r\nClass:
+        Assets\r\nNamespace: Merkab\r\nMethods:\r\n- static ImportAssets(string asset,
+        string subfolder, string folder) : void\r\n\r\nInterface: IAgentOverride\r\nNamespace:
+        NavMeshPlus.Extensions\r\nMethods:\r\n- UpdateAgent() : void\r\n\r\nClass:
+        AgentDefaultOverride\r\nNamespace: NavMeshPlus.Extensions\r\nMethods:\r\n-
+        UpdateAgent() : void\r\n\r\nClass: AgentOverride2d : MonoBehaviour\r\nNamespace:
+        NavMeshPlus.Extensions\r\nProperties:\r\n- Agent : NavMeshAgent\r\n- agentOverride
+        : IAgentOverride\r\n\r\nClass: AgentRotate2d : MonoBehaviour\r\nNamespace:
+        NavMeshPlus.Extensions\r\n\r\nClass: AgentRotateSmooth2d : MonoBehaviour\r\nNamespace:
+        NavMeshPlus.Extensions\r\nFields:\r\n- angularSpeed : float\r\n\r\nClass:
+        CollectSources2d : NavMeshExtension\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+        overrideByGrid : bool\r\n- useMeshPrefab : GameObject\r\n- compressBounds
+        : bool\r\n- overrideVector : Vector3\r\nMethods:\r\n- CalculateWorldBounds(NavMeshSurface
+        surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n- CollectSources(NavMeshSurface
+        surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n\r\nClass:
+        CollectSourcesCache2d : NavMeshExtension\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+        IsDirty : bool\r\n- SourcesCount : int\r\n- CahcheCount : int\r\n- Cache
+        : List`1\r\nMethods:\r\n- AddSource(GameObject gameObject, NavMeshBuildSource
+        source) : bool\r\n- UpdateSource(GameObject gameObject) : bool\r\n- RemoveSource(GameObject
+        gameObject) : bool\r\n- UpdateNavMesh(NavMeshData data) : AsyncOperation\r\n-
+        UpdateNavMesh() : AsyncOperation\r\n- CollectSources(NavMeshSurface surface,
+        List`1 sources, NavMeshBuilderState navMeshState) : void\r\n- PostCollectSources(NavMeshSurface
+        surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n\r\nClass:
+        CollectTilemapSourcesCache2d : NavMeshExtension\r\nNamespace: NavMeshPlus.Extensions\r\nMethods:\r\n-
+        UpdateNavMesh(NavMeshData data) : AsyncOperation\r\n- UpdateNavMesh() : AsyncOperation\r\n-
+        PostCollectSources(NavMeshSurface surface, List`1 sources, NavMeshBuilderState
+        navNeshState) : void\r\n\r\nClass: NavMeshAgentAttribute : PropertyAttribute\r\nNamespace:
+        NavMeshPlus.Extensions\r\n\r\nClass: NavMeshAreaAttribute : PropertyAttribute\r\nNamespace:
+        NavMeshPlus.Extensions\r\nDescription: See also NavMeshAreaAttributePropertyDrawer
+        \r\n\r\nClass: NavMeshBuilder2dState\r\nNamespace: NavMeshPlus.Extensions\r\nFields:\r\n-
+        spriteMeshMap : Dictionary`2\r\n- coliderMeshMap : Dictionary`2\r\n- lookupCallback
+        : Action`2\r\n- defaultArea : int\r\n- layerMask : int\r\n- agentID : int\r\n-
+        overrideByGrid : bool\r\n- useMeshPrefab : GameObject\r\n- compressBounds
+        : bool\r\n- overrideVector : Vector3\r\n- CollectGeometry : NavMeshCollectGeometry\r\n-
+        CollectObjects : CollectObjects\r\n- parent : GameObject\r\n- hideEditorLogs
+        : bool\r\nProperties:\r\n- Root : IEnumerable`1\r\nMethods:\r\n- GetMesh(Sprite
+        sprite) : Mesh\r\n- GetMesh(Collider2D collider) : Mesh\r\n- SetRoot(IEnumerable`1
+        root) : void\r\n- GetRoot() : IEnumerable`1\r\n- Dispose() : void\r\n\r\nClass:
+        NavMeshBuilder2d\r\nNamespace: NavMeshPlus.Extensions\r\nMethods:\r\n- static
+        CollectSources(List`1 sources, NavMeshBuilder2dState builder) : void\r\n-
+        static CollectSources(GameObject root, List`1 sources, NavMeshBuilder2dState
+        builder) : void\r\n- static CollectSources(List`1 sources, NavMeshBuilder2dState
+        builder, NavMeshModifier modifier, int area) : void\r\n- static CollectSources(List`1
+        sources, SpriteRenderer spriteRenderer, int area, NavMeshBuilder2dState builder)
+        : void\r\n- static CollectSources(List`1 sources, Collider2D collider, int
+        area, NavMeshBuilder2dState builder) : void\r\n- static CollectTileSources(List`1
+        sources, Tilemap tilemap, int area, NavMeshBuilder2dState builder) : void\r\n-
+        static GetCellTransformMatrix(Tilemap tilemap, Vector3 scale, Vector3Int
+        vec3int) : Matrix4x4\r\n\r\nClass: NavMeshBuilderState\r\nNamespace: NavMeshPlus.Extensions\r\nFields:\r\n-
+        worldToLocal : Matrix4x4\r\n- worldBounds : Bounds\r\n- roots : IEnumerable`1\r\nMethods:\r\n-
+        GetExtraState(bool dispose) : T\r\n- Dispose() : void\r\n\r\nClass: CompositeDisposable\r\nNamespace:
+        NavMeshPlus.Extensions\r\nMethods:\r\n- Add(IDisposable dispose) : void\r\n-
+        Add(Object dispose) : void\r\n- Dispose() : void\r\n\r\nClass: NavMeshExtension
+        : MonoBehaviour\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+        Order : int\r\n- NavMeshSurfaceOwner : NavMeshSurface\r\nMethods:\r\n- CollectSources(NavMeshSurface
+        surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n- CalculateWorldBounds(NavMeshSurface
+        surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n- PostCollectSources(NavMeshSurface
+        surface, List`1 sources, NavMeshBuilderState navNeshState) : void\r\n\r\nInterface:
+        INavMeshExtensionsProvider\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+        Count : int\r\n- Item : NavMeshExtension\r\nMethods:\r\n- Add(NavMeshExtension
+        extension, int order) : void\r\n- Remove(NavMeshExtension extension) : void\r\n\r\nClass:
+        NavMeshExtensionMeta\r\nNamespace: NavMeshPlus.Extensions\r\nFields:\r\n-
+        order : int\r\n- extension : NavMeshExtension\r\n\r\nClass: NavMeshExtensionsProvider\r\nNamespace:
+        NavMeshPlus.Extensions\r\nProperties:\r\n- Item : NavMeshExtension\r\n- Count
+        : int\r\nMethods:\r\n- Add(NavMeshExtension extension, int order) : void\r\n-
+        Remove(NavMeshExtension extension) : void\r\n\r\nClass: NavMeshLink : MonoBehaviour\r\nNamespace:
+        NavMeshPlus.Components\r\nProperties:\r\n- agentTypeID : int\r\n- startPoint
+        : Vector3\r\n- endPoint : Vector3\r\n- width : float\r\n- costModifier :
+        int\r\n- bidirectional : bool\r\n- autoUpdate : bool\r\n- area : int\r\nMethods:\r\n-
+        UpdateLink() : void\r\n\r\nClass: NavMeshModifier : MonoBehaviour\r\nNamespace:
+        NavMeshPlus.Components\r\nProperties:\r\n- overrideArea : bool\r\n- area
+        : int\r\n- ignoreFromBuild : bool\r\n- static activeModifiers : List`1\r\nMethods:\r\n-
+        AffectsAgentType(int agentTypeID) : bool\r\n\r\nClass: NavMeshModifierTilemap
+        : MonoBehaviour\r\nNamespace: NavMeshPlus.Components\r\nMethods:\r\n- GetModifierMap()
+        : Dictionary`2\r\n- CacheModifiers() : void\r\n- HasDuplicateTileModifiers()
+        : bool\r\n- TryGetTileModifier(Vector3Int coords, Tilemap tilemap, TileModifier&
+        modifier) : bool\r\n- AffectsAgentType(int agentTypeID) : bool\r\n\r\nClass:
+        NavMeshModifierVolume : MonoBehaviour\r\nNamespace: NavMeshPlus.Components\r\nProperties:\r\n-
+        size : Vector3\r\n- center : Vector3\r\n- area : int\r\n- static activeModifiers
+        : List`1\r\nMethods:\r\n- AffectsAgentType(int agentTypeID) : bool\r\n\r\nClass:
+        NavMeshSurface : MonoBehaviour\r\nNamespace: NavMeshPlus.Components\r\nProperties:\r\n-
+        agentTypeID : int\r\n- collectObjects : CollectObjects\r\n- size : Vector3\r\n-
+        center : Vector3\r\n- layerMask : LayerMask\r\n- useGeometry : NavMeshCollectGeometry\r\n-
+        defaultArea : int\r\n- ignoreNavMeshAgent : bool\r\n- ignoreNavMeshObstacle
+        : bool\r\n- overrideTileSize : bool\r\n- tileSize : int\r\n- overrideVoxelSize
+        : bool\r\n- voxelSize : float\r\n- buildHeightMesh : bool\r\n- minRegionArea
+        : float\r\n- hideEditorLogs : bool\r\n- navMeshData : NavMeshData\r\n- navMeshDataInstance
+        : NavMeshDataInstance\r\n- NevMeshExtensions : INavMeshExtensionsProvider\r\n-
+        static activeSurfaces : List`1\r\nMethods:\r\n- AddData() : void\r\n- RemoveData()
+        : void\r\n- GetBuildSettings() : NavMeshBuildSettings\r\n- BuildNavMesh()
+        : void\r\n- BuildNavMeshAsync() : AsyncOperation\r\n- UpdateNavMesh(NavMeshData
+        data) : AsyncOperation\r\n- static GetWorldBounds(Matrix4x4 mat, Bounds bounds)
+        : Bounds\r\n- CalculateWorldBounds(List`1 sources) : Bounds\r\n\r\nClass:
+        RootSources2d : NavMeshExtension\r\nNamespace: NavMeshPlus.Extensions\r\nProperties:\r\n-
+        RootSources : List`1\r\nMethods:\r\n- CollectSources(NavMeshSurface surface,
+        List`1 sources, NavMeshBuilderState navNeshState) : void\r\n\r\nClass: RotateAgentInstantly\r\nNamespace:
+        NavMeshPlus.Extensions\r\nMethods:\r\n- UpdateAgent() : void\r\n\r\nClass:
+        RotateAgentSmoothly\r\nNamespace: NavMeshPlus.Extensions\r\nFields:\r\n-
+        rotateSpeed : float\r\nMethods:\r\n- UpdateAgent() : void\r\n\r\nClass: Demo_Camera
+        : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\n\r\nClass: Demo_ColorPicker
+        : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+        targetMaterial : Material\r\n- propertyName : string\r\nMethods:\r\n- SetTarget(Material
+        newMaterial, string newProperty, string shaderName) : void\r\n- LoadColor(Color
+        color) : void\r\n- UpdateColor(float hue, float saturation) : void\r\n- SliderChanged()
+        : void\r\n- OnPointerEnter(PointerEventData eventData) : void\r\n- OnPointerExit(PointerEventData
+        eventData) : void\r\n\r\nClass: Demo_Display : MonoBehaviour\r\nNamespace:
+        SpriteShadersUltimate.Demo\r\nDescription: Selected: \r\nFields:\r\n- static
+        selected : Demo_Display - Selected: \r\n- firstProperty : string\r\n- ignorePlayer
+        : bool\r\n- cycleTime : float\r\nMethods:\r\n- ChangeIndex() : void\r\n-
+        HasAlternatives() : bool\r\n- UpdateIndex() : void\r\n- Select() : void\r\n-
+        Deselect() : void\r\n- ResetMaterial() : void\r\n- InstantiateMaterial()
+        : Material\r\n\r\nClass: Demo_DisplayTitle : MonoBehaviour\r\nNamespace:
+        SpriteShadersUltimate.Demo\r\nFields:\r\n- target : Transform\r\n\r\nClass:
+        Demo_FloatPicker : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+        targetMaterial : Material\r\n- propertyName : string\r\nMethods:\r\n- SetTarget(Material
+        newMaterial, string newProperty, string shaderName) : void\r\n- LoadFloat(float
+        floatValue) : void\r\n- UpdateFloat(float floatValue) : void\r\n- SliderChanged()
+        : void\r\n\r\nClass: Demo_GUI : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+        static instance : Demo_GUI\r\nMethods:\r\n- CreateTitle(string title, Transform
+        target) : void\r\n- UpdateHud() : void\r\n- static IsKeyword(string propName)
+        : bool\r\n- BackButton() : void\r\n- ResetMaterialButton() : void\r\n- AlternativeButton()
+        : void\r\n- UpdateScroll() : void\r\n\r\nClass: Demo_Player : MonoBehaviour\r\nNamespace:
+        SpriteShadersUltimate.Demo\r\nFields:\r\n- static instance : Demo_Player\r\n-
+        idleSprites : List`1\r\n- runningSprites : List`1\r\n- hurtSprites : List`1\r\n-
+        ignoreMaterials : bool\r\nMethods:\r\n- GetHurt(Vector2 velocity) : void\r\n-
+        ApplyMaterial(Material material) : void\r\n- SnapPosition(Vector3 newPosition)
+        : void\r\n- ResetPosition() : void\r\n- ResetMaterial() : void\r\n\r\nClass:
+        Demo_Shaders : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+        static instance : Demo_Shaders\r\n- static zoomFactor : float\r\nMethods:\r\n-
+        AllowMovement() : bool\r\n- FadeInGUI() : bool\r\n\r\nClass: Demo_SpriteFader
+        : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nMethods:\r\n-
+        SetFade(bool fadeState) : void\r\n\r\nClass: Demo_Trigger : MonoBehaviour\r\nNamespace:
+        SpriteShadersUltimate.Demo\r\nFields:\r\n- events : List`1\r\nMethods:\r\n-
+        ChangeState(bool isActive) : void\r\n\r\nClass: Demo_TriggerEvent\r\nNamespace:
+        SpriteShadersUltimate.Demo\r\nFields:\r\n- delay : float\r\n- fader : ShaderFaderSSU\r\n-
+        faderState : bool\r\n- negateState : bool\r\n- snapPlayer : bool\r\n- isRelative
+        : bool\r\n- snapPosition : Vector3\r\n- hurtPlayer : bool\r\n- velocity :
+        Vector2\r\nMethods:\r\n- Play(Transform source) : void\r\n\r\nClass: Demo_VectorFollow
+        : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+        propertyName : string - Public: \r\n- trackedTransform : Transform\r\n\r\nClass:
+        Demo_VectorPicker : MonoBehaviour\r\nNamespace: SpriteShadersUltimate.Demo\r\nFields:\r\n-
+        targetMaterial : Material\r\n- propertyName : string\r\nMethods:\r\n- SetTarget(Material
+        newMaterial, string newProperty, string shaderName) : void\r\n- LoadVector(Vector2
+        vectorValue) : void\r\n- UpdateVector(Vector2 vectorValue) : void\r\n- SliderChanged()
+        : void\r\n\r\nClass: ImageSSU : InstancerSSU\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+        updateChanges : bool - Updates material when RectTransform changes. \r\nMethods:\r\n-
+        UpdateMaterial() : void\r\n\r\nClass: InteractiveSquishSSU : MonoBehaviour\r\nFields:\r\n-
+        squishSpeed : float\r\n- staySquished : bool\r\n- squishDuration : float\r\n\r\nClass:
+        InteractiveWindSSU : InstancerSSU\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+        rotationFactor : float\r\n- bendInSpeed : float\r\n- bendOutSpeed : float\r\n-
+        stayBent : bool\r\n- minBendSpeed : float\r\n- hyperPerformanceMode : bool\r\n-
+        randomOffsetZ : bool\r\n- customMaterial : bool\r\n- inactiveShader : string\r\n-
+        inactiveMaterial : Material\r\n- randomizeWiggle : bool\r\n- allowCustomLayer
+        : bool\r\nMethods:\r\n- UpdateShader() : void\r\n- static DefaultCollider(BoxCollider2D
+        box) : void\r\n\r\nClass: WindManagerSSU : MonoBehaviour\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+        windNoiseScale : float\r\n- windNoiseSpeed : float\r\n- windIntensityFrom
+        : float\r\n- windIntensityTo : float\r\nMethods:\r\n- ModifyIfChanged(Single&
+        currentValue, Single& oldValue, string globalShaderName) : void\r\n\r\nClass:
+        WindParallaxSSU : MonoBehaviour\r\nNamespace: SpriteShadersUltimate\r\n\r\nClass:
+        InstancerSSU : MonoBehaviour\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+        runtimeMaterial : Material\r\n\r\nClass: MaterialInstancerSSU : InstancerSSU\r\nNamespace:
+        SpriteShadersUltimate\r\n\r\nClass: ShaderFaderSSU : MonoBehaviour\r\nNamespace:
+        SpriteShadersUltimate\r\nFields:\r\n- automaticFading : bool - Fading: \r\n-
+        isFaded : bool\r\n- fadeValue : float\r\n- duration : float\r\n- unscaledTime
+        : bool\r\n- fadeCurve : AnimationCurve\r\n- getChildObjects : bool - Materials:
+        \r\n- poolMaterials : bool\r\n- renderers : List`1\r\n- graphics : List`1\r\n-
+        floatProperties : List`1 - Properties: \r\n- vectorProperties : List`1\r\n-
+        colorProperties : List`1\r\nMethods:\r\n- UpdateMaterials() : void\r\n- UpdateSingleMaterial(Material
+        mat, float fadeFactor) : void\r\n- ReloadMaterials() : void\r\n\r\nClass:
+        BaseFaderSSU\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n- propertyName
+        : string\r\n- fromTime : float\r\n- toTime : float\r\n\r\nClass: FloatFaderSSU
+        : BaseFaderSSU\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n- fromValue
+        : float\r\n- toValue : float\r\n\r\nClass: VectorFaderSSU : BaseFaderSSU\r\nNamespace:
+        SpriteShadersUltimate\r\nFields:\r\n- fromValue : Vector4\r\n- toValue :
+        Vector4\r\n\r\nClass: ColorFaderSSU : BaseFaderSSU\r\nNamespace: SpriteShadersUltimate\r\nFields:\r\n-
+        fromValue : Color\r\n- toValue : Color\r\n\r\nClass: SpriteSheetSSU : MonoBehaviour\r\nNamespace:
+        SpriteShadersUltimate\r\nDescription: Attach this to sprite renderers or
+        images with a sprite shaders ultimate material. Enable Sprite Sheet Fix and
+        let this component update the Sprite Sheet Rect variable. \r\nFields:\r\n-
+        updateChanges : bool\r\nMethods:\r\n- UpdateSpriteRect() : void\r\n- static
+        GetSheetVector(Sprite sprite) : Vector4\r\n\r\nClass: UnscaledTimeSSU : MonoBehaviour\r\nNamespace:
+        SpriteShadersUltimate\r\nFields:\r\n- dontDestroyOnLoad : bool\r\n\r\n"
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: user
+      Content: 'I would like to work on a refactor of this player controller and
+        interaction system that allow us to cleanly work on the highlighting system. 
+        Right now it requires a lot of asing which control state we are in, but i
+        want to back it up a little and work on setting up through unity input system
+        to separate logic cleanly into two toggleable modes, controller and keyboard
+        & mouse.  This way in logic we will know which one we are in and we will
+        use that logic.  We also need to handle adding in a toggle to switch between
+        controller and KBM, and set it all  up in the input system.  This is Unity
+        6 '
+      Skip: 0
+      Attachments:
+      - 677ca8cf8ad0b6644a8bbd3a6aa1af2a
+      - 0ee21bbb5bffda44697ed8541bb763ac
+      - 309abaca7f822874992b5c9c8eb8f0b1
+      - a765460b2f1aa8046bbcd6d994cbc3c5
+      - 0a5da76b10abead42b1ab88b181d0e77
+      - 8cc85879c5933a74d91a4474ba077d19
+      - 523929666607fb242b7d2d1031f7f61c
+      - 38bc8014aa7998d40b3e413f5086ac8a
+      - a488f650d5d8cca41b6c037eee0d01b0
+      - 171dbb7715a09b346a19c7d965740f3a
+      - c0f33ca4825565f41861c26fa20bb420
+      - 81cb6fd7c1bf72b4d974659bc09cd8df
+      - 2d7d109fe76974144a6f60f486d6a137
+    - Id: 
+      Role: assistant
+      Content: "I'll help you refactor this into a cleaner input system. Let's start
+        with the core components:\n\n1. First, let's create an InputMode enum and
+        system:\n\n```csharp\nusing UnityEngine;\nusing UnityEngine.InputSystem;\n\npublic
+        enum InputMode \n{\n    KeyboardMouse,\n    Gamepad\n}\n\npublic class InputModeManager
+        : MonoBehaviour\n{\n    public static InputModeManager Instance { get; private
+        set; }\n    public InputMode CurrentMode { get; private set; }\n    \n   
+        public event System.Action<InputMode> OnInputModeChanged;\n\n    private
+        void Awake()\n    {\n        if (Instance != null && Instance != this)\n       
+        {\n            Destroy(gameObject);\n            return;\n        }\n       
+        \n        Instance = this;\n        DontDestroyOnLoad(gameObject);\n    }\n\n   
+        public void SetInputMode(InputMode newMode)\n    {\n        if (CurrentMode
+        == newMode) return;\n        \n        CurrentMode = newMode;\n        OnInputModeChanged?.Invoke(newMode);\n   
+        }\n\n    public void ToggleInputMode()\n    {\n        SetInputMode(CurrentMode
+        == InputMode.KeyboardMouse \n            ? InputMode.Gamepad \n           
+        : InputMode.KeyboardMouse);\n    }\n}\n```\n\n2. Now let's modify the InteractionTargetingSystem
+        to use this:\n\n```csharp\nusing UnityEngine;\nusing UnityEngine.Tilemaps;\n\npublic
+        class InteractionTargetingSystem : MonoBehaviour\n{\n    [Header(\"References\")]\n   
+        [SerializeField] private Tilemap selectionHighlightTilemap;\n    [SerializeField]
+        private Tile highlightTile;\n    [SerializeField] private Grid grid;\n   
+        \n    [Header(\"Settings\")]\n    [SerializeField] private float mouseTargetMaxDistance
+        = 5f;\n    [SerializeField] private int gamepadHighlightRange = 2;\n    [SerializeField]
+        private Vector2Int gamepadConeSize = new(3, 2);\n    [SerializeField] private
+        float footPositionOffset = 0.5f;\n\n    public Vector3Int? CurrentTargetedTile
+        { get; private set; }\n\n    private void Update()\n    {\n        ClearHighlight();\n       
+        \n        if (InputModeManager.Instance.CurrentMode == InputMode.KeyboardMouse)\n       
+        {\n            UpdateMouseTargeting();\n        }\n        else\n       
+        {\n            UpdateGamepadTargeting();\n        }\n    }\n\n    private
+        void UpdateMouseTargeting()\n    {\n        // Mouse targeting logic\n   
+        }\n\n    private void UpdateGamepadTargeting()\n    {\n        // Gamepad
+        targeting logic\n    }\n\n    private void ClearHighlight()\n    {\n       
+        if (CurrentTargetedTile.HasValue)\n        {\n            selectionHighlightTilemap.SetTile(CurrentTargetedTile.Value,
+        null);\n            CurrentTargetedTile = null;\n        }\n    }\n\n   
+        private void HighlightTile(Vector3Int tilePos)\n    {\n        selectionHighlightTilemap.SetTile(tilePos,
+        highlightTile);\n        CurrentTargetedTile = tilePos;\n    }\n}\n```\n\n3.
+        For the input system setup, we'll need to:\n- Create a new Input Action Asset\n-
+        Add a \"ToggleInputMode\" action mapped to both keyboard (e.g. F1) and gamepad
+        (e.g. Options button)\n- Add UI to show current input mode\n\nWould you like
+        me to:\n1. Show the Input Action Asset setup\n2. Provide the UI component
+        for mode display\n3. Focus on either the mouse or gamepad targeting implementation
+        first?\n\nAlso, should we modify the existing InputManager or create a new
+        system that works alongside it?"
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: user
+      Content: 'Let''s instead of setting up a new action to a keyboard and gamepad
+        button, we should just make a UI, so that later we can throw it into a settings
+        UI.  Once we do that  can we actually fully update this InteractionTargeting
+        System to use this Input Mode.  '
+      Skip: 0
+      Attachments:
+      - 3cc64da71bffccc4f867d0995042e69f
+      - 171dbb7715a09b346a19c7d965740f3a
+      - 0a5da76b10abead42b1ab88b181d0e77
+      - c0f33ca4825565f41861c26fa20bb420
+    - Id: 
+      Role: assistant
+      Content: "Got it. Let's break this down into clear steps:\n\n1. First, let's
+        create a simple UI toggle component:\n\n```csharp\nusing UnityEngine;\nusing
+        UnityEngine.UI;\n\npublic class InputModeToggle : MonoBehaviour\n{\n    [SerializeField]
+        private Toggle toggle;\n    [SerializeField] private Image keyboardIcon;\n   
+        [SerializeField] private Image gamepadIcon;\n    [SerializeField] private
+        Color activeColor = Color.white;\n    [SerializeField] private Color inactiveColor
+        = Color.gray;\n\n    private void Awake()\n    {\n        toggle.onValueChanged.AddListener(OnToggleChanged);\n       
+        InputModeManager.Instance.OnInputModeChanged += UpdateVisuals;\n        UpdateVisuals(InputModeManager.Instance.CurrentMode);\n   
+        }\n\n    private void OnToggleChanged(bool isOn)\n    {\n        InputModeManager.Instance.SetInputMode(isOn
+        ? InputMode.Gamepad : InputMode.KeyboardMouse);\n    }\n\n    private void
+        UpdateVisuals(InputMode mode)\n    {\n        bool isGamepad = mode == InputMode.Gamepad;\n       
+        toggle.SetIsOnWithoutNotify(isGamepad);\n        keyboardIcon.color = isGamepad
+        ? inactiveColor : activeColor;\n        gamepadIcon.color = isGamepad ? activeColor
+        : inactiveColor;\n    }\n\n    private void OnDestroy()\n    {\n        if
+        (InputModeManager.Instance != null)\n        {\n            InputModeManager.Instance.OnInputModeChanged
+        -= UpdateVisuals;\n        }\n    }\n}\n```\n\n2. Now let's fully update
+        the InteractionTargetingSystem:\n\n```csharp\nusing UnityEngine;\nusing UnityEngine.Tilemaps;\n\npublic
+        class InteractionTargetingSystem : MonoBehaviour\n{\n    [Header(\"References\")]\n   
+        [SerializeField] private Tilemap selectionHighlightTilemap;\n    [SerializeField]
+        private Tile highlightTile;\n    [SerializeField] private Grid grid;\n   
+        \n    [Header(\"Mouse Settings\")]\n    [SerializeField] private float mouseTargetMaxDistance
+        = 5f;\n    \n    [Header(\"Gamepad Settings\")] \n    [SerializeField] private
+        int gamepadHighlightRange = 2;\n    [SerializeField] private Vector2Int gamepadConeSize
+        = new(3, 2);\n    [SerializeField] private float footPositionOffset = 0.5f;\n\n   
+        public Vector3Int? CurrentTargetedTile { get; private set; }\n\n    private
+        Camera mainCamera;\n\n    private void Awake()\n    {\n        mainCamera
+        = Camera.main;\n    }\n\n    private void Update()\n    {\n        ClearHighlight();\n       
+        \n        switch (InputModeManager.Instance.CurrentMode)\n        {\n           
+        case InputMode.KeyboardMouse:\n                UpdateMouseTargeting();\n               
+        break;\n            \n            case InputMode.Gamepad:\n               
+        UpdateGamepadTargeting();\n                break;\n        }\n    }\n\n   
+        private void UpdateMouseTargeting()\n    {\n        Vector2 mousePos = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());\n       
+        Vector3Int tilePos = grid.WorldToCell(mousePos);\n        \n        if (Vector2.Distance(mousePos,
+        Player_Controller.Position) > mouseTargetMaxDistance)\n            return;\n\n       
+        HighlightTile(tilePos);\n    }\n\n    private void UpdateGamepadTargeting()\n   
+        {\n        Vector2 lookInput = InputManager.Instance.LookInput;\n       
+        if (lookInput.magnitude < 0.1f) return;\n\n        Vector3 playerPos = Player_Controller.Position;\n       
+        Vector3Int playerTile = grid.WorldToCell(playerPos);\n        \n        //
+        Calculate target tile based on facing direction and range\n        Vector2
+        facingDirection = Player_Controller.Facing.ToVector2();\n        Vector3Int
+        targetTile = playerTile + new Vector3Int(\n            Mathf.RoundToInt(facingDirection.x
+        * gamepadHighlightRange),\n            Mathf.RoundToInt(facingDirection.y
+        * gamepadHighlightRange),\n            0\n        );\n\n        HighlightTile(targetTile);\n   
+        }\n\n    private void ClearHighlight()\n    {\n        if (CurrentTargetedTile.HasValue)\n       
+        {\n            selectionHighlightTilemap.SetTile(CurrentTargetedTile.Value,
+        null);\n            CurrentTargetedTile = null;\n        }\n    }\n\n   
+        private void HighlightTile(Vector3Int tilePos)\n    {\n        selectionHighlightTilemap.SetTile(tilePos,
+        highlightTile);\n        CurrentTargetedTile = tilePos;\n    }\n}\n```\n\n3.
+        For the UI setup, create a Toggle with:\n- A Toggle component\n- Two child
+        Images (keyboard and gamepad icons)\n- Attach the InputModeToggle script\n-
+        Wire up references in the inspector\n\nKey improvements:\n1. Clean separation
+        between mouse and gamepad logic\n2. No more manual control scheme checks
+        - uses the InputModeManager\n3. Easily extendable for settings menu integration\n4.
+        Visual feedback for current input mode\n\nWould you like me to:\n1. Show
+        how to modify the existing InputManager to work with this\n2. Add more sophisticated
+        gamepad targeting (like cone-shaped area)\n3. Create a settings menu prefab
+        for this toggle?"
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: user
+      Content: "Vector2 facingDirection = Player_Controller.Facing.ToVector2(); 
+        I am getting an error on the ToVetor2() saying it doesnt exist. \n"
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: assistant
+      Content: "Ah, we need to add an extension method to convert the `Directions`
+        enum to a Vector2. Here's how to fix that:\n\n1. First, create a new static
+        class for direction extensions:\n\n```csharp\nusing UnityEngine;\n\npublic
+        static class DirectionExtensions\n{\n    /// <summary>\n    /// Converts
+        Directions enum to corresponding Vector2\n    /// </summary>\n    public
+        static Vector2 ToVector2(this Directions direction)\n    {\n        return
+        direction switch\n        {\n            Directions.Up => Vector2.up,\n           
+        Directions.Down => Vector2.down,\n            Directions.Left => Vector2.left,\n           
+        Directions.Right => Vector2.right,\n            _ => Vector2.zero\n       
+        };\n    }\n}\n```\n\n2. Make sure your `Directions` enum is properly defined
+        (it should be in your Player_Controller class):\n\n```csharp\npublic enum
+        Directions\n{\n    Up,\n    Down,\n    Left,\n    Right\n}\n```\n\n3. Now
+        the `ToVector2()` call will work in your InteractionTargetingSystem. The
+        full fixed gamepad targeting method would look like:\n\n```csharp\nprivate
+        void UpdateGamepadTargeting()\n{\n    Vector2 lookInput = InputManager.Instance.LookInput;\n   
+        if (lookInput.magnitude < 0.1f) return;\n\n    Vector3 playerPos = Player_Controller.Position;\n   
+        Vector3Int playerTile = grid.WorldToCell(playerPos);\n    \n    Vector2 facingDirection
+        = Player_Controller.Facing.ToVector2();\n    Vector3Int targetTile = playerTile
+        + new Vector3Int(\n        Mathf.RoundToInt(facingDirection.x * gamepadHighlightRange),\n       
+        Mathf.RoundToInt(facingDirection.y * gamepadHighlightRange),\n        0\n   
+        );\n\n    HighlightTile(targetTile);\n}\n```\n\nThis gives you a clean way
+        to convert between the enum and Vector2 directions throughout your project.
+        Would you like me to:\n1. Add more direction utility methods (like getting
+        angle from direction)?\n2. Show how to handle diagonal inputs if needed?\n3.
+        Modify the gamepad targeting to be more sophisticated?"
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: user
+      Content: 'We now need to update this FarmToolHandler since we no longer are
+        using a singleton and have changed up some logic int the interaction system.
+
+'
+      Skip: 0
+      Attachments:
+      - 0a5da76b10abead42b1ab88b181d0e77
+    - Id: 
+      Role: assistant
+      Content: "Here's the refactored `FarmToolHandler` that works with the new input
+        system and interaction targeting:\n\n```csharp\nusing UnityEngine;\nusing
+        UnityEngine.InputSystem;\n\n/// <summary>\n/// Handles farm tool interactions
+        (Hoe, Water, Plant, Harvest) using the new input system\n/// </summary>\npublic
+        class FarmToolHandler : MonoBehaviour\n{\n    [Header(\"Tool Settings\")]\n   
+        [SerializeField] private float interactionHoldDuration = 0.5f;\n    [SerializeField]
+        private Transform progressSlider;\n    \n    [Header(\"References\")]\n   
+        [SerializeField] private InputActionReference interactAction;\n    [SerializeField]
+        private InteractionTargetingSystem targetingSystem;\n    \n    private float
+        currentHoldTime;\n    private bool isInteracting;\n    private Vector3Int?
+        targetTile;\n\n    private void OnEnable()\n    {\n        interactAction.action.performed
+        += OnInteractPerformed;\n        interactAction.action.canceled += OnInteractCanceled;\n       
+        InputModeManager.Instance.OnInputModeChanged += OnInputModeChanged;\n   
+        }\n\n    private void OnDisable()\n    {\n        interactAction.action.performed
+        -= OnInteractPerformed;\n        interactAction.action.canceled -= OnInteractCanceled;\n       
+        InputModeManager.Instance.OnInputModeChanged -= OnInputModeChanged;\n   
+        }\n\n    private void Update()\n    {\n        if (!isInteracting) return;\n       
+        \n        targetTile = targetingSystem.CurrentTargetedTile;\n        if (!targetTile.HasValue)
+        return;\n\n        currentHoldTime += Time.deltaTime;\n        UpdateSliderVisual();\n\n       
+        if (currentHoldTime >= interactionHoldDuration)\n        {\n            CompleteInteraction();\n       
+        }\n    }\n\n    private void OnInteractPerformed(InputAction.CallbackContext
+        context)\n    {\n        if (!GameStateManager.Instance.IsGameplay()) return;\n       
+        if (!targetingSystem.CurrentTargetedTile.HasValue) return;\n\n        isInteracting
+        = true;\n        currentHoldTime = 0f;\n        progressSlider.gameObject.SetActive(true);\n       
+        PositionSliderAtTarget();\n    }\n\n    private void OnInteractCanceled(InputAction.CallbackContext
+        context)\n    {\n        if (!isInteracting) return;\n        \n        isInteracting
+        = false;\n        progressSlider.gameObject.SetActive(false);\n        \n       
+        if (currentHoldTime < interactionHoldDuration)\n        {\n            DebugUIOverlay.Instance.ShowLastAction(\"Interaction
+        cancelled\");\n        }\n    }\n\n    private void OnInputModeChanged(InputMode
+        newMode)\n    {\n        // Reset interaction when switching modes\n       
+        if (isInteracting)\n        {\n            isInteracting = false;\n           
+        progressSlider.gameObject.SetActive(false);\n        }\n    }\n\n    private
+        void CompleteInteraction()\n    {\n        isInteracting = false;\n       
+        progressSlider.gameObject.SetActive(false);\n        \n        if (!targetTile.HasValue)
+        return;\n\n        // Handle different tool types\n        switch (ToolSlot.CurrentTool)\n       
+        {\n            case ToolType.Hoe:\n                FarmTileDataManager.Instance.SetTilled(targetTile.Value,
+        true);\n                break;\n                \n            case ToolType.WateringCan:\n               
+        FarmTileDataManager.Instance.SetWatered(targetTile.Value, true);\n               
+        break;\n                \n            case ToolType.Seed:\n               
+        TryPlantSeed(targetTile.Value);\n                break;\n               
+        \n            case ToolType.Harvest:\n                TryHarvest(targetTile.Value);\n               
+        break;\n        }\n    }\n\n    private void TryPlantSeed(Vector3Int tilePos)\n   
+        {\n        // Your planting logic here\n    }\n\n    private void TryHarvest(Vector3Int
+        tilePos)\n    {\n        // Your harvest logic here\n    }\n\n    private
+        void PositionSliderAtTarget()\n    {\n        if (!targetTile.HasValue) return;\n       
+        Vector3 worldPos = targetingSystem.Grid.CellToWorld(targetTile.Value);\n       
+        progressSlider.position = worldPos + Vector3.up;\n    }\n\n    private void
+        UpdateSliderVisual()\n    {\n        float progress = Mathf.Clamp01(currentHoldTime
+        / interactionHoldDuration);\n        progressSlider.localScale = new Vector3(progress,
+        1f, 1f);\n    }\n}\n```\n\nKey changes made:\n1. Removed singleton pattern
+        - now uses direct references\n2. Works with the new `InputModeManager` system\n3.
+        Uses `InputActionReference` for better input system integration\n4. Cleaner
+        separation of interaction states\n5. Proper event subscription/unsubscription\n6.
+        Visual feedback tied to the target tile\n\nYou'll need to:\n1. Set up the
+        `interactAction` reference in the inspector\n2. Wire up the `targetingSystem`
+        reference\n3. Configure the `progressSlider` transform (should be a child
+        with a scale-from-left UI element)\n\nWould you like me to:\n1. Show the
+        input action setup?\n2. Provide the progress slider UI implementation?\n3.
+        Add any specific tool logic (like the planting/harvest details)?"
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: user
+      Content: 'We removed out toolslot enum, and we also do not have a tool type
+        enum like is expected.  Where and how should we implement those. '
+      Skip: 0
+      Attachments:
+      - 0a5da76b10abead42b1ab88b181d0e77
+    - Id: 
+      Role: assistant
+      Content: "Let's implement a clean tool system with proper enums and data structure.
+        Here's how we'll organize it:\n\n1. First, create a new `ToolSystem.cs` script
+        to define our core types:\n\n```csharp\nusing UnityEngine;\n\n/// <summary>\n///
+        Core tool system definitions and current tool tracking\n/// </summary>\npublic
+        static class ToolSystem\n{\n    public enum ToolType\n    {\n        None,\n       
+        Hoe,\n        WateringCan,\n        Seed,\n        Harvest\n    }\n\n   
+        public static ToolType CurrentTool { get; private set; } = ToolType.None;\n\n   
+        public static void SetTool(ToolType tool)\n    {\n        CurrentTool = tool;\n       
+        DebugUIOverlay.Instance.ShowLastAction($\"Tool: {CurrentTool}\");\n    }\n}\n```\n\n2.
+        Then create a `ToolSlot.cs` script for UI/inventory integration:\n\n```csharp\nusing
+        UnityEngine;\nusing UnityEngine.UI;\n\n/// <summary>\n/// UI representation
+        of a tool slot that can be selected\n/// </summary>\npublic class ToolSlot
+        : MonoBehaviour\n{\n    [SerializeField] private ToolSystem.ToolType toolType;\n   
+        [SerializeField] private Image selectionHighlight;\n\n    private Button
+        button;\n\n    private void Awake()\n    {\n        button = GetComponent<Button>();\n       
+        button.onClick.AddListener(SelectTool);\n    }\n\n    private void Update()\n   
+        {\n        selectionHighlight.enabled = (ToolSystem.CurrentTool == toolType);\n   
+        }\n\n    private void SelectTool()\n    {\n        ToolSystem.SetTool(toolType);\n   
+        }\n}\n```\n\n3. Update the `FarmToolHandler.cs` to use this system (just
+        change the switch case):\n\n```csharp\nswitch (ToolSystem.CurrentTool)\n{\n   
+        case ToolSystem.ToolType.Hoe:\n        FarmTileDataManager.Instance.SetTilled(targetTile.Value,
+        true);\n        break;\n        \n    case ToolSystem.ToolType.WateringCan:\n       
+        FarmTileDataManager.Instance.SetWatered(targetTile.Value, true);\n       
+        break;\n        \n    case ToolSystem.ToolType.Seed:\n        TryPlantSeed(targetTile.Value);\n       
+        break;\n        \n    case ToolSystem.ToolType.Harvest:\n        TryHarvest(targetTile.Value);\n       
+        break;\n}\n```\n\nImplementation steps:\n\n1. Create the two new scripts\n2.
+        For each tool in your UI:\n   - Create a Button GameObject\n   - Add the
+        `ToolSlot` component\n   - Set the tool type in the inspector\n   - Add a
+        child Image for the selection highlight\n3. The system will now:\n   - Track
+        the currently selected tool globally\n   - Show visual feedback when tools
+        are selected\n   - Log tool changes in the debug UI\n\nFor inventory integration,
+        you would:\n\n1. Create a `ToolData` ScriptableObject if you need more complex
+        tool properties\n2. Modify `ToolSystem` to reference actual tool items instead
+        of just enum values\n\nWould you like me to:\n1. Show the ScriptableObject
+        tool data implementation?\n2. Demonstrate how to connect this to an inventory
+        system?\n3. Add tool cooldowns or energy costs?"
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: user
+      Content: 'Without implementing any new logic, can you walk me through the new
+        updates and how the interaction, highlight and tool logic should work now
+        and the things we need to do to set it all up in unity correctly.
+
+'
+      Skip: 0
+      Attachments: []
+    - Id: 
+      Role: assistant
+      Content: "Here's a clear, step-by-step walkthrough of the new system and Unity
+        setup:\n\n### **1. Core System Flow**\n```\nInput Mode \u2192 Targeting \u2192
+        Tool Selection \u2192 Interaction\n```\n\n### **2. Key Components & Their
+        Roles**\n1. **InputModeManager**  \n   - Tracks current control scheme (Keyboard/Mouse
+        or Gamepad)\n   - Fires events when mode changes\n\n2. **InteractionTargetingSystem** 
+        \n   - Handles tile highlighting based on current input mode:\n     - *Mouse*:
+        Follows cursor position\n     - *Gamepad*: Projects forward from player facing
+        direction\n   - Provides `CurrentTargetedTile` to other systems\n\n3. **ToolSystem** 
+        \n   - Maintains `CurrentTool` (Hoe/WateringCan/Seed/Harvest)\n   - Simple
+        static class for tool state\n\n4. **FarmToolHandler**  \n   - Listens for
+        interactions on targeted tiles\n   - Manages hold-to-interact progress slider\n  
+        - Executes appropriate tool action when interaction completes\n\n---\n\n###
+        **3. Unity Setup Checklist**\n\n#### **A. Input Mode Toggle UI**\n1. Create
+        a Toggle UI element:\n   - Add `InputModeToggle` component\n   - Assign:\n    
+        - Toggle reference\n     - Keyboard Icon Image\n     - Gamepad Icon Image\n  
+        - Set active/inactive colors in inspector\n\n#### **B. Targeting System**\n1.
+        Add `InteractionTargetingSystem` to scene:\n   - Assign references:\n    
+        - Selection Highlight Tilemap\n     - Highlight Tile asset\n     - Grid component\n  
+        - Configure in inspector:\n     - Mouse: `Max Distance`\n     - Gamepad:
+        `Highlight Range` and `Cone Size`\n\n#### **C. Tool System Setup**\n1. Create
+        tool selection UI buttons:\n   - For each tool (Hoe/Water/Seed/Harvest):\n    
+        - Add Button GameObject\n     - Add `ToolSlot` component\n     - Set `ToolType`
+        in inspector\n     - Add selection highlight Image as child\n\n#### **D.
+        Farm Tool Handler**\n1. Add `FarmToolHandler` to player or farming system:\n  
+        - Assign references:\n     - `InteractionTargetingSystem`\n     - `Interact
+        Action` (from Input Actions)\n     - Progress Slider Transform\n   - Set
+        `Interaction Hold Duration`\n\n#### **E. Input Actions**\n1. Ensure you have:\n  
+        - `Interact` action bound to:\n     - Mouse: Left Click\n     - Gamepad:
+        Right Trigger\n   - (Optional) Quick-switch binding for debugging\n\n---\n\n###
+        **4. Expected Behavior**\n1. **Keyboard/Mouse Mode**:\n   - Highlight follows
+        mouse cursor\n   - Click/hold to interact with targeted tile\n\n2. **Gamepad
+        Mode**:\n   - Highlight projects forward from player\n   - Face direction
+        + hold button to interact\n\n3. **Tool Feedback**:\n   - Selected tool shows
+        UI highlight\n   - Progress slider appears during holds\n   - Debug UI shows
+        last action\n\n---\n\n### **5. Debugging Tips**\nIf something isn't working:\n1.
+        Check all inspector references are assigned\n2. Verify Input Actions are
+        properly bound\n3. Watch `DebugUIOverlay` for tool/action messages\n4. Test
+        each input mode separately\n\nWould you like me to provide specific prefab
+        structures or screenshot examples of how the inspector setups should look?"
+      Skip: 0
+      Attachments: []
+  geminiHistory: []
+  claudeHistory: []

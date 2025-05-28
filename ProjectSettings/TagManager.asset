@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -38,6 +38,56 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Grass
+    uniqueID: 1106866305
+    locked: 0
+  - name: Ground
+    uniqueID: 1655271237
+    locked: 0
+  - name: Paths
+    uniqueID: 2356737819
+    locked: 0
+  - name: Cliff
+    uniqueID: 2498122529
+    locked: 0
+  - name: ForestRiver
+    uniqueID: 3572831021
+    locked: 0
+  - name: ForestWalls
+    uniqueID: 3219275481
+    locked: 0
+  - name: Tilled
+    uniqueID: 217979733
+    locked: 0
+  - name: Watered
+    uniqueID: 3023581691
+    locked: 0
+  - name: Crops
+    uniqueID: 2277162935
+    locked: 0
+  - name: Highlight
+    uniqueID: 2929098317
+    locked: 0
+  - name: WalkInFront
+    uniqueID: 1032253703
+    locked: 0
+  - name: Collision
+    uniqueID: 1068046037
+    locked: 0
+  - name: NPC
+    uniqueID: 4271782613
+    locked: 0
+  - name: Player
+    uniqueID: 3252066505
+    locked: 0
+  - name: WalkBehind
+    uniqueID: 3889070007
+    locked: 0
+  - name: Decor
+    uniqueID: 2289570519
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  m_RenderingLayers:
+  - Default

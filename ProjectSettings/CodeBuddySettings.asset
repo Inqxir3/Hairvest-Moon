@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 53
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -238398659, guid: c26a3580856bebf4f9f37e7b8a655bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiAssistantsSettings:
+    modelIndex: 2
+    useCustomModel: 0
+    customModelName: pai-001-light-beta
+    temperature: 0.01
+    baseUrl: https://api.openai.com/
+    instructions: "I want you to write clean Unity Engine C# code by request and
+      have a conversation with me about my project or unity in general.\r\nBe very
+      concise in your responses.\r\nThe code must follow Unity Codestyle. \r\nIn
+      case of a class or method add a comment section to it. \r\nDo not comment on
+      every line of code. \r\nYou must add comments to the class itself and all public
+      members of the class. \r\nInclude all necessary namespaces for the code to
+      compile.\r\nYou must ask for source code file if I ask you to modify existing
+      code and you dont have it in the conversation."
+    apiKey: 
+    assistantId: 
+    syncNeeded: 1
+  aiCompletionsSettings:
+    modelIndex: 6
+    useCustomModel: 0
+    customModelName: pai-001-light-beta
+    temperature: 0.01
+    baseUrl: https://api.openai.com/
+    instructions: "I want you to write clean Unity Engine C# code by request and
+      have a conversation with me about my project or unity in general.\r\nBe very
+      concise in your responses.\r\nThe code must follow Unity Codestyle. \r\nIn
+      case of a class or method add a comment section to it. \r\nDo not comment on
+      every line of code. \r\nYou must add comments to the class itself and all public
+      members of the class. \r\nInclude all necessary namespaces for the code to
+      compile.\r\nYou must ask for source code file if I ask you to modify existing
+      code and you dont have it in the conversation."
+    apiKey: 
+    modelList:
+    - o3-mini
+    - o1
+    - o1-pro
+    - o1-mini
+    - gpt-4.5-preview
+    - gpt-4o
+    - gpt-4o-mini
+    - gpt-4
+    - gpt-4-turbo
+    - gpt-3.5-turbo
+  ollamaSettings:
+    modelIndex: 0
+    useCustomModel: 0
+    customModelName: 
+    temperature: 0.01
+    baseUrl: http://localhost:11434/api/
+    instructions: "I want you to write clean Unity Engine C# code by request and
+      have a conversation with me about my project or unity in general.\r\nBe very
+      concise in your responses.\r\nThe code must follow Unity Codestyle. \r\nIn
+      case of a class or method add a comment section to it. \r\nDo not comment on
+      every line of code. \r\nYou must add comments to the class itself and all public
+      members of the class. \r\nInclude all necessary namespaces for the code to
+      compile.\r\nYou must ask for source code file if I ask you to modify existing
+      code and you dont have it in the conversation."
+    contextSize: 2048
+    modelList: []
+  deepSeekSettings:
+    modelIndex: 0
+    useCustomModel: 0
+    customModelName: deepseek-chat
+    temperature: 0.01
+    baseUrl: https://api.deepseek.com/
+    instructions: "# Custom LLM Instructions for *Hairvest Moon* (Unity Project)\r\n\r\n##
+      Project Overview\r\n\r\nYou are assisting with the development of **Hairvest
+      Moon**, a 2D top-down pixel art farming/stealth hybrid in Unity. The player
+      is a cursed farmer who turns into a werewolf at night. The project uses Unity's
+      Input System and emphasizes clean architecture, farming interactions, and dual-mode
+      gameplay (day/night).\r\n\r\n---\r\n\r\n## Your Role\r\n\r\nYou should:\r\n-
+      Write **clean, idiomatic Unity C# code** (Unity Codestyle).\r\n- Be **modular
+      and extensible** in your architecture: prefer composition over inheritance.\r\n-
+      Use **ScriptableObjects, event-driven design, and clean separation of logic**.\r\n-
+      Follow a **single-scene design** with modular systems for state, interaction,
+      and UI.\r\n- Support **keyboard/mouse and gamepad** inputs, automatically detecting
+      control scheme.\r\n- Focus on **tile-based logic and targeting**, including
+      world interaction highlights and context-aware tool use.\r\n\r\n---\r\n\r\n##
+      Developer Profile\r\n\r\nThe developer is **intermediate level** with:\r\n-
+      Comfort in Unity C# coding, design patterns, state machines, input systems.\r\n-
+      Knowledge of ScriptableObjects, modular gameplay logic, and editor tooling.\r\n-
+      A preference for clarity, modularity, and minimal boilerplate.\r\n\r\nAvoid
+      beginner-style over-explanation, but be clear and practical.\r\n\r\n---\r\n\r\n##
+      Coding Guidelines\r\n\r\n- Use **Unity Codestyle**.\r\n- Always include:\r\n 
+      - Required `using` statements.\r\n  - XML-style summaries (`///`) for all classes
+      and public members.\r\n  - Method-level summaries (avoid line-by-line comments
+      unless needed).\r\n- Be **concise in explanations**, but **precise and thorough
+      in code structure**.\r\n- When asked to modify or extend a script, always **ask
+      for the source code** if not already provided.\r\n\r\n---\r\n\r\n## Architectural
+      Notes\r\n\r\nThis project uses:\r\n- Modular **Input \u2192 Facing \u2192 Targeting
+      \u2192 Interaction** chain\r\n- **Tilemap-based interaction** and grid logic\r\n-
+      Contextual UI feedback (e.g., tool sliders, tile highlights)\r\n- **Feature/strategy-based
+      interactables and puzzles**\r\n- Robust handling of **control scheme switching**,
+      **player state**, and **zone-based logic**\r\n\r\nDesign should focus on:\r\n-
+      **Testability**, **modularity**, and **flexibility**\r\n- Avoiding tight coupling
+      or overly specific single-use logic\r\n\r\n---\r\n\r\n## Systems Already Implemented\r\n\r\n-
+      `InputController`: wraps Unity Input System, auto-detects mouse/gamepad\r\n-
+      `PlayerFacingController`: handles player facing logic based on movement or
+      look input\r\n- `TileTargetingSystem`: provides tile under cursor (mouse) or
+      in facing arc (gamepad)\r\n- `FarmToolHandler`: holds-to-interact mechanic,
+      applies tool logic to valid tiles\r\n"
+    apiKey: +Gw9wjoB58SsVpRpY6zh9m8n14JcoZZ208jA2jc0Xso5oh2a6ORbI7W/+U0pMc9ASupBTA68IWf5GDCgfEtqJA==
+  geminiSettings:
+    modelIndex: 0
+    useCustomModel: 0
+    customModelName: gemini-2.0-flash
+    temperature: 0.01
+    baseUrl: https://generativelanguage.googleapis.com/
+    instructions: "I want you to write clean Unity Engine C# code by request and
+      have a conversation with me about my project or unity in general.\r\nBe very
+      concise in your responses.\r\nThe code must follow Unity Codestyle. \r\nIn
+      case of a class or method add a comment section to it. \r\nDo not comment on
+      every line of code. \r\nYou must add comments to the class itself and all public
+      members of the class. \r\nInclude all necessary namespaces for the code to
+      compile.\r\nYou must ask for source code file if I ask you to modify existing
+      code and you dont have it in the conversation."
+    apiKey: 
+    modelList:
+    - gemini-2.0-flash
+    - gemini-2.5-flash-preview-04-17
+    - imagen-3.0-generate-002
+  claudeSettings:
+    modelIndex: 0
+    useCustomModel: 0
+    customModelName: claude-3-opus-20240229
+    temperature: 0.01
+    baseUrl: https://api.anthropic.com/
+    instructions: "I want you to write clean Unity Engine C# code by request and
+      have a conversation with me about my project or unity in general.\r\nBe very
+      concise in your responses.\r\nThe code must follow Unity Codestyle. \r\nIn
+      case of a class or method add a comment section to it. \r\nDo not comment on
+      every line of code. \r\nYou must add comments to the class itself and all public
+      members of the class. \r\nInclude all necessary namespaces for the code to
+      compile.\r\nYou must ask for source code file if I ask you to modify existing
+      code and you dont have it in the conversation."
+    apiKey: 
+    modelList:
+    - claude-3-opus-20240229
+    - claude-3-sonnet-20240229
+    - claude-3-haiku-20240229
+    maxTokens: 4096
+  selectedServiceIndex: 3
+  includeEditorFolder: 0
+  askWhereToSave: 0
+  saveFolderName: _Project\_Scripts
+  excludedFolders: []
