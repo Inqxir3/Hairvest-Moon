@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Handles farm tool interactions (Hoe, Water, Plant, Harvest) using the new input system
+/// Handles farm tool interactions (Hoe, Water, Plant, Harvest) using the new input system.
 /// </summary>
 public class FarmToolHandler : MonoBehaviour
 {
     public enum ToolSlot { None, Hoe = 1, Water = 2, Plant = 3, Harvest = 4 }
 
     [Header("Tool Settings")]
-    [SerializeField] private float interactionHoldDuration = 0.5f;
+    [SerializeField] private float interactionHoldDuration = 0.1f;
     [SerializeField] private Transform progressSlider;
 
     [Header("References")]
@@ -58,7 +58,11 @@ public class FarmToolHandler : MonoBehaviour
         if (!GameStateManager.Instance.IsGameplay()) return;
 
         targetTile = targetingSystem.CurrentTargetedTile;
-        if (!targetTile.HasValue) return;
+        if (!targetTile.HasValue)
+        {
+            DebugUIOverlay.Instance.ShowLastAction("No valid tile");
+            return;
+        }
 
         isInteracting = true;
         currentHoldTime = 0f;
@@ -86,34 +90,76 @@ public class FarmToolHandler : MonoBehaviour
 
         if (!targetTile.HasValue) return;
 
+        var tile = targetTile.Value;
+        var data = FarmTileDataManager.Instance.GetTileData(tile);
+
         switch (ToolSystem.CurrentTool)
         {
             case ToolSystem.ToolType.Hoe:
-                FarmTileDataManager.Instance.SetTilled(targetTile.Value, true);
+                if (FarmTileDataManager.Instance.IsTileTillable(tile) && !data.isTilled)
+                {
+                    FarmTileDataManager.Instance.SetTilled(tile, true);
+                    DebugUIOverlay.Instance.ShowLastAction("Tilled soil");
+                }
+                else
+                {
+                    DebugUIOverlay.Instance.ShowLastAction("Can't till here");
+                }
                 break;
 
             case ToolSystem.ToolType.WateringCan:
-                FarmTileDataManager.Instance.SetWatered(targetTile.Value, true);
+                if (data.isTilled && !data.isWatered)
+                {
+                    FarmTileDataManager.Instance.SetWatered(tile, true);
+                    DebugUIOverlay.Instance.ShowLastAction("Watered crop");
+                }
+                else
+                {
+                    DebugUIOverlay.Instance.ShowLastAction("Nothing to water");
+                }
                 break;
 
             case ToolSystem.ToolType.Seed:
-                TryPlantSeed(targetTile.Value);
+                TryPlantSeed(tile, data);
                 break;
 
             case ToolSystem.ToolType.Harvest:
-                TryHarvest(targetTile.Value);
+                TryHarvest(tile, data);
+                break;
+
+            default:
+                DebugUIOverlay.Instance.ShowLastAction("No tool selected");
                 break;
         }
     }
 
-    private void TryPlantSeed(Vector3Int tilePos)
+    private void TryPlantSeed(Vector3Int tile, FarmTileData data)
     {
-        // Your planting logic here
+        if (data.isTilled && data.plantedCrop == null)
+        {
+            // Placeholder: use dummy crop data
+            data.plantedCrop = new CropData { cropName = "Carrot", growthDuration = 3 };
+            data.growthDays = 0;
+            DebugUIOverlay.Instance.ShowLastAction("Planted seed");
+        }
+        else
+        {
+            DebugUIOverlay.Instance.ShowLastAction("Can't plant here");
+        }
     }
 
-    private void TryHarvest(Vector3Int tilePos)
+    private void TryHarvest(Vector3Int tile, FarmTileData data)
     {
-        // Your harvest logic here
+        if (data.HasRipeCrop())
+        {
+            DebugUIOverlay.Instance.ShowLastAction($"Harvested {data.plantedCrop.cropName}");
+            data.plantedCrop = null;
+            data.growthDays = 0;
+        }
+        else
+        {
+            DebugUIOverlay.Instance.ShowLastAction("Nothing to harvest");
+        }
     }
 
     private void PositionSliderAtTarget()
@@ -129,3 +175,4 @@ public class FarmToolHandler : MonoBehaviour
         progressSlider.localScale = new Vector3(progress, 1f, 1f);
     }
 }
+

@@ -2,28 +2,27 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// UI representation of a tool slot that can be selected
+/// A UI button representing a tool in the hotbar.
 /// </summary>
 public class ToolSlot : MonoBehaviour
 {
-    [SerializeField] private ToolSystem.ToolType toolType;
-    [SerializeField] private Image selectionHighlight;
+    [SerializeField] private ToolSystem.ToolType tool;
+    [SerializeField] private Image highlightImage;
 
-    private Button button;
+    public ToolSystem.ToolType Tool => tool;
 
     private void Awake()
     {
-        button = GetComponent<Button>();
-        button.onClick.AddListener(SelectTool);
+        GetComponent<Button>().onClick.AddListener(() =>
+        {
+            ToolSelector.Instance?.SelectToolExternally(tool);
+            DebugUIOverlay.Instance.ShowLastAction($"Tool: {tool}");
+        });
     }
 
-    private void Update()
+    public void SetHighlighted(bool isHighlighted)
     {
-        selectionHighlight.enabled = (ToolSystem.CurrentTool == toolType);
-    }
-
-    private void SelectTool()
-    {
-        ToolSystem.SetTool(toolType);
+        if (highlightImage != null)
+            highlightImage.enabled = isHighlighted;
     }
 }

@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Determines the player's current facing direction based on movement or look input.
+/// Prioritizes movement, and defers to look input only after intentional use.
+/// </summary>
 public class PlayerFacingController : MonoBehaviour
 {
     public static PlayerFacingController Instance { get; private set; }
@@ -7,50 +11,64 @@ public class PlayerFacingController : MonoBehaviour
     public enum FacingDirection { Up, Down, Left, Right }
     public FacingDirection CurrentFacing { get; private set; } = FacingDirection.Right;
 
+    private FacingDirection _lastMoveFacing = FacingDirection.Right;
+    private FacingSource _currentSource = FacingSource.Movement;
+
     private void Awake()
     {
         if (Instance != null) Destroy(gameObject);
         else Instance = this;
     }
 
+    /// <summary>
+    /// Updates the facing direction each frame based on input and control mode.
+    /// </summary>
     public void UpdateFacing(Vector2 moveInput, Vector2 lookInput, ControlMode mode)
     {
-        // Priority 1: Movement input
-        if (moveInput.sqrMagnitude > 0.01f)
-        {
-            if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
-                CurrentFacing = moveInput.x > 0 ? FacingDirection.Right : FacingDirection.Left;
-            else
-                CurrentFacing = moveInput.y > 0 ? FacingDirection.Up : FacingDirection.Down;
+        bool isMoving = moveInput.sqrMagnitude > 0.01f;
+        bool lookInputActive = InputController.Instance.LookInputThisFrame;
 
+        if (isMoving)
+        {
+            _currentSource = FacingSource.Movement;
+            CurrentFacing = FromVector(moveInput);
+            _lastMoveFacing = CurrentFacing;
             return;
         }
 
-        // Priority 2: Look input (when idle)
-        if (lookInput.sqrMagnitude < 0.01f) return;
-
-        if (mode == ControlMode.Gamepad)
+        if (_currentSource == FacingSource.Movement && lookInputActive)
         {
-            if (lookInput.sqrMagnitude < 0.05f) return;  // ← consider removing this check now
-
-            if (Mathf.Abs(lookInput.x) > Mathf.Abs(lookInput.y))
-                CurrentFacing = lookInput.x > 0 ? FacingDirection.Right : FacingDirection.Left;
-            else
-                CurrentFacing = lookInput.y > 0 ? FacingDirection.Up : FacingDirection.Down;
+            _currentSource = FacingSource.Look;
         }
-        else if (mode == ControlMode.Mouse)
+
+        if (_currentSource == FacingSource.Look && lookInputActive)
         {
-            Vector2 playerScreenPos = Camera.main.WorldToScreenPoint(Player_Controller.Position);
-            Vector2 delta = lookInput - playerScreenPos;
-            if (delta.sqrMagnitude < 100f) return;
+            Vector2 direction;
 
-            if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
-                CurrentFacing = delta.x > 0 ? FacingDirection.Right : FacingDirection.Left;
+            if (mode == ControlMode.Mouse)
+            {
+                Vector2 worldMouse = Camera.main.ScreenToWorldPoint(lookInput);
+                direction = worldMouse - (Vector2)transform.position;
+            }
             else
-                CurrentFacing = delta.y > 0 ? FacingDirection.Up : FacingDirection.Down;
-        }
-        Debug.Log($"[Facing] Input: {lookInput}, Mode: {mode}, Result: {CurrentFacing}");
+            {
+                direction = lookInput; // already a direction vector from stick
+            }
 
+            CurrentFacing = FromVector(direction);
+        }
+        else
+        {
+            CurrentFacing = _lastMoveFacing;
+        }
+    }
+
+    private FacingDirection FromVector(Vector2 input)
+    {
+        if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+            return input.x > 0 ? FacingDirection.Right : FacingDirection.Left;
+        else
+            return input.y > 0 ? FacingDirection.Up : FacingDirection.Down;
     }
 
     public Vector3Int GetFacingOffset()
@@ -64,6 +82,10 @@ public class PlayerFacingController : MonoBehaviour
             _ => Vector3Int.zero
         };
     }
+
+    private enum FacingSource
+    {
+        Movement,
+        Look
+    }
 }
-
-
