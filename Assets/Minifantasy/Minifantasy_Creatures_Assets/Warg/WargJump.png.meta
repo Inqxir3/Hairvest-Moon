@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WargJump_0: -4244951220896382419
+      WargJump_1: -2794995228965129446
+      WargJump_10: 7335489273625515599
+      WargJump_11: -6753193809755143080
+      WargJump_12: -6589738591776160350
+      WargJump_13: 1759638263210244237
+      WargJump_14: 2541594542764762100
+      WargJump_15: -7638933838438188111
+      WargJump_2: -8698601027169937404
+      WargJump_3: 7905749013610640568
+      WargJump_4: 6833916445016780905
+      WargJump_5: -871559165120125846
+      WargJump_6: -3962879261348353363
+      WargJump_7: -469146042890762564
+      WargJump_8: -5319570185935641964
+      WargJump_9: 1882276512055120223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

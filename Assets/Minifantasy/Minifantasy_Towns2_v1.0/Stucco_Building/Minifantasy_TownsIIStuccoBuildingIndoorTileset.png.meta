@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_0: 5943658538902411952
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_1: -7126874598504006202
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_10: -3389990807884328124
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_11: 9060754384969823232
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_12: -557820939967376722
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_13: -824255359151219509
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_14: 2020684304724358784
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_15: -7141213819372991336
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_16: -2225490532784485263
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_17: 8325002520579226063
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_2: 965120489455429531
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_3: -5804396363658756803
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_4: -5929745263450152201
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_5: 4620236105508451037
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_6: -2775048718864058565
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_7: -6907917566879397713
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_8: 6819582889653715356
+      Minifantasy_TownsIIStuccoBuildingIndoorTileset_9: 4875217890369892992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

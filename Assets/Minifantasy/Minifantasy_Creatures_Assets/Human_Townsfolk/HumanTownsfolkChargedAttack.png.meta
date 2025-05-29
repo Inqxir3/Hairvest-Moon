@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HumanTownsfolkChargedAttack_0: 1467746548434057854
+      HumanTownsfolkChargedAttack_1: 6015488971388284279
+      HumanTownsfolkChargedAttack_10: -2394948966851276054
+      HumanTownsfolkChargedAttack_11: 281658642049319443
+      HumanTownsfolkChargedAttack_12: -4639831036914465170
+      HumanTownsfolkChargedAttack_13: -6045699496422506887
+      HumanTownsfolkChargedAttack_14: -5816205677512532437
+      HumanTownsfolkChargedAttack_15: 3170036240796844971
+      HumanTownsfolkChargedAttack_16: -2752613883195281021
+      HumanTownsfolkChargedAttack_17: 3059407267460381963
+      HumanTownsfolkChargedAttack_2: -6056980937752802826
+      HumanTownsfolkChargedAttack_3: -3218490426044321605
+      HumanTownsfolkChargedAttack_4: -5895146101441286984
+      HumanTownsfolkChargedAttack_5: -3964744045818505567
+      HumanTownsfolkChargedAttack_6: -3990021999699136620
+      HumanTownsfolkChargedAttack_7: 4565422318836446922
+      HumanTownsfolkChargedAttack_8: -6873662351948840154
+      HumanTownsfolkChargedAttack_9: -6415519804519161242
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

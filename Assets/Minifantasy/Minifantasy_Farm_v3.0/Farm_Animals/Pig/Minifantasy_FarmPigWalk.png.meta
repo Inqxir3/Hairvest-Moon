@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_FarmPigWalk_0: 4199290042171480220
+      Minifantasy_FarmPigWalk_1: -647198176086739682
+      Minifantasy_FarmPigWalk_10: 971822971725623317
+      Minifantasy_FarmPigWalk_11: 1184005545961948653
+      Minifantasy_FarmPigWalk_12: 4838209181061839977
+      Minifantasy_FarmPigWalk_13: 6819930922142586682
+      Minifantasy_FarmPigWalk_14: -4061933842320420381
+      Minifantasy_FarmPigWalk_15: 151028673312248780
+      Minifantasy_FarmPigWalk_2: 1644147035668674849
+      Minifantasy_FarmPigWalk_3: 3361209113347576788
+      Minifantasy_FarmPigWalk_4: 7002477696308727813
+      Minifantasy_FarmPigWalk_5: -6875547757724652225
+      Minifantasy_FarmPigWalk_6: -6815451342359196819
+      Minifantasy_FarmPigWalk_7: -3052619322890094269
+      Minifantasy_FarmPigWalk_8: -4117865733679384761
+      Minifantasy_FarmPigWalk_9: 257860397495875567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

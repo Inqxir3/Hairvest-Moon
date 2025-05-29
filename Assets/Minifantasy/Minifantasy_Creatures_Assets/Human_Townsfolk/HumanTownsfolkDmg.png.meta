@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HumanTownsfolkDmg_0: -6826928327642718434
+      HumanTownsfolkDmg_1: 8290230582108577161
+      HumanTownsfolkDmg_10: 8001010338731253114
+      HumanTownsfolkDmg_11: 1196648541546620876
+      HumanTownsfolkDmg_12: 5432372964146716305
+      HumanTownsfolkDmg_13: -4086862427995827082
+      HumanTownsfolkDmg_14: -5060138146547109577
+      HumanTownsfolkDmg_15: 8339790247527609122
+      HumanTownsfolkDmg_2: -7120693726470442283
+      HumanTownsfolkDmg_3: 6669679865193579514
+      HumanTownsfolkDmg_4: -1085467711047647829
+      HumanTownsfolkDmg_5: -8587136509588351791
+      HumanTownsfolkDmg_6: 4830493361784076982
+      HumanTownsfolkDmg_7: -2063154300413615953
+      HumanTownsfolkDmg_8: 1419302689670820378
+      HumanTownsfolkDmg_9: 1298499228966274441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TrollAttack_0: -6876071188230048735
+      TrollAttack_1: -7158631256929438390
+      TrollAttack_10: -5618394616606694413
+      TrollAttack_11: 7745860215095521241
+      TrollAttack_12: 5774248264406051876
+      TrollAttack_13: -4143544493856388055
+      TrollAttack_14: -344868928659268664
+      TrollAttack_15: 9163967799413739646
+      TrollAttack_2: -8458682214556479206
+      TrollAttack_3: 4743474768818406091
+      TrollAttack_4: -4982720867694245475
+      TrollAttack_5: 5402320068144959532
+      TrollAttack_6: -2495851366613055182
+      TrollAttack_7: 1112285615927348683
+      TrollAttack_8: -6178199891585191447
+      TrollAttack_9: -8705814946209690819
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GoblinJump_0: -2652796443076996704
+      GoblinJump_1: -6436028616985326372
+      GoblinJump_10: -6054215326980266535
+      GoblinJump_11: 7446462110132244706
+      GoblinJump_12: 5755100032105536822
+      GoblinJump_13: 5201023383949918783
+      GoblinJump_14: -3779608493461936818
+      GoblinJump_15: -7675308191301082697
+      GoblinJump_2: -8685865435658186543
+      GoblinJump_3: 2227287464642174598
+      GoblinJump_4: -5637168070042508822
+      GoblinJump_5: 1012359775199554578
+      GoblinJump_6: -7695714948016838903
+      GoblinJump_7: -5307824629328838174
+      GoblinJump_8: -9102974647662348993
+      GoblinJump_9: 6909459322539488796
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

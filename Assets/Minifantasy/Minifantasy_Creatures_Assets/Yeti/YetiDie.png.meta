@@ -129,6 +129,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YetiDie_0: 2375522181393239763
+      YetiDie_1: 2435262801495321647
+      YetiDie_10: -3375077222059947131
+      YetiDie_11: -7248106208748044690
+      YetiDie_2: -793518428180986398
+      YetiDie_3: 3273645264967635807
+      YetiDie_4: -8217605406827128990
+      YetiDie_5: 2539316549346709863
+      YetiDie_6: 5516806405286927231
+      YetiDie_7: -312840486264429055
+      YetiDie_8: -7994645935796354966
+      YetiDie_9: 4396728891278203535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

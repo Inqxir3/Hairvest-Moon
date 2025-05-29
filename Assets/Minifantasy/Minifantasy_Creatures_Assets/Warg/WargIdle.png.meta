@@ -237,6 +237,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1309,7 +1335,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WargIdle_0: -631333259981080878
+      WargIdle_1: 6202441226125914643
+      WargIdle_10: 5134541734508622506
+      WargIdle_11: -473761265189171855
+      WargIdle_12: -6799655102409115828
+      WargIdle_13: -4702946104953051724
+      WargIdle_14: 7614588781017221054
+      WargIdle_15: 7403589211329288551
+      WargIdle_16: 7823017011670807740
+      WargIdle_17: 2785013995031236943
+      WargIdle_18: 2065308068027532045
+      WargIdle_19: 3531192167077247056
+      WargIdle_2: 616475735062079072
+      WargIdle_20: 6130573734268043953
+      WargIdle_21: 797258109467874461
+      WargIdle_22: 1785496082129620667
+      WargIdle_23: -1867641148035485746
+      WargIdle_24: -5076643090939596284
+      WargIdle_25: 5370225698396371464
+      WargIdle_26: -7600628026161058448
+      WargIdle_27: -1983187642476025670
+      WargIdle_28: 8807843917684284189
+      WargIdle_29: -8928286175495527664
+      WargIdle_3: -4088593850853164967
+      WargIdle_30: 2989846004877731943
+      WargIdle_31: -3569672318944205948
+      WargIdle_32: 7471059215209248561
+      WargIdle_33: 7845550040065169725
+      WargIdle_34: 6497709671666745302
+      WargIdle_35: -6215266544402637217
+      WargIdle_36: -2212096861503668972
+      WargIdle_37: 7428487676648331062
+      WargIdle_38: 6388097809724885463
+      WargIdle_39: -7432114919066794223
+      WargIdle_4: -7215605601816809733
+      WargIdle_40: 6790793135559396607
+      WargIdle_41: -4277941373615319324
+      WargIdle_42: -3271380677173137923
+      WargIdle_43: -7710721368282217322
+      WargIdle_44: -1677899179699054514
+      WargIdle_45: 7220514578685236793
+      WargIdle_46: 4521941953342915547
+      WargIdle_47: 5396444457465696077
+      WargIdle_5: 316116528747117041
+      WargIdle_6: -7288862599144275905
+      WargIdle_7: 4343500071481078398
+      WargIdle_8: -3455981249045117123
+      WargIdle_9: -9115996519728421848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

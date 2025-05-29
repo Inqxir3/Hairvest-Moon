@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BatSleep_0: -4902847657413497885
+      BatSleep_1: -5547398766982700352
+      BatSleep_10: -103998165742936754
+      BatSleep_11: 1523015297182897959
+      BatSleep_12: -299153028838492793
+      BatSleep_13: -4213675548952408233
+      BatSleep_14: -6001160046318633589
+      BatSleep_15: -4643035701304663200
+      BatSleep_16: -2525046170951587462
+      BatSleep_17: 6832348612855669528
+      BatSleep_2: -5690234767901593062
+      BatSleep_3: -9126614817590161089
+      BatSleep_4: 634000881999536615
+      BatSleep_5: -3894615517518318425
+      BatSleep_6: 5132959668932881992
+      BatSleep_7: 5966362374438434635
+      BatSleep_8: 7576556680102216789
+      BatSleep_9: -6592883235555278499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

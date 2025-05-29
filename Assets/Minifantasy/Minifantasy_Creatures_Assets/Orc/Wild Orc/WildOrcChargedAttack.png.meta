@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WildOrcChargedAttack_0: 3551845356688965726
+      WildOrcChargedAttack_1: -5948266995760796763
+      WildOrcChargedAttack_10: 5476997963492564622
+      WildOrcChargedAttack_11: 2290025984033855770
+      WildOrcChargedAttack_12: 6158003604465864702
+      WildOrcChargedAttack_13: 3275826351368504011
+      WildOrcChargedAttack_14: 5434944127872789747
+      WildOrcChargedAttack_15: 558717038044534487
+      WildOrcChargedAttack_16: 3667596953474427404
+      WildOrcChargedAttack_17: -6929098487247649239
+      WildOrcChargedAttack_2: -8030201125501795296
+      WildOrcChargedAttack_3: 398670901272931823
+      WildOrcChargedAttack_4: -7881392805736163924
+      WildOrcChargedAttack_5: -8914683477832320397
+      WildOrcChargedAttack_6: -6697015696387885992
+      WildOrcChargedAttack_7: -1584152529741747708
+      WildOrcChargedAttack_8: 6486640558007648445
+      WildOrcChargedAttack_9: 6948334688346611397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

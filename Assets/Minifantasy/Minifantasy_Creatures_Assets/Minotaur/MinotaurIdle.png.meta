@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MinotaurIdle_0: -4778936811577777369
+      MinotaurIdle_1: 1767211041134207211
+      MinotaurIdle_10: -2882928611666748758
+      MinotaurIdle_11: 6684844947925370508
+      MinotaurIdle_12: 5771028301829277461
+      MinotaurIdle_13: -8898613726393217341
+      MinotaurIdle_14: 119107172317334306
+      MinotaurIdle_15: -4056886836906661222
+      MinotaurIdle_16: 4309189079213330166
+      MinotaurIdle_17: 86707651037582854
+      MinotaurIdle_18: 1354687318224132082
+      MinotaurIdle_19: 1516496940305223195
+      MinotaurIdle_2: -5719487298562224095
+      MinotaurIdle_20: -6420128451408383658
+      MinotaurIdle_21: -2273192415082377192
+      MinotaurIdle_22: 4135590485626028941
+      MinotaurIdle_23: 1498879554383217883
+      MinotaurIdle_24: -6209295349282036972
+      MinotaurIdle_25: 8332774945330168752
+      MinotaurIdle_26: 1239541343803162488
+      MinotaurIdle_27: -1143080931270229033
+      MinotaurIdle_28: 5577560847528239715
+      MinotaurIdle_29: -2661151122450474001
+      MinotaurIdle_3: 1802042939335284613
+      MinotaurIdle_30: 405190266291910192
+      MinotaurIdle_31: -5905960246626182967
+      MinotaurIdle_32: 8422335887117902981
+      MinotaurIdle_33: -7950399538358439104
+      MinotaurIdle_34: -3892012094728996591
+      MinotaurIdle_35: 2706814426515408027
+      MinotaurIdle_36: 7817007764069491912
+      MinotaurIdle_37: -5556912939544472079
+      MinotaurIdle_38: 1467913088186584576
+      MinotaurIdle_39: -111974663552051960
+      MinotaurIdle_4: -7855231862327229579
+      MinotaurIdle_40: 4377958541053701419
+      MinotaurIdle_41: 8806315103852315278
+      MinotaurIdle_42: -873420001714922490
+      MinotaurIdle_43: -6942655988479661130
+      MinotaurIdle_44: 4134701884228927523
+      MinotaurIdle_45: -5073495279331039859
+      MinotaurIdle_46: -9206576714467591644
+      MinotaurIdle_47: 1006948299831422159
+      MinotaurIdle_48: -6959735512746180189
+      MinotaurIdle_49: 36188929830277450
+      MinotaurIdle_5: -1349312637488861919
+      MinotaurIdle_50: 570282043423601002
+      MinotaurIdle_51: 6939447516762077083
+      MinotaurIdle_52: 8228890707479213715
+      MinotaurIdle_53: 3659609256773758893
+      MinotaurIdle_54: 4526195809702361801
+      MinotaurIdle_55: 7338461934141460906
+      MinotaurIdle_56: 4034947960696742530
+      MinotaurIdle_57: -8151748548579966920
+      MinotaurIdle_58: -8806976319121122880
+      MinotaurIdle_59: 2825627138763659418
+      MinotaurIdle_6: 3497257630060666110
+      MinotaurIdle_60: -2788683796043683202
+      MinotaurIdle_61: -5397435532088449426
+      MinotaurIdle_62: 4333865884978897360
+      MinotaurIdle_63: 6290709620658559180
+      MinotaurIdle_7: 5591280950285925443
+      MinotaurIdle_8: 7473571102601646250
+      MinotaurIdle_9: -210545810323472253
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

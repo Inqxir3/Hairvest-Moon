@@ -159,6 +159,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -659,7 +685,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WargAttack_0: -5740655543115658010
+      WargAttack_1: -5989285246321696722
+      WargAttack_10: 5168268823119434285
+      WargAttack_11: 5293524597980580524
+      WargAttack_12: 8320610921792995365
+      WargAttack_13: -7900341469223634813
+      WargAttack_14: 7528106730499877865
+      WargAttack_15: 3524243950707656803
+      WargAttack_16: -840004587022549073
+      WargAttack_17: 6392233092799177272
+      WargAttack_18: -8848618476854464374
+      WargAttack_19: -5418619608718783492
+      WargAttack_2: -4298670957469966821
+      WargAttack_20: -3493370656653942853
+      WargAttack_21: -3848683656996117836
+      WargAttack_3: 7481977388613059036
+      WargAttack_4: -5846697428179457972
+      WargAttack_5: 7336592046285314557
+      WargAttack_6: -9068748193012199096
+      WargAttack_7: 6201274226264167211
+      WargAttack_8: -1406466708146211121
+      WargAttack_9: -7512938240966272328
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

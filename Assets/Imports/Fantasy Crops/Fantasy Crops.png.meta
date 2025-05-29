@@ -426,6 +426,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2884,7 +2910,118 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fantasy Crops_0: 6645909779542991491
+      Fantasy Crops_1: 7220517265686203865
+      Fantasy Crops_10: -1068550322693208863
+      Fantasy Crops_100: -1997437386608133922
+      Fantasy Crops_101: 3477870150714177785
+      Fantasy Crops_102: 7477763402345574141
+      Fantasy Crops_103: -3138404692922658305
+      Fantasy Crops_104: -6904421141156485249
+      Fantasy Crops_105: -8576850159889000043
+      Fantasy Crops_106: 3040255726841499331
+      Fantasy Crops_107: 9031404763375078154
+      Fantasy Crops_108: 6592785116846837933
+      Fantasy Crops_109: 778468314284669253
+      Fantasy Crops_11: -3015079631202472666
+      Fantasy Crops_110: 7670210268822231134
+      Fantasy Crops_12: 6015048091281414335
+      Fantasy Crops_13: 6115169698378623702
+      Fantasy Crops_14: 733891586448964232
+      Fantasy Crops_15: 1495184152694329054
+      Fantasy Crops_16: 8153876137238806391
+      Fantasy Crops_17: 8566593946592379460
+      Fantasy Crops_18: -2846963833402037377
+      Fantasy Crops_19: 1107896516749288863
+      Fantasy Crops_2: 2475179445717388078
+      Fantasy Crops_20: 1053015898683254747
+      Fantasy Crops_21: -8194735839597567206
+      Fantasy Crops_22: 8167943860046768126
+      Fantasy Crops_23: 7230132103784157932
+      Fantasy Crops_24: 7168414777239762655
+      Fantasy Crops_25: -5825003871992278097
+      Fantasy Crops_26: -2311193711062433670
+      Fantasy Crops_27: 9184448112606311551
+      Fantasy Crops_28: 4135905502364488942
+      Fantasy Crops_29: -6381431660779620236
+      Fantasy Crops_3: -4428051687643113153
+      Fantasy Crops_30: 296710885337903264
+      Fantasy Crops_31: -8060798960134099706
+      Fantasy Crops_32: -734791675158548737
+      Fantasy Crops_33: -3213493567690756958
+      Fantasy Crops_34: 1676423709419613714
+      Fantasy Crops_35: 8372526871656278530
+      Fantasy Crops_36: 3956393958476882102
+      Fantasy Crops_37: -2670626806545194723
+      Fantasy Crops_38: -1714341043298474646
+      Fantasy Crops_39: -3142888562759678849
+      Fantasy Crops_4: 351906640709293403
+      Fantasy Crops_40: -643858952599338858
+      Fantasy Crops_41: 1623112465965931175
+      Fantasy Crops_42: -591815411762671932
+      Fantasy Crops_43: -800459866896489937
+      Fantasy Crops_44: -5353395774971165485
+      Fantasy Crops_45: -332604394405869914
+      Fantasy Crops_46: -6958461288019577459
+      Fantasy Crops_47: -5542357490221795388
+      Fantasy Crops_48: 1693535412255288313
+      Fantasy Crops_49: -7129192611604183120
+      Fantasy Crops_5: -436678761845232878
+      Fantasy Crops_50: -6512121884521167634
+      Fantasy Crops_51: 1392172365837684051
+      Fantasy Crops_52: -1209665332685181612
+      Fantasy Crops_53: -4650492320170045544
+      Fantasy Crops_54: 28388151465399934
+      Fantasy Crops_55: -1585032122154980820
+      Fantasy Crops_56: 739497070214097654
+      Fantasy Crops_57: -9123794706296950975
+      Fantasy Crops_58: 4712564043840796576
+      Fantasy Crops_59: -1747678572342377107
+      Fantasy Crops_6: -2213228658277688645
+      Fantasy Crops_60: -4508608758644650421
+      Fantasy Crops_61: -3625609997485101125
+      Fantasy Crops_62: -1154508307580114854
+      Fantasy Crops_63: 2607384111165581662
+      Fantasy Crops_64: -3782700929124451978
+      Fantasy Crops_65: -1236502497459660399
+      Fantasy Crops_66: 8796136141769024142
+      Fantasy Crops_67: -1005116673668701583
+      Fantasy Crops_68: -4577224352258860929
+      Fantasy Crops_69: 831532082360484182
+      Fantasy Crops_7: 6602904335023042884
+      Fantasy Crops_70: -3502448130172623227
+      Fantasy Crops_71: 4922599616844158486
+      Fantasy Crops_72: 6578386385226726403
+      Fantasy Crops_73: 5050101114116586865
+      Fantasy Crops_74: -3791435654793884009
+      Fantasy Crops_75: -67294352863555539
+      Fantasy Crops_76: -1261409472718558245
+      Fantasy Crops_77: 6559777388805120537
+      Fantasy Crops_78: 5027772307682097729
+      Fantasy Crops_79: -6357075240609416128
+      Fantasy Crops_8: -6916619383433972586
+      Fantasy Crops_80: 5369639799876091523
+      Fantasy Crops_81: -6514269017950107298
+      Fantasy Crops_82: -60193193824288778
+      Fantasy Crops_83: 8696360206217781836
+      Fantasy Crops_84: 4878480124888619355
+      Fantasy Crops_85: 3268966902700975867
+      Fantasy Crops_86: -1758957736125895744
+      Fantasy Crops_87: 1589687403758321133
+      Fantasy Crops_88: 5310175172700017839
+      Fantasy Crops_89: 6557183944983439692
+      Fantasy Crops_9: 1775722823711571458
+      Fantasy Crops_90: -5107654666464885362
+      Fantasy Crops_91: 1739086536355371987
+      Fantasy Crops_92: -6397442697400001966
+      Fantasy Crops_93: 5052539974025857304
+      Fantasy Crops_94: -3484471748788514408
+      Fantasy Crops_95: 157938076752289888
+      Fantasy Crops_96: -9025909825060240991
+      Fantasy Crops_97: 5480162810784607507
+      Fantasy Crops_98: 5434068039686330163
+      Fantasy Crops_99: -2001617542962841765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

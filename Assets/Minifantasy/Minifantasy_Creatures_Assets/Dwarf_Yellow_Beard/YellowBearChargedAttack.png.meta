@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowBearChargedAttack_0: -3734684139115373412
+      YellowBearChargedAttack_1: 537252409195662492
+      YellowBearChargedAttack_10: -2842540656397996236
+      YellowBearChargedAttack_11: 5284132907916485499
+      YellowBearChargedAttack_12: 9135995954167961306
+      YellowBearChargedAttack_13: 4429734524785758100
+      YellowBearChargedAttack_14: -2493149899583414439
+      YellowBearChargedAttack_15: 5728034764149920364
+      YellowBearChargedAttack_16: 7992603768880472772
+      YellowBearChargedAttack_17: 8820763501939634833
+      YellowBearChargedAttack_2: -7936347933251753977
+      YellowBearChargedAttack_3: -1299380189760975996
+      YellowBearChargedAttack_4: 5690321589963944333
+      YellowBearChargedAttack_5: -8866546461818907594
+      YellowBearChargedAttack_6: -5596648949764483412
+      YellowBearChargedAttack_7: -7088994077401054784
+      YellowBearChargedAttack_8: -6314219368453661671
+      YellowBearChargedAttack_9: -8035625331925485620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -189,6 +189,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -909,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SlimeGreenIdle_0: 5801251333333569131
+      SlimeGreenIdle_1: 335638778462207662
+      SlimeGreenIdle_10: 3436492766536059686
+      SlimeGreenIdle_11: -894832592435358738
+      SlimeGreenIdle_12: 8008814247356796322
+      SlimeGreenIdle_13: -6577932489551104401
+      SlimeGreenIdle_14: -6495266574121550355
+      SlimeGreenIdle_15: -5941983933877056440
+      SlimeGreenIdle_16: -815091052296085765
+      SlimeGreenIdle_17: 1223490024865004403
+      SlimeGreenIdle_18: 8288207450821369688
+      SlimeGreenIdle_19: -1049697882262845230
+      SlimeGreenIdle_2: 6368591236406317857
+      SlimeGreenIdle_20: -8631442344633391783
+      SlimeGreenIdle_21: 8412637725377831116
+      SlimeGreenIdle_22: 3774724275633339113
+      SlimeGreenIdle_23: -3067637317131051219
+      SlimeGreenIdle_24: 3877626621281031259
+      SlimeGreenIdle_25: -8736926094764340377
+      SlimeGreenIdle_26: -7852597360660081957
+      SlimeGreenIdle_27: 3800954527292171763
+      SlimeGreenIdle_28: 4230966308567983035
+      SlimeGreenIdle_29: -440040638594417277
+      SlimeGreenIdle_3: 5623025282929616181
+      SlimeGreenIdle_30: -2521322596403725443
+      SlimeGreenIdle_31: -3323598666707045048
+      SlimeGreenIdle_4: -4961635304391283486
+      SlimeGreenIdle_5: 8466776744716013314
+      SlimeGreenIdle_6: -5789193289617693839
+      SlimeGreenIdle_7: 20760649954980043
+      SlimeGreenIdle_8: 2402388078759577916
+      SlimeGreenIdle_9: 3212140337819653982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

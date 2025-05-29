@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIBrickFenceTileset_0: 7529882087848348945
+      Minifantasy_TownsIIBrickFenceTileset_1: -5972796218342530361
+      Minifantasy_TownsIIBrickFenceTileset_10: 1880250736794353977
+      Minifantasy_TownsIIBrickFenceTileset_11: -9166469024375996285
+      Minifantasy_TownsIIBrickFenceTileset_12: -91799419811672557
+      Minifantasy_TownsIIBrickFenceTileset_13: 3273738182103471318
+      Minifantasy_TownsIIBrickFenceTileset_14: -8471664302842008457
+      Minifantasy_TownsIIBrickFenceTileset_15: -635930627246254862
+      Minifantasy_TownsIIBrickFenceTileset_16: -803264764899179925
+      Minifantasy_TownsIIBrickFenceTileset_17: 1053693029208769935
+      Minifantasy_TownsIIBrickFenceTileset_18: 9187178973764819273
+      Minifantasy_TownsIIBrickFenceTileset_19: 1007256375693752386
+      Minifantasy_TownsIIBrickFenceTileset_2: -6683593910176288990
+      Minifantasy_TownsIIBrickFenceTileset_20: 7886731608323621577
+      Minifantasy_TownsIIBrickFenceTileset_21: -4255833907333302580
+      Minifantasy_TownsIIBrickFenceTileset_22: -2712051178893784226
+      Minifantasy_TownsIIBrickFenceTileset_23: -6584713535955229568
+      Minifantasy_TownsIIBrickFenceTileset_3: -532104910684963781
+      Minifantasy_TownsIIBrickFenceTileset_4: 4213429736804443897
+      Minifantasy_TownsIIBrickFenceTileset_5: -5798945264783121240
+      Minifantasy_TownsIIBrickFenceTileset_6: -916623285524830845
+      Minifantasy_TownsIIBrickFenceTileset_7: -2576797270467321250
+      Minifantasy_TownsIIBrickFenceTileset_8: -5229651485920454293
+      Minifantasy_TownsIIBrickFenceTileset_9: 1311937911033970309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

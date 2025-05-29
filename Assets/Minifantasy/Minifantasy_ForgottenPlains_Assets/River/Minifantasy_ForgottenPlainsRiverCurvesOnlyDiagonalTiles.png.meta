@@ -189,6 +189,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -909,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_0: 8047052661288308914
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_1: 6727054632708968748
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_10: 9204885208467931362
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_11: 830921460029961967
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_12: 5756675161754493124
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_13: 6962523386167607933
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_14: -8940619475879884979
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_15: -3245256962835403835
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_16: -4412559582636049488
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_17: -4815832989936170794
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_18: -7784283372326558710
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_19: -7505603731050619844
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_2: -2941761909100098319
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_20: 3778048150608840232
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_21: 2860943749886882249
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_22: -5944341683469740473
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_23: -1101996041823331967
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_24: 7737223964826553052
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_25: -1563774208389911583
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_26: 7953447713505223832
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_27: 7858806125598502128
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_28: 1559367090045718006
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_29: -3805522007348653626
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_3: 6332537592502694895
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_30: 4017279640851066330
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_31: 1548918455817754313
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_4: 7569300548854390870
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_5: 7565206766812075598
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_6: 5655764473605714364
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_7: -4527734603736234141
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_8: -5559973376905488841
+      Minifantasy_ForgottenPlainsRiverCurvesOnlyDiagonalTiles_9: -4811355942302704254
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

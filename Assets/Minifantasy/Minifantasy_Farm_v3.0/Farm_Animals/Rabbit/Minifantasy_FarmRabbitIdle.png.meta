@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_FarmRabbitIdle_0: -3248086385121358096
+      Minifantasy_FarmRabbitIdle_1: -7407838970583794885
+      Minifantasy_FarmRabbitIdle_10: -5790744549660552024
+      Minifantasy_FarmRabbitIdle_11: 6456351336454958834
+      Minifantasy_FarmRabbitIdle_12: 786204915933212167
+      Minifantasy_FarmRabbitIdle_13: -1730133530219179193
+      Minifantasy_FarmRabbitIdle_14: -2658701487164277568
+      Minifantasy_FarmRabbitIdle_15: 5604618131460877079
+      Minifantasy_FarmRabbitIdle_16: 2001649908021278652
+      Minifantasy_FarmRabbitIdle_17: -2581353439128309208
+      Minifantasy_FarmRabbitIdle_18: 7450737587331539305
+      Minifantasy_FarmRabbitIdle_19: -3593529864277373423
+      Minifantasy_FarmRabbitIdle_2: -730669056845529175
+      Minifantasy_FarmRabbitIdle_20: -7859822835824751077
+      Minifantasy_FarmRabbitIdle_21: -3189426013754072801
+      Minifantasy_FarmRabbitIdle_22: 489829395187361141
+      Minifantasy_FarmRabbitIdle_23: -2277484208583812049
+      Minifantasy_FarmRabbitIdle_3: -9220707717359568193
+      Minifantasy_FarmRabbitIdle_4: -3990638523164188149
+      Minifantasy_FarmRabbitIdle_5: -58516337373286767
+      Minifantasy_FarmRabbitIdle_6: -7501151114221797176
+      Minifantasy_FarmRabbitIdle_7: 1854293259402565077
+      Minifantasy_FarmRabbitIdle_8: -6036465034097363646
+      Minifantasy_FarmRabbitIdle_9: 4919204114646849714
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

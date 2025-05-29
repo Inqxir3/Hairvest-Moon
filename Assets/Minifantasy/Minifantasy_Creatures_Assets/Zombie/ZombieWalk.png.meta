@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ZombieWalk_0: 2085919176084871402
+      ZombieWalk_1: -8722894508168291501
+      ZombieWalk_10: -6140315089775834728
+      ZombieWalk_11: -3059482746631547966
+      ZombieWalk_12: 7513705567109630840
+      ZombieWalk_13: -7826167715708172469
+      ZombieWalk_14: 3316339334204565254
+      ZombieWalk_15: -2187776254198395422
+      ZombieWalk_2: 3326888169448285783
+      ZombieWalk_3: -2248006008508996821
+      ZombieWalk_4: 8879946403732888419
+      ZombieWalk_5: -7262419567257045619
+      ZombieWalk_6: -5922269116954131880
+      ZombieWalk_7: 8157729572881418310
+      ZombieWalk_8: -7724230646029205676
+      ZombieWalk_9: -7953908031492739965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WildOrcWalk_0: -1238549663690871156
+      WildOrcWalk_1: 2736903515869663967
+      WildOrcWalk_10: -7704907635654433747
+      WildOrcWalk_11: -5420124366894143830
+      WildOrcWalk_12: -1321280496537360761
+      WildOrcWalk_13: -9054430549322776025
+      WildOrcWalk_14: -1225276922067863469
+      WildOrcWalk_15: 2244742777212280993
+      WildOrcWalk_2: 5700882819052699029
+      WildOrcWalk_3: 5094541891090881033
+      WildOrcWalk_4: -6459449158795666133
+      WildOrcWalk_5: -3278880607664374883
+      WildOrcWalk_6: -5809709997406161159
+      WildOrcWalk_7: 418323670013530258
+      WildOrcWalk_8: 4128886200408042608
+      WildOrcWalk_9: -7589911937354545992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -117,6 +117,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIWindmillBladesShadow_0: 5426837808312621996
+      Minifantasy_TownsIIWindmillBladesShadow_1: 5939055422794782562
+      Minifantasy_TownsIIWindmillBladesShadow_2: 6940977291630931121
+      Minifantasy_TownsIIWindmillBladesShadow_3: 7770770378806667475
+      Minifantasy_TownsIIWindmillBladesShadow_4: 6274734374724088329
+      Minifantasy_TownsIIWindmillBladesShadow_5: 3456660744063906280
+      Minifantasy_TownsIIWindmillBladesShadow_6: -8232500965453695901
+      Minifantasy_TownsIIWindmillBladesShadow_7: -4395516780570312669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

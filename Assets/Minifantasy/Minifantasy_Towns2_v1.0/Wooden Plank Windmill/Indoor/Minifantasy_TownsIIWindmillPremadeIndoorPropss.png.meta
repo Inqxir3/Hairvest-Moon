@@ -129,6 +129,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_0: 5521321838319195276
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_1: 7744459062463034384
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_10: 696696138895019182
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_11: 873091455465980869
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_2: 1374883751898484846
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_3: -4258470573103857151
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_4: 8065897055919841822
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_5: 3694521557335011494
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_6: 7995656282764355407
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_7: 1914046179268868058
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_8: 5845699814673596365
+      Minifantasy_TownsIIWindmillPremadeIndoorPropss_9: 4474261363806151944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

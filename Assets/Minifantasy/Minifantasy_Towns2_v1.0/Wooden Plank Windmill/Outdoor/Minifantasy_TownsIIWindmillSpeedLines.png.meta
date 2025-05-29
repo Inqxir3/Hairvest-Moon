@@ -201,6 +201,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1009,7 +1035,43 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIWindmillSpeedLines_0: 5700247184690227482
+      Minifantasy_TownsIIWindmillSpeedLines_1: -6521324399429388452
+      Minifantasy_TownsIIWindmillSpeedLines_10: -6496867496149973787
+      Minifantasy_TownsIIWindmillSpeedLines_11: -544016388745146681
+      Minifantasy_TownsIIWindmillSpeedLines_12: -8026132453871288643
+      Minifantasy_TownsIIWindmillSpeedLines_13: -7870183670789125009
+      Minifantasy_TownsIIWindmillSpeedLines_14: -2764436756539090992
+      Minifantasy_TownsIIWindmillSpeedLines_15: -7437950560119592751
+      Minifantasy_TownsIIWindmillSpeedLines_16: 3095077444147287693
+      Minifantasy_TownsIIWindmillSpeedLines_17: 2716798283325608660
+      Minifantasy_TownsIIWindmillSpeedLines_18: 151417673225850947
+      Minifantasy_TownsIIWindmillSpeedLines_19: -4455746637175337512
+      Minifantasy_TownsIIWindmillSpeedLines_2: -2516956092364885219
+      Minifantasy_TownsIIWindmillSpeedLines_20: -4116787438917158115
+      Minifantasy_TownsIIWindmillSpeedLines_21: 502079001214595875
+      Minifantasy_TownsIIWindmillSpeedLines_22: 7456640968561313183
+      Minifantasy_TownsIIWindmillSpeedLines_23: -5547263500995837704
+      Minifantasy_TownsIIWindmillSpeedLines_24: 5040686372189634108
+      Minifantasy_TownsIIWindmillSpeedLines_25: -6276869572089781077
+      Minifantasy_TownsIIWindmillSpeedLines_26: -1073403055743258698
+      Minifantasy_TownsIIWindmillSpeedLines_27: 3071652994847790449
+      Minifantasy_TownsIIWindmillSpeedLines_28: 2959408312680830063
+      Minifantasy_TownsIIWindmillSpeedLines_29: -7918993169002247525
+      Minifantasy_TownsIIWindmillSpeedLines_3: 2311162706541576202
+      Minifantasy_TownsIIWindmillSpeedLines_30: 4298939716152885920
+      Minifantasy_TownsIIWindmillSpeedLines_31: -8900696085227174346
+      Minifantasy_TownsIIWindmillSpeedLines_32: -8005220025164196633
+      Minifantasy_TownsIIWindmillSpeedLines_33: -7797170245001469061
+      Minifantasy_TownsIIWindmillSpeedLines_34: -6451012970643657237
+      Minifantasy_TownsIIWindmillSpeedLines_35: -6992097527378019693
+      Minifantasy_TownsIIWindmillSpeedLines_4: -8579682920114261705
+      Minifantasy_TownsIIWindmillSpeedLines_5: 8361336348438334366
+      Minifantasy_TownsIIWindmillSpeedLines_6: -5108347026160270229
+      Minifantasy_TownsIIWindmillSpeedLines_7: -4880142026702959841
+      Minifantasy_TownsIIWindmillSpeedLines_8: 855093108593763134
+      Minifantasy_TownsIIWindmillSpeedLines_9: 8636384819389469384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

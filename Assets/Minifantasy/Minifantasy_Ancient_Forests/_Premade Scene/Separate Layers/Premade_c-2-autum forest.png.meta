@@ -144,6 +144,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -534,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Premade_c-2-autum forest_0: -3625482346161104288
+      Premade_c-2-autum forest_1: -437302819837090681
+      Premade_c-2-autum forest_10: 4487237686854458981
+      Premade_c-2-autum forest_11: 2918525235510017521
+      Premade_c-2-autum forest_12: -640852740850038620
+      Premade_c-2-autum forest_13: -7992768406703377408
+      Premade_c-2-autum forest_14: 5202933914874281641
+      Premade_c-2-autum forest_15: -1199106759261563543
+      Premade_c-2-autum forest_16: -3767461622721891618
+      Premade_c-2-autum forest_2: -6072102992262712991
+      Premade_c-2-autum forest_3: -8499743458228721875
+      Premade_c-2-autum forest_4: 4644163286263650406
+      Premade_c-2-autum forest_5: 956815503595718213
+      Premade_c-2-autum forest_6: -2686247733536143419
+      Premade_c-2-autum forest_7: -7225377264017559963
+      Premade_c-2-autum forest_8: -7045549711432339329
+      Premade_c-2-autum forest_9: 8492992739968787042
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -117,6 +117,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_ForgottenPlainsRiverCurves_0: 545595838526967806
+      Minifantasy_ForgottenPlainsRiverCurves_1: -2744092167731548509
+      Minifantasy_ForgottenPlainsRiverCurves_2: -6716424514479708136
+      Minifantasy_ForgottenPlainsRiverCurves_3: 2820407324849137704
+      Minifantasy_ForgottenPlainsRiverCurves_4: -7419306210238765710
+      Minifantasy_ForgottenPlainsRiverCurves_5: -387755600102362735
+      Minifantasy_ForgottenPlainsRiverCurves_6: -8391869360780653810
+      Minifantasy_ForgottenPlainsRiverCurves_7: -1678844130259347150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

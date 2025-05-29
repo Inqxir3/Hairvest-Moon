@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CyclopIdle_0: -5777422551746021335
+      CyclopIdle_1: -2901512428222588045
+      CyclopIdle_10: -1950106626445223794
+      CyclopIdle_11: -3046829425067600477
+      CyclopIdle_12: 3066954343468473859
+      CyclopIdle_13: -2083323051153016093
+      CyclopIdle_14: 236798753595312656
+      CyclopIdle_15: 4496685900614095785
+      CyclopIdle_16: 6189751775949611795
+      CyclopIdle_17: 1669718304568409542
+      CyclopIdle_18: 2437252513298325063
+      CyclopIdle_19: 8589119949892367480
+      CyclopIdle_2: -8913778718626627316
+      CyclopIdle_20: 7002466043157726167
+      CyclopIdle_21: 1646183189891599268
+      CyclopIdle_22: -7819825027477847532
+      CyclopIdle_23: 7353355358406891426
+      CyclopIdle_24: -7836278301175860414
+      CyclopIdle_25: -6811891298787288428
+      CyclopIdle_26: -7386856609082635780
+      CyclopIdle_27: 8026610881995681921
+      CyclopIdle_28: -8529087623548887878
+      CyclopIdle_29: 5687795491526502294
+      CyclopIdle_3: 8622222554990489396
+      CyclopIdle_30: 2697208996271313734
+      CyclopIdle_31: 5973129556997181354
+      CyclopIdle_32: 3688829580152016376
+      CyclopIdle_33: 3641330593882334046
+      CyclopIdle_34: 6240702041172572128
+      CyclopIdle_35: -8671717865988335300
+      CyclopIdle_36: -9066220128661961251
+      CyclopIdle_37: -8069844629703597731
+      CyclopIdle_38: 2821483813347605026
+      CyclopIdle_39: 4916102314616809168
+      CyclopIdle_4: -1619712276058435598
+      CyclopIdle_40: 1449143213998892385
+      CyclopIdle_41: -8042360646807190808
+      CyclopIdle_42: -216318403410708179
+      CyclopIdle_43: 6417342551673487465
+      CyclopIdle_44: -499478772043141670
+      CyclopIdle_45: 868488153855212578
+      CyclopIdle_46: 5768431124478274646
+      CyclopIdle_47: -392581286398697606
+      CyclopIdle_48: -5776520811073920758
+      CyclopIdle_49: 3983317369747805413
+      CyclopIdle_5: -1909548115976523056
+      CyclopIdle_50: -8270109080427348161
+      CyclopIdle_51: -1285697420581406980
+      CyclopIdle_52: -8565454208567192636
+      CyclopIdle_53: 5937923639459891119
+      CyclopIdle_54: -3413408822234459421
+      CyclopIdle_55: -5836600160741848113
+      CyclopIdle_56: 3918955676105668658
+      CyclopIdle_57: 1941650397348384392
+      CyclopIdle_58: 394088125519368828
+      CyclopIdle_59: 7588458474621297863
+      CyclopIdle_6: -4095533685637338975
+      CyclopIdle_60: 3966792236495152756
+      CyclopIdle_61: -1300638268244345615
+      CyclopIdle_62: 4206112559377331278
+      CyclopIdle_63: -2292835671584506939
+      CyclopIdle_7: -2634310975706320878
+      CyclopIdle_8: -5190797041654620164
+      CyclopIdle_9: -5472798790696513175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

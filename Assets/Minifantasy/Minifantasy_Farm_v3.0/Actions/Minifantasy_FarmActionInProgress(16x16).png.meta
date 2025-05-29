@@ -201,6 +201,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1009,7 +1035,43 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_FarmActionInProgress(16x16)_0: -544823395129342382
+      Minifantasy_FarmActionInProgress(16x16)_1: 299758214189108135
+      Minifantasy_FarmActionInProgress(16x16)_10: 288258037646802988
+      Minifantasy_FarmActionInProgress(16x16)_11: -3980531329358461638
+      Minifantasy_FarmActionInProgress(16x16)_12: 5367445806435855321
+      Minifantasy_FarmActionInProgress(16x16)_13: 9151411998178856850
+      Minifantasy_FarmActionInProgress(16x16)_14: 7350432025338581847
+      Minifantasy_FarmActionInProgress(16x16)_15: -909136956425700498
+      Minifantasy_FarmActionInProgress(16x16)_16: -4109338059027943185
+      Minifantasy_FarmActionInProgress(16x16)_17: -4313577414010861298
+      Minifantasy_FarmActionInProgress(16x16)_18: 4535637720930986961
+      Minifantasy_FarmActionInProgress(16x16)_19: 6340042735623660694
+      Minifantasy_FarmActionInProgress(16x16)_2: 9074263687941502899
+      Minifantasy_FarmActionInProgress(16x16)_20: -7752914965828189747
+      Minifantasy_FarmActionInProgress(16x16)_21: 6046906522207399245
+      Minifantasy_FarmActionInProgress(16x16)_22: 3808788010291880761
+      Minifantasy_FarmActionInProgress(16x16)_23: 7323883676893654881
+      Minifantasy_FarmActionInProgress(16x16)_24: 1549756608161997414
+      Minifantasy_FarmActionInProgress(16x16)_25: -2248343930929966879
+      Minifantasy_FarmActionInProgress(16x16)_26: -9095217922677523887
+      Minifantasy_FarmActionInProgress(16x16)_27: 838224053371349844
+      Minifantasy_FarmActionInProgress(16x16)_28: -5521784259268013925
+      Minifantasy_FarmActionInProgress(16x16)_29: -8099420519782403031
+      Minifantasy_FarmActionInProgress(16x16)_3: 1121626367721523887
+      Minifantasy_FarmActionInProgress(16x16)_30: 2984183647060267157
+      Minifantasy_FarmActionInProgress(16x16)_31: -2831073517169290401
+      Minifantasy_FarmActionInProgress(16x16)_32: 5900047261450973447
+      Minifantasy_FarmActionInProgress(16x16)_33: 1212226453071952717
+      Minifantasy_FarmActionInProgress(16x16)_34: 8721980169093427538
+      Minifantasy_FarmActionInProgress(16x16)_35: -942383140768097906
+      Minifantasy_FarmActionInProgress(16x16)_4: -129817440287426364
+      Minifantasy_FarmActionInProgress(16x16)_5: 6932762362585977237
+      Minifantasy_FarmActionInProgress(16x16)_6: 7639330412873071929
+      Minifantasy_FarmActionInProgress(16x16)_7: -8773770169888917921
+      Minifantasy_FarmActionInProgress(16x16)_8: -987717625142840619
+      Minifantasy_FarmActionInProgress(16x16)_9: 5213194458255412127
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

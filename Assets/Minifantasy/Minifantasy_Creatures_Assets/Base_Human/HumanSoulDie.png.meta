@@ -135,6 +135,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -459,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HumanSoulDie_0: -6962981945601507954
+      HumanSoulDie_1: -3502138182884797443
+      HumanSoulDie_10: -6724694138416479944
+      HumanSoulDie_11: -7421875074059397216
+      HumanSoulDie_12: -3801432488388674298
+      HumanSoulDie_13: -1575480472675882387
+      HumanSoulDie_2: 2763598464064067844
+      HumanSoulDie_3: 6878329280995117616
+      HumanSoulDie_4: 167077191815319942
+      HumanSoulDie_5: -895428360150099696
+      HumanSoulDie_6: -6413484394993978849
+      HumanSoulDie_7: -8607660786476716396
+      HumanSoulDie_8: -7911149481122465345
+      HumanSoulDie_9: -2930815066936461156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

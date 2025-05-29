@@ -153,6 +153,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -609,7 +635,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ZombieAttack_0: -6110456907742226210
+      ZombieAttack_1: -919882710125404491
+      ZombieAttack_10: -4401249648073539501
+      ZombieAttack_11: 776712265417384643
+      ZombieAttack_12: -7969367009766848389
+      ZombieAttack_13: 464922742236829375
+      ZombieAttack_14: -2375442596150358547
+      ZombieAttack_15: -3037054859753976623
+      ZombieAttack_16: -3522778793304701531
+      ZombieAttack_17: 8991765806079123662
+      ZombieAttack_18: 5983528454147733922
+      ZombieAttack_19: -8435934604183723781
+      ZombieAttack_2: 3157100177331716593
+      ZombieAttack_3: -3112844997425633342
+      ZombieAttack_4: 7179474213224602943
+      ZombieAttack_5: -3203837127043433104
+      ZombieAttack_6: -2090183406250075987
+      ZombieAttack_7: 1178986656028754166
+      ZombieAttack_8: -6416616219433784594
+      ZombieAttack_9: -4406275761025457222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

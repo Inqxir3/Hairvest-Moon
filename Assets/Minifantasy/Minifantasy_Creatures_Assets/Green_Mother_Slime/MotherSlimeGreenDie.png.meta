@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MotherSlimeGreenDie_0: 7553643178538720262
+      MotherSlimeGreenDie_1: 1726322137024755645
+      MotherSlimeGreenDie_10: -8496856043976696008
+      MotherSlimeGreenDie_11: 7222151714402655599
+      MotherSlimeGreenDie_12: -7494282913809482973
+      MotherSlimeGreenDie_13: -4178280930167882684
+      MotherSlimeGreenDie_14: 889198728773144163
+      MotherSlimeGreenDie_15: 8362498952701846139
+      MotherSlimeGreenDie_16: 1462947278599265879
+      MotherSlimeGreenDie_17: -7534593721037414697
+      MotherSlimeGreenDie_18: -6501274493335378831
+      MotherSlimeGreenDie_19: -6851137674514763218
+      MotherSlimeGreenDie_2: -5845529729006470060
+      MotherSlimeGreenDie_20: 7099148000669179641
+      MotherSlimeGreenDie_21: -3860070033519038577
+      MotherSlimeGreenDie_22: 2530995309819000441
+      MotherSlimeGreenDie_23: 5681174335986183111
+      MotherSlimeGreenDie_3: -2524022072408699184
+      MotherSlimeGreenDie_4: 3014205286114230348
+      MotherSlimeGreenDie_5: 2664820940140685536
+      MotherSlimeGreenDie_6: 535252644829902824
+      MotherSlimeGreenDie_7: 580867640765974304
+      MotherSlimeGreenDie_8: 2742466609415771220
+      MotherSlimeGreenDie_9: -8228374024568613265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

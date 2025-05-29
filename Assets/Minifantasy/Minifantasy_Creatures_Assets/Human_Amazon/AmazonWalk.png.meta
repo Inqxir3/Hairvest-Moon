@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AmazonWalk_0: -6948773313030704380
+      AmazonWalk_1: 422206652862542635
+      AmazonWalk_10: -6742464188644143744
+      AmazonWalk_11: 7874705298496888929
+      AmazonWalk_12: -5260948127330551010
+      AmazonWalk_13: -6974197658580518255
+      AmazonWalk_14: -2626303620989615134
+      AmazonWalk_15: -6637246739582228394
+      AmazonWalk_2: -5488816972872337739
+      AmazonWalk_3: 4149043931566502939
+      AmazonWalk_4: 6245161019318941402
+      AmazonWalk_5: 5445055465379198001
+      AmazonWalk_6: -4055820076137186411
+      AmazonWalk_7: -1346927284121212205
+      AmazonWalk_8: 5409668251932716841
+      AmazonWalk_9: 8701395502402672816
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_ardley_0: -3670919054317736195
+      spr_ardley_1: 509137457554169431
+      spr_ardley_10: -911293475499369199
+      spr_ardley_11: 4684315807661285673
+      spr_ardley_12: -6442838437124881437
+      spr_ardley_13: 1584507784956647359
+      spr_ardley_14: 5400621341554013747
+      spr_ardley_15: -3987744398106291187
+      spr_ardley_2: -5762228848244227439
+      spr_ardley_3: 4069680336065378749
+      spr_ardley_4: 5397690949746096233
+      spr_ardley_5: 8343587605388676449
+      spr_ardley_6: 4136287827489600057
+      spr_ardley_7: 1639863239012208451
+      spr_ardley_8: -1236004484599700795
+      spr_ardley_9: -2199736608318785850
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

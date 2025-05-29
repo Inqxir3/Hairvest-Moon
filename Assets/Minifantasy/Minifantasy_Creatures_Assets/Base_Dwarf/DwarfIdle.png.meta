@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DwarfIdle_0: 5786280150610744601
+      DwarfIdle_1: -2485849173845287424
+      DwarfIdle_10: 6761012746814336561
+      DwarfIdle_11: -3342005993657244218
+      DwarfIdle_12: 1094307535198551883
+      DwarfIdle_13: -5870923516922233610
+      DwarfIdle_14: -4563530654412874139
+      DwarfIdle_15: 6189195846016159301
+      DwarfIdle_16: 3000949945900526227
+      DwarfIdle_17: -2969341542606514586
+      DwarfIdle_18: -29919066849615778
+      DwarfIdle_19: 3050249184422143363
+      DwarfIdle_2: 567961292977954658
+      DwarfIdle_20: -696501238637503784
+      DwarfIdle_21: -6423202608726307146
+      DwarfIdle_22: -8714746489003148816
+      DwarfIdle_23: -6706567646454779701
+      DwarfIdle_24: -7713125258838263111
+      DwarfIdle_25: -152772754310194935
+      DwarfIdle_26: 8883428529922606760
+      DwarfIdle_27: 8693864001625081229
+      DwarfIdle_28: -8497260708928738281
+      DwarfIdle_29: -5512344281614572192
+      DwarfIdle_3: 9170558308684637138
+      DwarfIdle_30: 4352859511501808342
+      DwarfIdle_31: 6813286647517299049
+      DwarfIdle_32: -7223231286783244498
+      DwarfIdle_33: -1160696257189359016
+      DwarfIdle_34: 5492662398647945801
+      DwarfIdle_35: -7713809837324734152
+      DwarfIdle_36: 1458087372967130862
+      DwarfIdle_37: -5159393449539093666
+      DwarfIdle_38: 6370131145043736442
+      DwarfIdle_39: 8284844243352574936
+      DwarfIdle_4: -3343285962459223005
+      DwarfIdle_40: 5130593250509712080
+      DwarfIdle_41: -925277380479617900
+      DwarfIdle_42: 8375659711872523719
+      DwarfIdle_43: -5569122600427766149
+      DwarfIdle_44: -3482072765107067814
+      DwarfIdle_45: 4612133529402971824
+      DwarfIdle_46: 982870668074971772
+      DwarfIdle_47: 524392143428391102
+      DwarfIdle_48: 1750186165591892154
+      DwarfIdle_49: 7875946291166571394
+      DwarfIdle_5: -8160429598475040267
+      DwarfIdle_50: 4139122362247518035
+      DwarfIdle_51: 5803940790035757117
+      DwarfIdle_52: 697392022301509323
+      DwarfIdle_53: -6291615899049655297
+      DwarfIdle_54: -838577293183124281
+      DwarfIdle_55: 1939511699979195767
+      DwarfIdle_56: -5207435071360632902
+      DwarfIdle_57: 6257466078629605751
+      DwarfIdle_58: -5554359029992480838
+      DwarfIdle_59: -7935768219921528221
+      DwarfIdle_6: -8065714312045667336
+      DwarfIdle_60: -8591464775895044369
+      DwarfIdle_61: 4975618519970803674
+      DwarfIdle_62: -5065070643158085920
+      DwarfIdle_63: -465393243543397299
+      DwarfIdle_7: 796631216998810272
+      DwarfIdle_8: -3399709562559266553
+      DwarfIdle_9: 5988598635428755483
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

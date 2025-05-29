@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CyclopDmg_0: -594917669848223251
+      CyclopDmg_1: -5936581666166246689
+      CyclopDmg_10: -451281599521519654
+      CyclopDmg_11: -32638597281364546
+      CyclopDmg_12: 3613475793089808289
+      CyclopDmg_13: -8358947952050564242
+      CyclopDmg_14: 2120157278031353642
+      CyclopDmg_15: -5052213284880606524
+      CyclopDmg_2: -7554308036783789852
+      CyclopDmg_3: -1720747209265747299
+      CyclopDmg_4: 3137624939935082277
+      CyclopDmg_5: -2503387876932472263
+      CyclopDmg_6: -6724690278288447875
+      CyclopDmg_7: 5618075215594564574
+      CyclopDmg_8: 7534610362381814858
+      CyclopDmg_9: 6014847104980684504
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

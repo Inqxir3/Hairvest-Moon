@@ -129,6 +129,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CyclopDie_0: -5449558115993315012
+      CyclopDie_1: 3971258713749431573
+      CyclopDie_10: -481843404633058980
+      CyclopDie_11: 4903393942800888487
+      CyclopDie_2: 6721547422480464351
+      CyclopDie_3: 1973597087757551705
+      CyclopDie_4: -7164830717067305605
+      CyclopDie_5: 1153686987011894254
+      CyclopDie_6: -6975649382725398034
+      CyclopDie_7: -3259971084456306876
+      CyclopDie_8: 6194366066097944743
+      CyclopDie_9: 3132606914403052708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

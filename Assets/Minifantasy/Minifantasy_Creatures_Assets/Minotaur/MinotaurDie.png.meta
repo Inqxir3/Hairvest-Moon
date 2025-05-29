@@ -132,6 +132,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -434,7 +460,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MinotaurDie_0: -2761696333473808117
+      MinotaurDie_1: -5601957128767068448
+      MinotaurDie_10: -8316185689451230515
+      MinotaurDie_11: 2820680271762993209
+      MinotaurDie_12: -9061886921736800652
+      MinotaurDie_2: 283792481183839180
+      MinotaurDie_3: 1467422930126093283
+      MinotaurDie_4: 3416979914456537605
+      MinotaurDie_5: -8586321932418073704
+      MinotaurDie_6: 715507859435294015
+      MinotaurDie_7: 2740841160322709293
+      MinotaurDie_8: 6320163315226882597
+      MinotaurDie_9: 1322580584812693032
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

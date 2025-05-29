@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HalflingDmg_0: 21331808416534711
+      HalflingDmg_1: -6362276825394400231
+      HalflingDmg_10: -369974946650640933
+      HalflingDmg_11: -2440571330347971277
+      HalflingDmg_12: 6930494581120914806
+      HalflingDmg_13: -3995774609728865726
+      HalflingDmg_14: 8618830631811355494
+      HalflingDmg_15: -44877408076992062
+      HalflingDmg_2: 7976529374426828353
+      HalflingDmg_3: -3461649457731356346
+      HalflingDmg_4: 1526365885546884264
+      HalflingDmg_5: -8233695596873299112
+      HalflingDmg_6: 8761843157155705557
+      HalflingDmg_7: -1281945265061238267
+      HalflingDmg_8: 7740305673168877672
+      HalflingDmg_9: 4895793665958217036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

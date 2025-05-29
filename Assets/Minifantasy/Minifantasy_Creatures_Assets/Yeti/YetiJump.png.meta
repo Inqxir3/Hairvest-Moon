@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YetiJump_0: 2620330511746077437
+      YetiJump_1: 5005410470017668787
+      YetiJump_10: -2651403307876310481
+      YetiJump_11: -4542238762151995302
+      YetiJump_12: -499402819954938891
+      YetiJump_13: -2968803278211543061
+      YetiJump_14: -5279234853109061733
+      YetiJump_15: -255996465075508236
+      YetiJump_16: 1473912096922447031
+      YetiJump_17: 8249808929179245607
+      YetiJump_18: -4925076564423357016
+      YetiJump_19: 6896833708306766283
+      YetiJump_2: 4945185807063234116
+      YetiJump_20: -44298462272062115
+      YetiJump_21: -304906983143159102
+      YetiJump_22: 6833506298581629958
+      YetiJump_23: -6107289840394006178
+      YetiJump_3: -6944160239818425033
+      YetiJump_4: -8869285819602832389
+      YetiJump_5: -5691184769663187860
+      YetiJump_6: 751166355301827873
+      YetiJump_7: 325810369275805441
+      YetiJump_8: 1741361130066539646
+      YetiJump_9: -2757378097804521379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

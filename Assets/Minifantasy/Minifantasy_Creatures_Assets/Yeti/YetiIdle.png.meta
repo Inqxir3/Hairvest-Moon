@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YetiIdle_0: -4275970655651676436
+      YetiIdle_1: -4746369309060703841
+      YetiIdle_10: 2703736671632138680
+      YetiIdle_11: -6537465042580616392
+      YetiIdle_12: -6266457114718813919
+      YetiIdle_13: 2080601903665984973
+      YetiIdle_14: -3366133621891150799
+      YetiIdle_15: 1368578215024158664
+      YetiIdle_16: -734933284776743194
+      YetiIdle_17: 4163604657503948784
+      YetiIdle_18: -424832768502115415
+      YetiIdle_19: -8998925990026414264
+      YetiIdle_2: 3906038834546385781
+      YetiIdle_20: 425289088442651723
+      YetiIdle_21: 6439193569440164866
+      YetiIdle_22: -7269547435082954490
+      YetiIdle_23: -3754844169947137303
+      YetiIdle_24: -7483369326019536895
+      YetiIdle_25: 583664589424352845
+      YetiIdle_26: 7921205707495808815
+      YetiIdle_27: -1323145521586743079
+      YetiIdle_28: -8758935272095836693
+      YetiIdle_29: 4606785790541808938
+      YetiIdle_3: -1734251241475837949
+      YetiIdle_30: -5532313730307934495
+      YetiIdle_31: 8768139095988202141
+      YetiIdle_32: 8716993210264129996
+      YetiIdle_33: -155701656698206188
+      YetiIdle_34: -4512798270726833592
+      YetiIdle_35: -1153211669226485618
+      YetiIdle_36: -6796609930058516332
+      YetiIdle_37: -2852811785091835337
+      YetiIdle_38: -5053874087273648978
+      YetiIdle_39: -7815408908018706698
+      YetiIdle_4: 8318385076724043716
+      YetiIdle_40: 1614030289082966281
+      YetiIdle_41: -547865551246583496
+      YetiIdle_42: -6177505995805367576
+      YetiIdle_43: -1523039401741490860
+      YetiIdle_44: 93846860197233102
+      YetiIdle_45: 4349199727781335508
+      YetiIdle_46: 5921773116644115511
+      YetiIdle_47: -1969159971645863756
+      YetiIdle_48: 6347319433254697825
+      YetiIdle_49: -6807737783182781121
+      YetiIdle_5: -5225794386629988437
+      YetiIdle_50: 7213288182611375251
+      YetiIdle_51: -2199426302264181896
+      YetiIdle_52: 8669382495323424705
+      YetiIdle_53: 7546851369619572342
+      YetiIdle_54: 8176751588508388548
+      YetiIdle_55: -6558998592352983819
+      YetiIdle_56: 5676669051416899399
+      YetiIdle_57: 7072355050500256172
+      YetiIdle_58: -8497238488903747481
+      YetiIdle_59: 7552865654270784554
+      YetiIdle_6: 3569813853242085356
+      YetiIdle_60: -9141243846187596536
+      YetiIdle_61: -1050981852096705689
+      YetiIdle_62: 5806130569586362934
+      YetiIdle_63: -5883873513693326490
+      YetiIdle_7: 7158392235639129738
+      YetiIdle_8: 1591849496121857508
+      YetiIdle_9: 2926450517014646754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AmazonChargedAttack_0: 4193129555021991060
+      AmazonChargedAttack_1: 2844740719912765143
+      AmazonChargedAttack_10: 8587626227335557808
+      AmazonChargedAttack_11: 8825890345374057115
+      AmazonChargedAttack_12: -6484745826712636268
+      AmazonChargedAttack_13: -1440414924869062128
+      AmazonChargedAttack_14: -5145164836415616703
+      AmazonChargedAttack_15: 6691105007057511049
+      AmazonChargedAttack_16: 7450765820432685340
+      AmazonChargedAttack_17: -8328865855261162338
+      AmazonChargedAttack_2: -6199809386847843582
+      AmazonChargedAttack_3: 7896842314416651296
+      AmazonChargedAttack_4: -5477455986567352001
+      AmazonChargedAttack_5: 3081499920480464427
+      AmazonChargedAttack_6: 6354105168965472747
+      AmazonChargedAttack_7: 3906538487191243540
+      AmazonChargedAttack_8: 7434972690600110281
+      AmazonChargedAttack_9: 6624591128463639346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -153,6 +153,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -609,7 +635,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PumpkinHorrorBaseAttack_0: -6106117491181602468
+      PumpkinHorrorBaseAttack_1: 3156504334713505410
+      PumpkinHorrorBaseAttack_10: -3481220864342467966
+      PumpkinHorrorBaseAttack_11: 3572578570016061053
+      PumpkinHorrorBaseAttack_12: 3446985292655323267
+      PumpkinHorrorBaseAttack_13: -5888606907346518359
+      PumpkinHorrorBaseAttack_14: 150945570537950889
+      PumpkinHorrorBaseAttack_15: -5417399441747484158
+      PumpkinHorrorBaseAttack_16: 2277870838756455001
+      PumpkinHorrorBaseAttack_17: 6980516473821700835
+      PumpkinHorrorBaseAttack_18: 1858727296124295856
+      PumpkinHorrorBaseAttack_19: -5409311611344291106
+      PumpkinHorrorBaseAttack_2: -5571697686473323855
+      PumpkinHorrorBaseAttack_3: 2750987178703606399
+      PumpkinHorrorBaseAttack_4: -616250528723105129
+      PumpkinHorrorBaseAttack_5: 5094622343235560945
+      PumpkinHorrorBaseAttack_6: 8782722318061650958
+      PumpkinHorrorBaseAttack_7: 6643869311703317640
+      PumpkinHorrorBaseAttack_8: -4375750064284852584
+      PumpkinHorrorBaseAttack_9: 4914312963885288654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

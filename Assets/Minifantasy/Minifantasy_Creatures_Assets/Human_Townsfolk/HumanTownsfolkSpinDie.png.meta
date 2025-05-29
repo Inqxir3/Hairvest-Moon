@@ -120,6 +120,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -334,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HumanTownsfolkSpinDie_0: 3090906446057174180
+      HumanTownsfolkSpinDie_1: 6176380920864478809
+      HumanTownsfolkSpinDie_2: -3717014266095328348
+      HumanTownsfolkSpinDie_3: 4028894016083067773
+      HumanTownsfolkSpinDie_4: 3287640149739360207
+      HumanTownsfolkSpinDie_5: -3048196617589262640
+      HumanTownsfolkSpinDie_6: 7292576378968921571
+      HumanTownsfolkSpinDie_7: 6404717203101247615
+      HumanTownsfolkSpinDie_8: 1859986687183325223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

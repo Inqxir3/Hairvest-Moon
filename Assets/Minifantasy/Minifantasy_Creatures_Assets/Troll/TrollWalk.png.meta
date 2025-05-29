@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TrollWalk_0: -3734445971632969027
+      TrollWalk_1: 428696021926043299
+      TrollWalk_10: -6829091726593461608
+      TrollWalk_11: -533755958052810235
+      TrollWalk_12: 3456997292737220966
+      TrollWalk_13: -2053464997594725793
+      TrollWalk_14: 308024407142140030
+      TrollWalk_15: 4482909502854677710
+      TrollWalk_16: -7484038608213686730
+      TrollWalk_17: 4705863588536307806
+      TrollWalk_18: 2659330255761656221
+      TrollWalk_19: -5531304321722857014
+      TrollWalk_2: 7047244573936809102
+      TrollWalk_20: -6752057021453143732
+      TrollWalk_21: 5499065390761764691
+      TrollWalk_22: -1941267075352454610
+      TrollWalk_23: 6321300003978995922
+      TrollWalk_3: 6455466070614318022
+      TrollWalk_4: 5231393731940578874
+      TrollWalk_5: 1403608971342464774
+      TrollWalk_6: -12993517276595611
+      TrollWalk_7: 8188502450849373344
+      TrollWalk_8: 3057192559386798095
+      TrollWalk_9: 1242617662285746459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

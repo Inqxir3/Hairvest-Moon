@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CyclopWalk_0: -1521038548891387094
+      CyclopWalk_1: -6089672711575221290
+      CyclopWalk_10: -8709505470504408444
+      CyclopWalk_11: 4533439243666199376
+      CyclopWalk_12: -4192147917539894912
+      CyclopWalk_13: -568596442804146813
+      CyclopWalk_14: 601986876452743595
+      CyclopWalk_15: 3705687750563264865
+      CyclopWalk_16: 409042676847572206
+      CyclopWalk_17: -422553964476968166
+      CyclopWalk_18: -8560399167281022905
+      CyclopWalk_19: 9011088838608271593
+      CyclopWalk_2: -857554542482174958
+      CyclopWalk_20: -7529884214543572784
+      CyclopWalk_21: -7963344706226812351
+      CyclopWalk_22: 856294953051033060
+      CyclopWalk_23: -758983654733060389
+      CyclopWalk_3: -6806531418941258414
+      CyclopWalk_4: -7147698750939869258
+      CyclopWalk_5: -8629557775252794149
+      CyclopWalk_6: 3817013217999853528
+      CyclopWalk_7: -2298609135668065637
+      CyclopWalk_8: 2576784594318543552
+      CyclopWalk_9: 3767188040167270154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

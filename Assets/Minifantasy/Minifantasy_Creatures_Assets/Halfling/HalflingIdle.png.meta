@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HalflingIdle_0: -6463991323347210029
+      HalflingIdle_1: 2765847926394424090
+      HalflingIdle_10: -4335405580936409356
+      HalflingIdle_11: 515939393231193629
+      HalflingIdle_12: -6731128012238929382
+      HalflingIdle_13: -532407745329315276
+      HalflingIdle_14: -2608525647646166640
+      HalflingIdle_15: 1379449210999994847
+      HalflingIdle_16: 7331229715072755348
+      HalflingIdle_17: 2234384309555788744
+      HalflingIdle_18: 3543773905055941039
+      HalflingIdle_19: -620736380892804988
+      HalflingIdle_2: -8998174776921914481
+      HalflingIdle_20: -7101769486749225200
+      HalflingIdle_21: 143841166238233091
+      HalflingIdle_22: -8048979759069616613
+      HalflingIdle_23: 8118642807538521211
+      HalflingIdle_24: -2506266737391632356
+      HalflingIdle_25: -664903909107193767
+      HalflingIdle_26: 5822652055625751887
+      HalflingIdle_27: -8621997033720994077
+      HalflingIdle_28: 8212701273875881807
+      HalflingIdle_29: -7581061194058147041
+      HalflingIdle_3: -4059801686318835583
+      HalflingIdle_30: 5501973844662817037
+      HalflingIdle_31: -3298037894419566723
+      HalflingIdle_32: 2544243839071014112
+      HalflingIdle_33: -1009696268991039219
+      HalflingIdle_34: -7783431642781338703
+      HalflingIdle_35: -7350734121830111594
+      HalflingIdle_36: 2287098660115816351
+      HalflingIdle_37: -7161031322545696029
+      HalflingIdle_38: -2029742452612190981
+      HalflingIdle_39: -7108947747604256114
+      HalflingIdle_4: 6524515219572139314
+      HalflingIdle_40: -6217350735692119033
+      HalflingIdle_41: -608557893486534082
+      HalflingIdle_42: -7034252552421695678
+      HalflingIdle_43: 2243138438723763995
+      HalflingIdle_44: -1547683919667734118
+      HalflingIdle_45: -4879975717743481651
+      HalflingIdle_46: -3395382083044408756
+      HalflingIdle_47: -8225131060264421759
+      HalflingIdle_48: 1891272966442567702
+      HalflingIdle_49: -252743708537238823
+      HalflingIdle_5: 1790391651473094647
+      HalflingIdle_50: 3367234489113526371
+      HalflingIdle_51: -959860967112894998
+      HalflingIdle_52: 3951519792526098384
+      HalflingIdle_53: -4041782602117662150
+      HalflingIdle_54: 8350562415559755498
+      HalflingIdle_55: 726254268943747779
+      HalflingIdle_56: 3915097900288799352
+      HalflingIdle_57: 7932254460250835629
+      HalflingIdle_58: -22557782005601457
+      HalflingIdle_59: 560450286442345591
+      HalflingIdle_6: 691678629213184408
+      HalflingIdle_60: -993547583745699137
+      HalflingIdle_61: 7634185374250619757
+      HalflingIdle_62: 1898848282157607345
+      HalflingIdle_63: -8266900893548517747
+      HalflingIdle_7: -5134512204618414568
+      HalflingIdle_8: -5851365585188642787
+      HalflingIdle_9: 137805541173256230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

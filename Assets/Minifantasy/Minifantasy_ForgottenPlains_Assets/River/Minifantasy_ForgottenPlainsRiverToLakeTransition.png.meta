@@ -153,6 +153,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -609,7 +635,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_0: -6619965504502871454
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_1: -3966209393762547630
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_10: 5294996171268516557
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_11: 5514902130907907084
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_12: -4111874903973736178
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_13: -8341178124272126988
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_14: -5531169172911083299
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_15: -3007006612684866886
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_16: 216596814610488198
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_17: 8119386816696064400
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_18: 3336218088987187811
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_19: -3120879103389024183
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_2: -9175521820757218018
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_3: 180950712922354981
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_4: -6791058486189392466
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_5: -4634494091364086172
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_6: -2812635856745572743
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_7: 1547154638245894858
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_8: 5121407412638027208
+      Minifantasy_ForgottenPlainsRiverToLakeTransition_9: -2641468967508413507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

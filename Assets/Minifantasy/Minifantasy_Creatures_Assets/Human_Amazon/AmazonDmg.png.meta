@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AmazonDmg_0: 2418399660908533277
+      AmazonDmg_1: 3001346165987580338
+      AmazonDmg_10: 7987504535763409309
+      AmazonDmg_11: 5380072481729215643
+      AmazonDmg_12: 8172685194179514552
+      AmazonDmg_13: -742465331789390900
+      AmazonDmg_14: 2489293165541109335
+      AmazonDmg_15: 6701265407307799519
+      AmazonDmg_2: -5743910562642651193
+      AmazonDmg_3: -2748878896842457367
+      AmazonDmg_4: 3385782583852559665
+      AmazonDmg_5: 6340006879653464582
+      AmazonDmg_6: -4320406011457181830
+      AmazonDmg_7: 6483692418353568643
+      AmazonDmg_8: -5532452762013400623
+      AmazonDmg_9: 2524963087363262814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

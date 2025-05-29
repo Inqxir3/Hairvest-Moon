@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TrasgoIdle_0: -8542089117932112399
+      TrasgoIdle_1: -8238507837048668589
+      TrasgoIdle_10: -3160606789207168104
+      TrasgoIdle_11: -7479423920678105541
+      TrasgoIdle_12: -1235512938341638495
+      TrasgoIdle_13: 3781828894082388725
+      TrasgoIdle_14: -197566825423322036
+      TrasgoIdle_15: -4951406454562174955
+      TrasgoIdle_16: 4557221009850026179
+      TrasgoIdle_17: 542996924182930332
+      TrasgoIdle_18: 466886142750672368
+      TrasgoIdle_19: 126055647111256146
+      TrasgoIdle_2: 5233519189882791995
+      TrasgoIdle_20: -3283032082539353600
+      TrasgoIdle_21: -5420546843860263028
+      TrasgoIdle_22: 5029757044526811345
+      TrasgoIdle_23: -7107794730760844111
+      TrasgoIdle_24: -7395282016350036612
+      TrasgoIdle_25: -89954698656646209
+      TrasgoIdle_26: 3138000397191366382
+      TrasgoIdle_27: -3060808563996176086
+      TrasgoIdle_28: 2288325470345558421
+      TrasgoIdle_29: 4244826337064696794
+      TrasgoIdle_3: -2937329967007607043
+      TrasgoIdle_30: -3462589012547107545
+      TrasgoIdle_31: -2830361172756364105
+      TrasgoIdle_32: 856139864343504635
+      TrasgoIdle_33: 3331002169609209229
+      TrasgoIdle_34: -7234354882621280744
+      TrasgoIdle_35: -8513707852224868582
+      TrasgoIdle_36: 4137456225214543092
+      TrasgoIdle_37: 5882369720617265769
+      TrasgoIdle_38: 6668174894491778291
+      TrasgoIdle_39: 2960549130893287738
+      TrasgoIdle_4: -8623769806013452403
+      TrasgoIdle_40: 1265825672726092169
+      TrasgoIdle_41: -7771777294529169399
+      TrasgoIdle_42: -7993371074458134287
+      TrasgoIdle_43: -2062617591436588576
+      TrasgoIdle_44: -1483360592409739154
+      TrasgoIdle_45: -7600888501234552495
+      TrasgoIdle_46: -5658955388053568837
+      TrasgoIdle_47: 7708402218916723049
+      TrasgoIdle_48: 1420953713978927651
+      TrasgoIdle_49: 8751799447911767593
+      TrasgoIdle_5: -2893271906628547226
+      TrasgoIdle_50: -9174750681197141679
+      TrasgoIdle_51: -2771233660904718253
+      TrasgoIdle_52: 1419931721419447916
+      TrasgoIdle_53: -5848775177857014380
+      TrasgoIdle_54: -4842892609504714399
+      TrasgoIdle_55: 4466780873871276126
+      TrasgoIdle_56: -6676975849576635435
+      TrasgoIdle_57: 5684162467972859957
+      TrasgoIdle_58: -2445793380060520244
+      TrasgoIdle_59: -7614535335093036398
+      TrasgoIdle_6: 585424324759868714
+      TrasgoIdle_60: 2246321347039548857
+      TrasgoIdle_61: -7605146662381050582
+      TrasgoIdle_62: -4026334029751651426
+      TrasgoIdle_63: 2712728209058146131
+      TrasgoIdle_7: 4920840038594974783
+      TrasgoIdle_8: -3709315709989710206
+      TrasgoIdle_9: -8380059407062927202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

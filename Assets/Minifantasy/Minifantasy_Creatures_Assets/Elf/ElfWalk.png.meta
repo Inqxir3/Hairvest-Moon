@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ElfWalk_0: 1266240345710302426
+      ElfWalk_1: 7418444675378601183
+      ElfWalk_10: 6795147673118846046
+      ElfWalk_11: -7426530822259351704
+      ElfWalk_12: -8436696041363570447
+      ElfWalk_13: -1303542697892263298
+      ElfWalk_14: 8280440607921493036
+      ElfWalk_15: 3330853623264573021
+      ElfWalk_2: 499027150623199441
+      ElfWalk_3: -398732286870569021
+      ElfWalk_4: -7199362767330599633
+      ElfWalk_5: 6095804312431779378
+      ElfWalk_6: 728699590515320811
+      ElfWalk_7: 658752548435675053
+      ElfWalk_8: 2176138273897629694
+      ElfWalk_9: 2276601171948361277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

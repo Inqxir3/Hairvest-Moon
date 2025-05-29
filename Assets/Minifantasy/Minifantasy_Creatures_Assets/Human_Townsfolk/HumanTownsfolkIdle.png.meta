@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HumanTownsfolkIdle_0: 7635750085193911923
+      HumanTownsfolkIdle_1: -5897026049252757534
+      HumanTownsfolkIdle_10: -2205896528802487336
+      HumanTownsfolkIdle_11: -3136283335699998699
+      HumanTownsfolkIdle_12: -3068014518613219243
+      HumanTownsfolkIdle_13: -621948967851832295
+      HumanTownsfolkIdle_14: 3597056613557431832
+      HumanTownsfolkIdle_15: 933190557430328091
+      HumanTownsfolkIdle_16: -3045270585738433708
+      HumanTownsfolkIdle_17: -5189544928884776472
+      HumanTownsfolkIdle_18: -7356574870832005987
+      HumanTownsfolkIdle_19: -3457246275871852875
+      HumanTownsfolkIdle_2: -2850297481404036698
+      HumanTownsfolkIdle_20: -800854754755692237
+      HumanTownsfolkIdle_21: -8175141818469630108
+      HumanTownsfolkIdle_22: -2666112967025255949
+      HumanTownsfolkIdle_23: -5015639661445373363
+      HumanTownsfolkIdle_24: -1414762760110211320
+      HumanTownsfolkIdle_25: 8406859854981980249
+      HumanTownsfolkIdle_26: 7490918280049615914
+      HumanTownsfolkIdle_27: -7617707942329993799
+      HumanTownsfolkIdle_28: -2309195043078200986
+      HumanTownsfolkIdle_29: 8747020603435442312
+      HumanTownsfolkIdle_3: -6582978865605307341
+      HumanTownsfolkIdle_30: -5111090570985922673
+      HumanTownsfolkIdle_31: 1147170470937105006
+      HumanTownsfolkIdle_32: -1750552978041837470
+      HumanTownsfolkIdle_33: -4232249599807491336
+      HumanTownsfolkIdle_34: 9037622383303489587
+      HumanTownsfolkIdle_35: -2275043597134092633
+      HumanTownsfolkIdle_36: 7465046044084794829
+      HumanTownsfolkIdle_37: -1851024205449658870
+      HumanTownsfolkIdle_38: 7237621678488660994
+      HumanTownsfolkIdle_39: 8209143291188120919
+      HumanTownsfolkIdle_4: 5079986382530917938
+      HumanTownsfolkIdle_40: 2667653125661290776
+      HumanTownsfolkIdle_41: 1835098354552841776
+      HumanTownsfolkIdle_42: 4700091307347125248
+      HumanTownsfolkIdle_43: -4230645525134838276
+      HumanTownsfolkIdle_44: -335595289052080849
+      HumanTownsfolkIdle_45: -7811527005146260318
+      HumanTownsfolkIdle_46: 7371083256868916890
+      HumanTownsfolkIdle_47: 4215053091313590838
+      HumanTownsfolkIdle_48: -7304090540913024809
+      HumanTownsfolkIdle_49: 892704762432151110
+      HumanTownsfolkIdle_5: -5881733686598354783
+      HumanTownsfolkIdle_50: 4081062931158059966
+      HumanTownsfolkIdle_51: 4784893720979164807
+      HumanTownsfolkIdle_52: 1687543255669228074
+      HumanTownsfolkIdle_53: 6789478317698304336
+      HumanTownsfolkIdle_54: 6750363956630155754
+      HumanTownsfolkIdle_55: -8541947812570757392
+      HumanTownsfolkIdle_56: -3639876452510823774
+      HumanTownsfolkIdle_57: -4935804391027434981
+      HumanTownsfolkIdle_58: -7391312611075288765
+      HumanTownsfolkIdle_59: -2715988910635423575
+      HumanTownsfolkIdle_6: 5033311719573046143
+      HumanTownsfolkIdle_60: -4364729695995899235
+      HumanTownsfolkIdle_61: -7810337345919733171
+      HumanTownsfolkIdle_62: 456860591281495214
+      HumanTownsfolkIdle_63: 2381909949559479464
+      HumanTownsfolkIdle_7: -7565683692816873591
+      HumanTownsfolkIdle_8: 5899246723219097322
+      HumanTownsfolkIdle_9: -2865475845903650534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

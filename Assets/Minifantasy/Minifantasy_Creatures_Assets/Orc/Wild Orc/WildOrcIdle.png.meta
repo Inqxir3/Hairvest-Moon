@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WildOrcIdle_0: -7333561172875363882
+      WildOrcIdle_1: 2211104421533053579
+      WildOrcIdle_10: 2643367557577060048
+      WildOrcIdle_11: -7986643801717759169
+      WildOrcIdle_12: -5112878144735881831
+      WildOrcIdle_13: -8554957629693082046
+      WildOrcIdle_14: -6324223206944136284
+      WildOrcIdle_15: 4501072889070088407
+      WildOrcIdle_16: 8546519617999311666
+      WildOrcIdle_17: 5290192523133919015
+      WildOrcIdle_18: -3208375248626811071
+      WildOrcIdle_19: -2105748926617699619
+      WildOrcIdle_2: 8290466550494135052
+      WildOrcIdle_20: 5884410141195800559
+      WildOrcIdle_21: 6193777402548476321
+      WildOrcIdle_22: 5167423521876078350
+      WildOrcIdle_23: -1847582206636106985
+      WildOrcIdle_24: -5140426984765341050
+      WildOrcIdle_25: 3367863630928062087
+      WildOrcIdle_26: -6193112091885935362
+      WildOrcIdle_27: -2947652379563908581
+      WildOrcIdle_28: 267926317055905869
+      WildOrcIdle_29: -2010319038436027863
+      WildOrcIdle_3: -1259242441368143462
+      WildOrcIdle_30: 8629745414544207506
+      WildOrcIdle_31: -8893799028085176628
+      WildOrcIdle_32: 9077197462721698522
+      WildOrcIdle_33: 8309187871982188350
+      WildOrcIdle_34: -4899556069103028681
+      WildOrcIdle_35: -7711806651014725065
+      WildOrcIdle_36: -8555253811289289552
+      WildOrcIdle_37: 4105026648272787253
+      WildOrcIdle_38: 685911302280041610
+      WildOrcIdle_39: -1170996861959992233
+      WildOrcIdle_4: -16656306271018849
+      WildOrcIdle_40: -5957967404768669093
+      WildOrcIdle_41: 8659748806498437489
+      WildOrcIdle_42: -2707783037326661897
+      WildOrcIdle_43: 5723717330318213578
+      WildOrcIdle_44: 706695438370012930
+      WildOrcIdle_45: -5016867675089358148
+      WildOrcIdle_46: -7972801817263587000
+      WildOrcIdle_47: 1635569836646558606
+      WildOrcIdle_48: -3344462200938603998
+      WildOrcIdle_49: 7944915607527907823
+      WildOrcIdle_5: -557304203530206126
+      WildOrcIdle_50: 7359624506363287545
+      WildOrcIdle_51: 5286570728797100918
+      WildOrcIdle_52: 767190402559213696
+      WildOrcIdle_53: -7831769445592979493
+      WildOrcIdle_54: 1871519905524201752
+      WildOrcIdle_55: 1539602738475681590
+      WildOrcIdle_56: 1841367630037971045
+      WildOrcIdle_57: 1054093399806183355
+      WildOrcIdle_58: 680406277223294453
+      WildOrcIdle_59: -1001217870073566476
+      WildOrcIdle_6: 4399226608145269746
+      WildOrcIdle_60: -605733879243150712
+      WildOrcIdle_61: 5125128132470845164
+      WildOrcIdle_62: 3807685623747037307
+      WildOrcIdle_63: 3156390992904909975
+      WildOrcIdle_7: 952349538559305785
+      WildOrcIdle_8: 4727792626251761472
+      WildOrcIdle_9: 51179817364716621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

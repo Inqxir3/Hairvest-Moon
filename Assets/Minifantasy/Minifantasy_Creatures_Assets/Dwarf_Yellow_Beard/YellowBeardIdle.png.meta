@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowBeardIdle_0: -7068485198307749546
+      YellowBeardIdle_1: -4944265505148047311
+      YellowBeardIdle_10: -758433860498925152
+      YellowBeardIdle_11: 7023782181724918462
+      YellowBeardIdle_12: 8483203885035425026
+      YellowBeardIdle_13: -6450288757619816252
+      YellowBeardIdle_14: -3030714960837472454
+      YellowBeardIdle_15: 4846601698662689213
+      YellowBeardIdle_16: 3438339022656860404
+      YellowBeardIdle_17: 334142739073730294
+      YellowBeardIdle_18: -7819809795883778824
+      YellowBeardIdle_19: 8078892595328374414
+      YellowBeardIdle_2: 2005329762948673077
+      YellowBeardIdle_20: -8852583794982664625
+      YellowBeardIdle_21: -7777116462173348549
+      YellowBeardIdle_22: 1780054281291624850
+      YellowBeardIdle_23: -6873597092757868704
+      YellowBeardIdle_24: -1269559940049599549
+      YellowBeardIdle_25: -6331323539049994097
+      YellowBeardIdle_26: -4955946663215336586
+      YellowBeardIdle_27: -5725032502190303557
+      YellowBeardIdle_28: 8862030327731408190
+      YellowBeardIdle_29: -1684472824969023398
+      YellowBeardIdle_3: 2585204102977371194
+      YellowBeardIdle_30: -108517706053305399
+      YellowBeardIdle_31: -7519808980304262693
+      YellowBeardIdle_32: 7478252251535655368
+      YellowBeardIdle_33: 2821903540455449859
+      YellowBeardIdle_34: 2839324703734285714
+      YellowBeardIdle_35: -3686280992399194535
+      YellowBeardIdle_36: 4073837614219997550
+      YellowBeardIdle_37: -82431752106371755
+      YellowBeardIdle_38: -3566980287873423854
+      YellowBeardIdle_39: -1784669245214853938
+      YellowBeardIdle_4: -6123007264671804300
+      YellowBeardIdle_40: 435362243847082352
+      YellowBeardIdle_41: 6789436861424388817
+      YellowBeardIdle_42: 6796426347567312497
+      YellowBeardIdle_43: -8272925401824067093
+      YellowBeardIdle_44: 2463315055407196121
+      YellowBeardIdle_45: -5333439165817109031
+      YellowBeardIdle_46: 6410666619026133878
+      YellowBeardIdle_47: 4323852655858999808
+      YellowBeardIdle_48: -218119559710098674
+      YellowBeardIdle_49: 4181132105722304643
+      YellowBeardIdle_5: -2676252396994252166
+      YellowBeardIdle_50: 4830668855102892597
+      YellowBeardIdle_51: -4596632443217032275
+      YellowBeardIdle_52: 6389042748960960457
+      YellowBeardIdle_53: -8039210652784911058
+      YellowBeardIdle_54: 1418619927671524224
+      YellowBeardIdle_55: 5775733052979006541
+      YellowBeardIdle_56: 4175682225805494714
+      YellowBeardIdle_57: -5449634958721294242
+      YellowBeardIdle_58: -4755767267529887233
+      YellowBeardIdle_59: -4815991479917549888
+      YellowBeardIdle_6: -1597139007596056073
+      YellowBeardIdle_60: -1318090666237858777
+      YellowBeardIdle_61: 3108011519886941697
+      YellowBeardIdle_62: 1472795201538933295
+      YellowBeardIdle_63: 4738852386487271840
+      YellowBeardIdle_7: 4701420652006689696
+      YellowBeardIdle_8: -711776942930096329
+      YellowBeardIdle_9: 8941987448651761710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

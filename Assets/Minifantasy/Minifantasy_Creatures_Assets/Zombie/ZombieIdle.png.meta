@@ -150,6 +150,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -584,7 +610,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ZombieIdle_0: 1307261339070176888
+      ZombieIdle_1: 6861165980009449592
+      ZombieIdle_10: -4494689318202469545
+      ZombieIdle_11: -6725787519626402219
+      ZombieIdle_12: 1185545965976978201
+      ZombieIdle_13: 7975015833439653036
+      ZombieIdle_14: -3463325680782155235
+      ZombieIdle_15: -371363313960552637
+      ZombieIdle_16: 8904638510699233797
+      ZombieIdle_17: 1739704838144454057
+      ZombieIdle_18: -4640157328343726699
+      ZombieIdle_2: 5753996667126049884
+      ZombieIdle_3: 4479259917525997916
+      ZombieIdle_4: 4791347545440075853
+      ZombieIdle_5: 836320356344149201
+      ZombieIdle_6: -4415262307601637622
+      ZombieIdle_7: -709018972853211622
+      ZombieIdle_8: -8265785211211667170
+      ZombieIdle_9: 3544874867746675615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

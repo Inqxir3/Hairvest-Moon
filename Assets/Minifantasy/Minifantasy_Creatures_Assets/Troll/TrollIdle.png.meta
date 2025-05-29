@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TrollIdle_0: 8832499859228829300
+      TrollIdle_1: -686232998992112530
+      TrollIdle_10: -7823309825971795920
+      TrollIdle_11: 6125916729545812
+      TrollIdle_12: -2837277682007236165
+      TrollIdle_13: 5094189611375315335
+      TrollIdle_14: 614581746245375528
+      TrollIdle_15: 8725914903864305906
+      TrollIdle_16: 2789767283141792360
+      TrollIdle_17: -8644223787399722643
+      TrollIdle_18: -2385100530736690276
+      TrollIdle_19: -8171977309950215117
+      TrollIdle_2: 6206301185546757787
+      TrollIdle_20: -1193580217599184897
+      TrollIdle_21: -2505107378252255257
+      TrollIdle_22: 8238664721479592431
+      TrollIdle_23: -7618317182728151907
+      TrollIdle_24: 4732413881898051861
+      TrollIdle_25: 8873291965248047471
+      TrollIdle_26: 2461124909847385119
+      TrollIdle_27: 7666464007701760486
+      TrollIdle_28: 7160086900955284518
+      TrollIdle_29: -3698113607651928964
+      TrollIdle_3: 4432967830720773439
+      TrollIdle_30: 2248140902036423735
+      TrollIdle_31: 3871674932738077195
+      TrollIdle_32: 6604531847301755983
+      TrollIdle_33: -2158192900476822046
+      TrollIdle_34: 3972488584573691896
+      TrollIdle_35: -7584234660809916344
+      TrollIdle_36: 4955452518226584024
+      TrollIdle_37: -6126495296141158030
+      TrollIdle_38: 5717618615031939835
+      TrollIdle_39: -8297903884362530534
+      TrollIdle_4: 7534526024942881275
+      TrollIdle_40: 4459701810945284998
+      TrollIdle_41: 8978410772695319430
+      TrollIdle_42: 5059353189059533949
+      TrollIdle_43: -3842030606183883969
+      TrollIdle_44: -2426213173250903423
+      TrollIdle_45: 5569241980854891545
+      TrollIdle_46: 7720973022739025956
+      TrollIdle_47: 2368505230683040975
+      TrollIdle_48: -184878994935793903
+      TrollIdle_49: -2343285704038145858
+      TrollIdle_5: 3211189956416581777
+      TrollIdle_50: -4476804081540326615
+      TrollIdle_51: 5506333294554819567
+      TrollIdle_52: 5231578754523646482
+      TrollIdle_53: -4187160624259946354
+      TrollIdle_54: 8123380042935110223
+      TrollIdle_55: -7980244903417030157
+      TrollIdle_56: 4988320106136580396
+      TrollIdle_57: -4797710974917964751
+      TrollIdle_58: 7628090764657701965
+      TrollIdle_59: 3851368348553915456
+      TrollIdle_6: 907068198250435784
+      TrollIdle_60: -9217330690407962460
+      TrollIdle_61: 7452391634019294172
+      TrollIdle_62: -6794760917396258719
+      TrollIdle_63: 991124676409013393
+      TrollIdle_7: 5712856695381697195
+      TrollIdle_8: -362285941488211412
+      TrollIdle_9: -7249265959170714290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

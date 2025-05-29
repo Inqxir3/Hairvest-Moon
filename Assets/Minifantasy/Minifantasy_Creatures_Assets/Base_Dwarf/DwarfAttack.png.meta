@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DwarfAttack_0: -1306946229431199242
+      DwarfAttack_1: -2846820580558651720
+      DwarfAttack_10: 7152474988670255559
+      DwarfAttack_11: -8939184247006032831
+      DwarfAttack_12: 6597524042827416020
+      DwarfAttack_13: 8605425408245777842
+      DwarfAttack_14: 1654224221078221332
+      DwarfAttack_15: 7186566609365388123
+      DwarfAttack_2: 6333252947491837621
+      DwarfAttack_3: 5426255964774971871
+      DwarfAttack_4: 3674384124126315355
+      DwarfAttack_5: -4523876153506350588
+      DwarfAttack_6: -4155762395816164823
+      DwarfAttack_7: -2273499659932370509
+      DwarfAttack_8: -4327224660527990366
+      DwarfAttack_9: 7575233999829538344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

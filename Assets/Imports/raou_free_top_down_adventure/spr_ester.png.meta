@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_ester_0: 7453665089872948624
+      spr_ester_1: 1301567984452212980
+      spr_ester_10: 1173617183788559160
+      spr_ester_11: 3444378884403522863
+      spr_ester_12: -6450509684164303076
+      spr_ester_13: 8302622320448331576
+      spr_ester_14: 7160919516370328159
+      spr_ester_15: 5213916508208859844
+      spr_ester_2: -1578891989163189597
+      spr_ester_3: 6042621712101422872
+      spr_ester_4: -2143972404909622745
+      spr_ester_5: -1661652956032958307
+      spr_ester_6: 4058617012216254949
+      spr_ester_7: -4132924886261125557
+      spr_ester_8: -992980525306363628
+      spr_ester_9: -3726115210996581385
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

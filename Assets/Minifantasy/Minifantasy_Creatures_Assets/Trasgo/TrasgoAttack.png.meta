@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TrasgoAttack_0: -3842575339996789204
+      TrasgoAttack_1: -2444813863346291020
+      TrasgoAttack_10: 4870050617470284419
+      TrasgoAttack_11: 7914248267331918415
+      TrasgoAttack_12: 2682087349714139100
+      TrasgoAttack_13: -7968068644022832424
+      TrasgoAttack_14: -1159735183935636221
+      TrasgoAttack_15: -8133050835287564475
+      TrasgoAttack_2: -833431555771681596
+      TrasgoAttack_3: -4809655344797681697
+      TrasgoAttack_4: -5290834535572861495
+      TrasgoAttack_5: 1229874846029987307
+      TrasgoAttack_6: 5670012428270424295
+      TrasgoAttack_7: -6413370193980442056
+      TrasgoAttack_8: 298868158190899202
+      TrasgoAttack_9: -3058336271131738656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

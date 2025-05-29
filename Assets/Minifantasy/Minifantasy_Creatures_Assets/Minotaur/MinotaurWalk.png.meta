@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MinotaurWalk_0: -5685493141332665261
+      MinotaurWalk_1: 3089134658185812999
+      MinotaurWalk_10: 1361244817753021128
+      MinotaurWalk_11: -7830970572651240251
+      MinotaurWalk_12: 2090923402791091525
+      MinotaurWalk_13: -948430175442552824
+      MinotaurWalk_14: -5325341989230947637
+      MinotaurWalk_15: -289275016595604699
+      MinotaurWalk_16: -7807159403438477830
+      MinotaurWalk_17: -1637624241236989692
+      MinotaurWalk_18: -8027388935900146792
+      MinotaurWalk_19: -2547393206233371382
+      MinotaurWalk_2: -5128408116529939208
+      MinotaurWalk_20: -559087631787640940
+      MinotaurWalk_21: 1255909461481471004
+      MinotaurWalk_22: 471746597072928910
+      MinotaurWalk_23: -3301005174898465832
+      MinotaurWalk_3: 2582314957478472552
+      MinotaurWalk_4: -5172256979539629431
+      MinotaurWalk_5: 7561833386828865412
+      MinotaurWalk_6: 4957889071442673035
+      MinotaurWalk_7: -4124738338739276030
+      MinotaurWalk_8: 2827843698448983510
+      MinotaurWalk_9: -6681086725294790452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

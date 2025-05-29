@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_0: 4335615518227677527
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_1: -2820388356847744998
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_10: -8308350928415981137
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_11: 1556335541417725722
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_12: 364397992190355427
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_13: 3821581462561638488
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_14: 4143359750333891862
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_15: -2278572129325861520
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_16: -5817941619318780352
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_17: 898406385758895356
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_2: -165603153556209573
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_3: 6243789159181190120
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_4: 475529353068792271
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_5: -5694113103235479120
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_6: -5698053529263082204
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_7: -33659147041767169
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_8: 6131277697616387032
+      Minifantasy_TownsIIWoodenPlankBuildingIndoorTileset_9: 2913803699766527422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

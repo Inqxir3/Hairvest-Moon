@@ -243,6 +243,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1359,7 +1385,57 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_0: 5166553934280569670
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_1: 2919814804076309789
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_10: 4339006568681418096
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_11: 3653885153610217765
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_12: -2499786920388414889
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_13: -5354285351675216805
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_14: -3908135681667206644
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_15: 241999612655710038
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_16: -561029472600181924
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_17: 4531195551673281617
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_18: -4082398800933176054
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_19: 5252934926469660975
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_2: -7041848148789183424
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_20: 3340351491105199207
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_21: 1065263830346385451
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_22: 6627280795888436225
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_23: -1968501043553558487
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_24: 1585402885462735486
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_25: 2934840299349521695
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_26: -2889484318787682884
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_27: 4363894422105757058
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_28: 380683237353796780
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_29: 407079185217473844
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_3: -8292892515959786580
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_30: -5261334585011482869
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_31: 1777018321147933565
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_32: 574954165048802685
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_33: -9028222075940135358
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_34: -4764330024304998202
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_35: -5582467625455904236
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_36: 6441856195459202932
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_37: -5442989396100131615
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_38: -1605010423812693698
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_39: 3725407401804419866
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_4: -336859024975682138
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_40: -2036739277776003791
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_41: -1656427163457905994
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_42: 1214993657184459128
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_43: 8299621038796777468
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_44: 2696425306004727625
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_45: -579061539559439058
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_46: -187073253984450082
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_47: 7454680168559602484
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_48: 7791404765068159009
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_49: -6415509926925875258
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_5: -2234715570812895058
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_6: -7523004262408632118
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_7: 8275743407030406480
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_8: 2022821371976444485
+      Minifantasy_TownsIIBrickBuildingIndoorTileset_9: -8820601943252138288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

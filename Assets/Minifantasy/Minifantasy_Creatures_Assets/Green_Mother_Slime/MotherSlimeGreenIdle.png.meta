@@ -189,6 +189,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -909,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MotherSlimeGreenIdle_0: -8910283570343621005
+      MotherSlimeGreenIdle_1: -1398746078757307081
+      MotherSlimeGreenIdle_10: 5787292468076494854
+      MotherSlimeGreenIdle_11: 4735232821280317078
+      MotherSlimeGreenIdle_12: -7095978850493672580
+      MotherSlimeGreenIdle_13: 4025341183712411983
+      MotherSlimeGreenIdle_14: 7547323606996794351
+      MotherSlimeGreenIdle_15: 3084529074703064765
+      MotherSlimeGreenIdle_16: -8175684826433798944
+      MotherSlimeGreenIdle_17: -4440065673113186957
+      MotherSlimeGreenIdle_18: -2695661301381214161
+      MotherSlimeGreenIdle_19: -7054000570914340986
+      MotherSlimeGreenIdle_2: 4203873294006186782
+      MotherSlimeGreenIdle_20: 8294563852008375851
+      MotherSlimeGreenIdle_21: -2025181369019538398
+      MotherSlimeGreenIdle_22: 354930244377214088
+      MotherSlimeGreenIdle_23: -1807348468991227105
+      MotherSlimeGreenIdle_24: -5751468290782489568
+      MotherSlimeGreenIdle_25: 720025896584824599
+      MotherSlimeGreenIdle_26: 6703315118084196830
+      MotherSlimeGreenIdle_27: 4736865733029048646
+      MotherSlimeGreenIdle_28: 8662728769444983225
+      MotherSlimeGreenIdle_29: -5388497512563070225
+      MotherSlimeGreenIdle_3: 1587737276756804678
+      MotherSlimeGreenIdle_30: 44441332377541666
+      MotherSlimeGreenIdle_31: 947685241234720090
+      MotherSlimeGreenIdle_4: -5238477385673857307
+      MotherSlimeGreenIdle_5: 262820975705515397
+      MotherSlimeGreenIdle_6: -6376123966709011937
+      MotherSlimeGreenIdle_7: -3829029977121593089
+      MotherSlimeGreenIdle_8: 2836313511367181231
+      MotherSlimeGreenIdle_9: -4131717775563516067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

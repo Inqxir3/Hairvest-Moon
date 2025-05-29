@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PumpkinHorrorBaseDmg_0: 8371959899653733014
+      PumpkinHorrorBaseDmg_1: 8131684376562928504
+      PumpkinHorrorBaseDmg_10: -44766395823384545
+      PumpkinHorrorBaseDmg_11: -1565630095233051850
+      PumpkinHorrorBaseDmg_12: -6285278288271498062
+      PumpkinHorrorBaseDmg_13: 1088408526453971579
+      PumpkinHorrorBaseDmg_14: 1998434983458646158
+      PumpkinHorrorBaseDmg_15: 1843348210367587367
+      PumpkinHorrorBaseDmg_2: 6749821651903098403
+      PumpkinHorrorBaseDmg_3: -4172192407509701239
+      PumpkinHorrorBaseDmg_4: -7236426049139982773
+      PumpkinHorrorBaseDmg_5: -6083718119395570890
+      PumpkinHorrorBaseDmg_6: 4643191140309584029
+      PumpkinHorrorBaseDmg_7: -677324124014082201
+      PumpkinHorrorBaseDmg_8: -1008402128378279763
+      PumpkinHorrorBaseDmg_9: 5494768456259136734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

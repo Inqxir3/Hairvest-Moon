@@ -330,6 +330,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2084,7 +2110,86 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Premade_d-shadows_2_0: -6349029367047239693
+      Premade_d-shadows_2_1: -7781826426702255456
+      Premade_d-shadows_2_10: 6894411150392401880
+      Premade_d-shadows_2_11: -8837751443962130758
+      Premade_d-shadows_2_12: 1322905478302327026
+      Premade_d-shadows_2_13: -5673912159711685720
+      Premade_d-shadows_2_14: 2141093903831665689
+      Premade_d-shadows_2_15: 6620976350723986010
+      Premade_d-shadows_2_16: 1185909486184377779
+      Premade_d-shadows_2_17: -3882031673115127059
+      Premade_d-shadows_2_18: 2523344160053066895
+      Premade_d-shadows_2_19: -8772666827050696537
+      Premade_d-shadows_2_2: 6076499149882824553
+      Premade_d-shadows_2_20: 2599493479335688189
+      Premade_d-shadows_2_21: 7254808716312323142
+      Premade_d-shadows_2_22: -7783552896961090455
+      Premade_d-shadows_2_23: 5944389506286114022
+      Premade_d-shadows_2_24: -1351921934636180081
+      Premade_d-shadows_2_25: -4769183027464014657
+      Premade_d-shadows_2_26: 3067192778484474978
+      Premade_d-shadows_2_27: 4341695017315729235
+      Premade_d-shadows_2_28: -7627810075415258456
+      Premade_d-shadows_2_29: -2344199238689191837
+      Premade_d-shadows_2_3: -6360285751641450166
+      Premade_d-shadows_2_30: 2761283074189350351
+      Premade_d-shadows_2_31: -8223197705395654257
+      Premade_d-shadows_2_32: 9117234395236907733
+      Premade_d-shadows_2_33: -1136070821433182724
+      Premade_d-shadows_2_34: 7305802014879113574
+      Premade_d-shadows_2_35: 268772793410621141
+      Premade_d-shadows_2_36: -8289189591614758506
+      Premade_d-shadows_2_37: 1949679118609469728
+      Premade_d-shadows_2_38: -2742823493046716221
+      Premade_d-shadows_2_39: 5589430513229095479
+      Premade_d-shadows_2_4: -8873058132029693334
+      Premade_d-shadows_2_40: -4818272538046634959
+      Premade_d-shadows_2_41: -4081449069567183618
+      Premade_d-shadows_2_42: 5735097005383063853
+      Premade_d-shadows_2_43: -7475528361298417747
+      Premade_d-shadows_2_44: 7645377589842468054
+      Premade_d-shadows_2_45: 1305500774769906690
+      Premade_d-shadows_2_46: 6715770348582892073
+      Premade_d-shadows_2_47: 5648123817457527328
+      Premade_d-shadows_2_48: 6336819928755206126
+      Premade_d-shadows_2_49: 4620161550772425026
+      Premade_d-shadows_2_5: -5067293695964829133
+      Premade_d-shadows_2_50: -4839710982924373613
+      Premade_d-shadows_2_51: 5328034582324285460
+      Premade_d-shadows_2_52: 105637890558708297
+      Premade_d-shadows_2_53: 3292172205680036983
+      Premade_d-shadows_2_54: 8944085077904938183
+      Premade_d-shadows_2_55: -6326352788033963140
+      Premade_d-shadows_2_56: -5239484494049610312
+      Premade_d-shadows_2_57: -4706705705225510852
+      Premade_d-shadows_2_58: -3577906848361575842
+      Premade_d-shadows_2_59: 4042567666170444520
+      Premade_d-shadows_2_6: 3452666182871696115
+      Premade_d-shadows_2_60: 7626781770546531288
+      Premade_d-shadows_2_61: 1545560846491453683
+      Premade_d-shadows_2_62: -6004365515750957081
+      Premade_d-shadows_2_63: 6131979037959379483
+      Premade_d-shadows_2_64: -6810034609255682243
+      Premade_d-shadows_2_65: 9024294303167539311
+      Premade_d-shadows_2_66: 8285357710501143468
+      Premade_d-shadows_2_67: -1361343675605607175
+      Premade_d-shadows_2_68: 4361431387676001062
+      Premade_d-shadows_2_69: -5648504424321838500
+      Premade_d-shadows_2_7: -3510443836397919989
+      Premade_d-shadows_2_70: -6585907153152933401
+      Premade_d-shadows_2_71: 4949777823888635176
+      Premade_d-shadows_2_72: -914674342914932561
+      Premade_d-shadows_2_73: -1453671795624828556
+      Premade_d-shadows_2_74: 5716754098014406121
+      Premade_d-shadows_2_75: 3838981876821010728
+      Premade_d-shadows_2_76: 3050194201563283926
+      Premade_d-shadows_2_77: 230091845291396848
+      Premade_d-shadows_2_78: 8624220884408398248
+      Premade_d-shadows_2_8: 439234894525658148
+      Premade_d-shadows_2_9: 430776296531333258
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

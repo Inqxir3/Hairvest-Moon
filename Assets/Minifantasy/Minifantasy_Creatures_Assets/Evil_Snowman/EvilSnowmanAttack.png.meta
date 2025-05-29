@@ -213,6 +213,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1109,7 +1135,47 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EvilSnowmanAttack_0: -8894478208887709590
+      EvilSnowmanAttack_1: 1905713894648970420
+      EvilSnowmanAttack_10: 2898817189419865629
+      EvilSnowmanAttack_11: 2350579450240588907
+      EvilSnowmanAttack_12: 3612272948971800849
+      EvilSnowmanAttack_13: 2715538051946451458
+      EvilSnowmanAttack_14: -543280481070902979
+      EvilSnowmanAttack_15: -3049080763396878940
+      EvilSnowmanAttack_16: -1107031771450938940
+      EvilSnowmanAttack_17: 5124019587264962123
+      EvilSnowmanAttack_18: 1517176357294805262
+      EvilSnowmanAttack_19: 3207614312282097303
+      EvilSnowmanAttack_2: 5214313386648433808
+      EvilSnowmanAttack_20: -4048404291047916534
+      EvilSnowmanAttack_21: -8063877464685377273
+      EvilSnowmanAttack_22: 1827407110890070755
+      EvilSnowmanAttack_23: 7210704628023271702
+      EvilSnowmanAttack_24: -7088881482220367426
+      EvilSnowmanAttack_25: 7213631530207669907
+      EvilSnowmanAttack_26: -5984042354284885073
+      EvilSnowmanAttack_27: -3005642919874374280
+      EvilSnowmanAttack_28: 3181538299590352651
+      EvilSnowmanAttack_29: 8353693887323076265
+      EvilSnowmanAttack_3: 2376929701388111619
+      EvilSnowmanAttack_30: -9216335592642845283
+      EvilSnowmanAttack_31: -2341679520114271504
+      EvilSnowmanAttack_32: -5367874636774488240
+      EvilSnowmanAttack_33: -2861028098580790183
+      EvilSnowmanAttack_34: -4629902650347484673
+      EvilSnowmanAttack_35: 920326874456827804
+      EvilSnowmanAttack_36: -1046125586531091199
+      EvilSnowmanAttack_37: 7156805185054359131
+      EvilSnowmanAttack_38: 2147325431733748363
+      EvilSnowmanAttack_39: 2490226203746911734
+      EvilSnowmanAttack_4: 5908330190153666677
+      EvilSnowmanAttack_5: 1431097656335888370
+      EvilSnowmanAttack_6: -5864597079470199319
+      EvilSnowmanAttack_7: -2222301594358123261
+      EvilSnowmanAttack_8: 2916730537991317254
+      EvilSnowmanAttack_9: 862808059567211192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DwarfJump_0: 8074629274853984238
+      DwarfJump_1: 5356664294803420840
+      DwarfJump_10: -739893797508994000
+      DwarfJump_11: -302234276227588703
+      DwarfJump_12: -6128625302727233413
+      DwarfJump_13: -3973278998349151246
+      DwarfJump_14: -8319459564176207534
+      DwarfJump_15: -5477058498156540328
+      DwarfJump_2: 8025099828574636842
+      DwarfJump_3: 2390338429661098781
+      DwarfJump_4: -7457944655884075917
+      DwarfJump_5: -8903204295943753707
+      DwarfJump_6: -8782483629170014976
+      DwarfJump_7: -532241534033521029
+      DwarfJump_8: 4002328466844349695
+      DwarfJump_9: 7136593828372586390
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

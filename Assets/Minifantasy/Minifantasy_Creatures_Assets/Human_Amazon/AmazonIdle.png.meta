@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AmazonIdle_0: -8391843181304135033
+      AmazonIdle_1: 6697016496745977693
+      AmazonIdle_10: -6030600385269983149
+      AmazonIdle_11: 2079133559989201342
+      AmazonIdle_12: 4607408664895885125
+      AmazonIdle_13: -5783739131257828962
+      AmazonIdle_14: -7904785768634007554
+      AmazonIdle_15: -1182072035312840973
+      AmazonIdle_16: -7781370605349009478
+      AmazonIdle_17: -7940566291415727666
+      AmazonIdle_18: -2309188531129697919
+      AmazonIdle_19: 587212712226397940
+      AmazonIdle_2: -2702645362419797192
+      AmazonIdle_20: -7345399493774514155
+      AmazonIdle_21: 3874249362641838943
+      AmazonIdle_22: -583713128709638801
+      AmazonIdle_23: 1509317909934163657
+      AmazonIdle_24: -3295619258852722005
+      AmazonIdle_25: -5348929860357685043
+      AmazonIdle_26: 1163951247332478868
+      AmazonIdle_27: 3172485980958266652
+      AmazonIdle_28: 1384661378005944189
+      AmazonIdle_29: 9072216003929503755
+      AmazonIdle_3: -8505372633899701898
+      AmazonIdle_30: -6727638448253568198
+      AmazonIdle_31: 672842666593263643
+      AmazonIdle_32: 6219406620475175605
+      AmazonIdle_33: 8635118601642270852
+      AmazonIdle_34: -3745689622309439094
+      AmazonIdle_35: 7155365647664179091
+      AmazonIdle_36: 3787937013857851207
+      AmazonIdle_37: -1370324335128768742
+      AmazonIdle_38: -8270158426999219404
+      AmazonIdle_39: 6603468914309058178
+      AmazonIdle_4: 3215117264845754003
+      AmazonIdle_40: -8394663304903926719
+      AmazonIdle_41: -8527890720266779858
+      AmazonIdle_42: 734487535153316325
+      AmazonIdle_43: -8076361912592612683
+      AmazonIdle_44: -5005700018363894488
+      AmazonIdle_45: 4300871778105073860
+      AmazonIdle_46: 1148649888208188684
+      AmazonIdle_47: -1213866405303915798
+      AmazonIdle_48: 2413660865668304510
+      AmazonIdle_49: -67988167477974408
+      AmazonIdle_5: -2184463193072397638
+      AmazonIdle_50: 2944308626250940984
+      AmazonIdle_51: -2660924230119497763
+      AmazonIdle_52: 7612849631242492194
+      AmazonIdle_53: 1965795981308590356
+      AmazonIdle_54: 1613920938157932836
+      AmazonIdle_55: 7413905749326425774
+      AmazonIdle_56: 8881840547483209228
+      AmazonIdle_57: 398110711966261456
+      AmazonIdle_58: 845388736313312279
+      AmazonIdle_59: 3138480985230558594
+      AmazonIdle_6: -5464545961535865570
+      AmazonIdle_60: 8752500091854910306
+      AmazonIdle_61: 687150361835982003
+      AmazonIdle_62: -7334445259642103537
+      AmazonIdle_63: -8794764739254692320
+      AmazonIdle_7: 6653373101838980598
+      AmazonIdle_8: -1401185508780761720
+      AmazonIdle_9: -7648652830221809194
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

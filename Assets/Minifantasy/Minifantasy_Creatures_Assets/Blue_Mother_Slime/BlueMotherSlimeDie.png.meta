@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueMotherSlimeDie_0: -587385101600129006
+      BlueMotherSlimeDie_1: -5993370296065949071
+      BlueMotherSlimeDie_10: 3706133551707181743
+      BlueMotherSlimeDie_11: -1128719132718464696
+      BlueMotherSlimeDie_12: -1358329197524169074
+      BlueMotherSlimeDie_13: 8294703323337027136
+      BlueMotherSlimeDie_14: 911244936430523231
+      BlueMotherSlimeDie_15: -4344384578753281219
+      BlueMotherSlimeDie_16: -7958905830218193208
+      BlueMotherSlimeDie_17: 214108666369204003
+      BlueMotherSlimeDie_18: -7509891975388400736
+      BlueMotherSlimeDie_19: 2357851777622689405
+      BlueMotherSlimeDie_2: -7884204212857698684
+      BlueMotherSlimeDie_20: -49316144134783001
+      BlueMotherSlimeDie_21: 1785328966858947893
+      BlueMotherSlimeDie_22: -9214390874145007208
+      BlueMotherSlimeDie_23: 4837789839231308528
+      BlueMotherSlimeDie_3: -4790597896244013688
+      BlueMotherSlimeDie_4: -1802632182968346058
+      BlueMotherSlimeDie_5: 3310679848868917711
+      BlueMotherSlimeDie_6: 3256396968284918847
+      BlueMotherSlimeDie_7: 4579677929842718858
+      BlueMotherSlimeDie_8: -7516145247899427793
+      BlueMotherSlimeDie_9: 163699150991729652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

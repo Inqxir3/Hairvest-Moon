@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WolfJump_0: 3411950335495107053
+      WolfJump_1: 6716406675591653415
+      WolfJump_10: 4358031507352295806
+      WolfJump_11: 7466536646950376596
+      WolfJump_12: -7571837104186511084
+      WolfJump_13: 6568492378151941643
+      WolfJump_14: -7818567498415219223
+      WolfJump_15: -8143125662615446417
+      WolfJump_2: -4100554435559558555
+      WolfJump_3: -1343430487646291703
+      WolfJump_4: -2392490032331257580
+      WolfJump_5: -3110363771260332037
+      WolfJump_6: 2482994601242084380
+      WolfJump_7: -6238666431204704763
+      WolfJump_8: -2945524777835731805
+      WolfJump_9: 254246518670575351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

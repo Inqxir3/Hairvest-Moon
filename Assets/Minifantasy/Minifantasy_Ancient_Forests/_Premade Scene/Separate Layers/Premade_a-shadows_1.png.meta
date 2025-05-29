@@ -177,6 +177,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -809,7 +835,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Premade_a-shadows_1_0: -4469275231711823443
+      Premade_a-shadows_1_1: 4073948014372751257
+      Premade_a-shadows_1_10: 2912431673152448381
+      Premade_a-shadows_1_11: 1494400304799692175
+      Premade_a-shadows_1_12: 8581063504545028237
+      Premade_a-shadows_1_13: 7261247783894853110
+      Premade_a-shadows_1_14: -1831006181245857863
+      Premade_a-shadows_1_15: -5303436855869037582
+      Premade_a-shadows_1_16: -2097233866209970178
+      Premade_a-shadows_1_17: -1317072740324365978
+      Premade_a-shadows_1_18: 415053704908667745
+      Premade_a-shadows_1_19: -8038263847869116707
+      Premade_a-shadows_1_2: -4257562531362291999
+      Premade_a-shadows_1_20: 6221807002044083978
+      Premade_a-shadows_1_21: -1610848679024037368
+      Premade_a-shadows_1_22: -4764953221920159038
+      Premade_a-shadows_1_23: -7799111363799393536
+      Premade_a-shadows_1_24: -5338202385203870378
+      Premade_a-shadows_1_25: -2344985127539339496
+      Premade_a-shadows_1_26: -2387839400911851725
+      Premade_a-shadows_1_27: -2388033432699744827
+      Premade_a-shadows_1_3: -4028919908403526505
+      Premade_a-shadows_1_4: -3372133009581742805
+      Premade_a-shadows_1_5: -3679184006220201687
+      Premade_a-shadows_1_6: 7422792877698365893
+      Premade_a-shadows_1_7: 114235987780732598
+      Premade_a-shadows_1_8: -8102958623140359651
+      Premade_a-shadows_1_9: -4719258828775944329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

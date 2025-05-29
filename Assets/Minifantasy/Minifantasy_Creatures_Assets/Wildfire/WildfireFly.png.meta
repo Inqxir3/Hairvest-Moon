@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WildfireFly_0: 6175179119451075582
+      WildfireFly_1: 2058773399344310286
+      WildfireFly_10: -8602605616600104842
+      WildfireFly_11: 6428513110195284366
+      WildfireFly_12: -6528082130891563998
+      WildfireFly_13: 2402304398742105553
+      WildfireFly_14: 8584028431916727241
+      WildfireFly_15: -2208483584303013632
+      WildfireFly_2: 4733396057412689537
+      WildfireFly_3: 8978449111321813860
+      WildfireFly_4: -7131685546733992641
+      WildfireFly_5: 8890151139070157819
+      WildfireFly_6: 6631068014685145437
+      WildfireFly_7: -3917361313153910934
+      WildfireFly_8: 6161351021046801475
+      WildfireFly_9: 8101206102183218012
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

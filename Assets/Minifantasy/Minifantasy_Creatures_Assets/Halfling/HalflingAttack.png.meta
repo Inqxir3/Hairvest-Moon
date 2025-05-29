@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HalflingAttack_0: 763495071017127408
+      HalflingAttack_1: -6559598998584512842
+      HalflingAttack_10: 3601743136420748774
+      HalflingAttack_11: -4213419826589950836
+      HalflingAttack_12: -7657038916676832783
+      HalflingAttack_13: -5840007600952256320
+      HalflingAttack_14: -6990090887873265585
+      HalflingAttack_15: 2130559407388385073
+      HalflingAttack_2: 3446790317727727672
+      HalflingAttack_3: -5686490296449291933
+      HalflingAttack_4: 4462214101466606219
+      HalflingAttack_5: -6913688515705428817
+      HalflingAttack_6: -7447048991111067173
+      HalflingAttack_7: 4206467497509118448
+      HalflingAttack_8: 4625633874004592320
+      HalflingAttack_9: -787095274026815521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GoblinChargedAttack_0: -7880629220676177789
+      GoblinChargedAttack_1: -4477572563080090373
+      GoblinChargedAttack_10: -9040315267254700323
+      GoblinChargedAttack_11: -669348910415718605
+      GoblinChargedAttack_12: 5253974692822897315
+      GoblinChargedAttack_13: 426291344517568287
+      GoblinChargedAttack_14: -439276699085607784
+      GoblinChargedAttack_15: -5140167539342859197
+      GoblinChargedAttack_16: 7020940195189280914
+      GoblinChargedAttack_17: -3564416763877249339
+      GoblinChargedAttack_2: 1711787830097894283
+      GoblinChargedAttack_3: 8295493177166735783
+      GoblinChargedAttack_4: -8526473355301407492
+      GoblinChargedAttack_5: 1069696605688070824
+      GoblinChargedAttack_6: -1627976950189312234
+      GoblinChargedAttack_7: 1687113453731151718
+      GoblinChargedAttack_8: -2335780926205798415
+      GoblinChargedAttack_9: -2365221077787335853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

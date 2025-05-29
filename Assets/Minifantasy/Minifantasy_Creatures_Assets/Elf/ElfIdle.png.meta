@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ElfIdle_0: -7655150461635808075
+      ElfIdle_1: -8667766223454287856
+      ElfIdle_10: -6713838820181368030
+      ElfIdle_11: -4557944281275270270
+      ElfIdle_12: 4367003894546478710
+      ElfIdle_13: 6753292076831316684
+      ElfIdle_14: -9046492696596615916
+      ElfIdle_15: 5816444532226376111
+      ElfIdle_16: -3967932609275516713
+      ElfIdle_17: -7122188965887764885
+      ElfIdle_18: 1137568128532082979
+      ElfIdle_19: 5663872815447307897
+      ElfIdle_2: -2595090310506151524
+      ElfIdle_20: 3731506325907990700
+      ElfIdle_21: -6726076307018182301
+      ElfIdle_22: 4024893033564285351
+      ElfIdle_23: 144659656712534269
+      ElfIdle_24: 1805813244722361851
+      ElfIdle_25: -4718783251048737352
+      ElfIdle_26: 4991360828816901224
+      ElfIdle_27: -7440745773225810774
+      ElfIdle_28: -2850447771499993095
+      ElfIdle_29: 7975838936248693368
+      ElfIdle_3: -6512514389894776353
+      ElfIdle_30: 4015037882377301116
+      ElfIdle_31: -1276903341791543188
+      ElfIdle_32: 7184729921616434908
+      ElfIdle_33: 6616482124590799703
+      ElfIdle_34: 3215850976505841570
+      ElfIdle_35: 8877206517403261486
+      ElfIdle_36: -5283408251466655180
+      ElfIdle_37: -539835030816654719
+      ElfIdle_38: 3402819803832273340
+      ElfIdle_39: 2026097120949198792
+      ElfIdle_4: -6877456217864767121
+      ElfIdle_40: -7219404621974517171
+      ElfIdle_41: -1633716404717912262
+      ElfIdle_42: 3974116174298448722
+      ElfIdle_43: 1299373714003711855
+      ElfIdle_44: 5981972690282659192
+      ElfIdle_45: 2333361761325819613
+      ElfIdle_46: 8701656372928741689
+      ElfIdle_47: 6894977679700976579
+      ElfIdle_48: -481743520919011887
+      ElfIdle_49: 1750138646117868442
+      ElfIdle_5: -7484699579597957968
+      ElfIdle_50: 806774032468989182
+      ElfIdle_51: -4891004544623551632
+      ElfIdle_52: -22444240636819181
+      ElfIdle_53: -1859595192088151
+      ElfIdle_54: 6476524219920680783
+      ElfIdle_55: 6478537421752393916
+      ElfIdle_56: -6633971793495915344
+      ElfIdle_57: -7430196348060712327
+      ElfIdle_58: -3206878037437825417
+      ElfIdle_59: 8999550145676256474
+      ElfIdle_6: 537985655154470693
+      ElfIdle_60: 7363103064085406649
+      ElfIdle_61: -9120340448886203961
+      ElfIdle_62: 7502472969140569735
+      ElfIdle_63: 7267323357443610237
+      ElfIdle_7: -4755113251261427202
+      ElfIdle_8: 1806074090235463106
+      ElfIdle_9: 7848146575750405670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

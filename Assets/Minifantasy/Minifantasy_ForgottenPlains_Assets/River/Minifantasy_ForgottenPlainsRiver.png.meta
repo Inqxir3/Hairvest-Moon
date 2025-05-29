@@ -225,6 +225,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1209,7 +1235,51 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_ForgottenPlainsRiver_0: 1355951780033196830
+      Minifantasy_ForgottenPlainsRiver_1: -8036041597888874270
+      Minifantasy_ForgottenPlainsRiver_10: -6197717638998509922
+      Minifantasy_ForgottenPlainsRiver_11: 1930000966775043217
+      Minifantasy_ForgottenPlainsRiver_12: -4009022765281500604
+      Minifantasy_ForgottenPlainsRiver_13: -7755774111284887643
+      Minifantasy_ForgottenPlainsRiver_14: -7301595916725123070
+      Minifantasy_ForgottenPlainsRiver_15: -1045238507063445240
+      Minifantasy_ForgottenPlainsRiver_16: 2692411322754317934
+      Minifantasy_ForgottenPlainsRiver_17: -1299650003337647379
+      Minifantasy_ForgottenPlainsRiver_18: -4711871147975343738
+      Minifantasy_ForgottenPlainsRiver_19: 8003086060589421107
+      Minifantasy_ForgottenPlainsRiver_2: -7325810547428634542
+      Minifantasy_ForgottenPlainsRiver_20: -467117063510785025
+      Minifantasy_ForgottenPlainsRiver_21: 4562391202820316820
+      Minifantasy_ForgottenPlainsRiver_22: -2550271324720825049
+      Minifantasy_ForgottenPlainsRiver_23: 8737741737624272353
+      Minifantasy_ForgottenPlainsRiver_24: 8050752620525327588
+      Minifantasy_ForgottenPlainsRiver_25: 3722292539694877586
+      Minifantasy_ForgottenPlainsRiver_26: 6749792785791496595
+      Minifantasy_ForgottenPlainsRiver_27: 1447404577334052618
+      Minifantasy_ForgottenPlainsRiver_28: -6170503194477314458
+      Minifantasy_ForgottenPlainsRiver_29: -4966504056544628031
+      Minifantasy_ForgottenPlainsRiver_3: 8495478320277266907
+      Minifantasy_ForgottenPlainsRiver_30: -4014348424013687882
+      Minifantasy_ForgottenPlainsRiver_31: 1444256422394119617
+      Minifantasy_ForgottenPlainsRiver_32: -2297182014523349013
+      Minifantasy_ForgottenPlainsRiver_33: -6261699876318086169
+      Minifantasy_ForgottenPlainsRiver_34: -3251670334655946585
+      Minifantasy_ForgottenPlainsRiver_35: 4977623463398862642
+      Minifantasy_ForgottenPlainsRiver_36: -8948704593795841015
+      Minifantasy_ForgottenPlainsRiver_37: 8645098356917253992
+      Minifantasy_ForgottenPlainsRiver_38: -6845860090367156552
+      Minifantasy_ForgottenPlainsRiver_39: 3992630313471781378
+      Minifantasy_ForgottenPlainsRiver_4: -737057570782128323
+      Minifantasy_ForgottenPlainsRiver_40: -3815257046386296004
+      Minifantasy_ForgottenPlainsRiver_41: -773794315500947130
+      Minifantasy_ForgottenPlainsRiver_42: -2885210164087569909
+      Minifantasy_ForgottenPlainsRiver_43: -270037435152785593
+      Minifantasy_ForgottenPlainsRiver_5: -7322182647150032589
+      Minifantasy_ForgottenPlainsRiver_6: -1152477286798729120
+      Minifantasy_ForgottenPlainsRiver_7: -44317237674191043
+      Minifantasy_ForgottenPlainsRiver_8: -1580783385201734851
+      Minifantasy_ForgottenPlainsRiver_9: -2960647196882239674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

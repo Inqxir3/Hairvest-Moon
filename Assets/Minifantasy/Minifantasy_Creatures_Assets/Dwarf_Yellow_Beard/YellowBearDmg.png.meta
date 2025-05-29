@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowBearDmg_0: 2251728095095456298
+      YellowBearDmg_1: -3431204329887048433
+      YellowBearDmg_10: 2245429740262022201
+      YellowBearDmg_11: -917759460223990896
+      YellowBearDmg_12: -3289146185468067932
+      YellowBearDmg_13: 7886328074070618067
+      YellowBearDmg_14: 626461012868028448
+      YellowBearDmg_15: -3507894996552148668
+      YellowBearDmg_2: 4791463641822150291
+      YellowBearDmg_3: -5748755041099068283
+      YellowBearDmg_4: 184595567362233774
+      YellowBearDmg_5: 6630423001595166249
+      YellowBearDmg_6: 588006628075381251
+      YellowBearDmg_7: 1258937051017252929
+      YellowBearDmg_8: -3179869935347652297
+      YellowBearDmg_9: 7111513673390092739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

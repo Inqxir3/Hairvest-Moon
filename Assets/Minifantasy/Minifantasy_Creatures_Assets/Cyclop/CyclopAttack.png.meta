@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CyclopAttack_0: 1070108759667780187
+      CyclopAttack_1: 4798735025698144109
+      CyclopAttack_10: -4606784238904409644
+      CyclopAttack_11: -3475791967414278718
+      CyclopAttack_12: -1958886990649497234
+      CyclopAttack_13: -4859112925865161863
+      CyclopAttack_14: 6694301969800652548
+      CyclopAttack_15: -459758105492814739
+      CyclopAttack_2: -2883901873548346815
+      CyclopAttack_3: 7491329648255143545
+      CyclopAttack_4: -8553629690081248515
+      CyclopAttack_5: -13127272220480214
+      CyclopAttack_6: -803525364167605052
+      CyclopAttack_7: 8650905516782015301
+      CyclopAttack_8: 5985018429738686606
+      CyclopAttack_9: 5801212155430805218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

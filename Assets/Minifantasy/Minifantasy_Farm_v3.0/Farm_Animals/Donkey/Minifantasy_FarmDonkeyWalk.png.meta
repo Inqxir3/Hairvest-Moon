@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_FarmDonkeyWalk_0: 2416902274967803153
+      Minifantasy_FarmDonkeyWalk_1: 2659547722586060144
+      Minifantasy_FarmDonkeyWalk_10: 6115854826388178332
+      Minifantasy_FarmDonkeyWalk_11: -1663342060925274950
+      Minifantasy_FarmDonkeyWalk_12: -9049848518381594269
+      Minifantasy_FarmDonkeyWalk_13: 1796503930084793310
+      Minifantasy_FarmDonkeyWalk_14: -5007580003554622850
+      Minifantasy_FarmDonkeyWalk_15: 5283175972952453079
+      Minifantasy_FarmDonkeyWalk_2: -4082624628616220656
+      Minifantasy_FarmDonkeyWalk_3: 4238534068144524049
+      Minifantasy_FarmDonkeyWalk_4: -1942444183643640637
+      Minifantasy_FarmDonkeyWalk_5: -8607025329381656586
+      Minifantasy_FarmDonkeyWalk_6: -337474069085452404
+      Minifantasy_FarmDonkeyWalk_7: -1235890318811617924
+      Minifantasy_FarmDonkeyWalk_8: 7198524050416571983
+      Minifantasy_FarmDonkeyWalk_9: -1580124885395328262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

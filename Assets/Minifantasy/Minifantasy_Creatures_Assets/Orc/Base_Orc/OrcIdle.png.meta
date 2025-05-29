@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OrcIdle_0: 629793003374028362
+      OrcIdle_1: -5434209319591505206
+      OrcIdle_10: -3500738153938769034
+      OrcIdle_11: 572857517099275023
+      OrcIdle_12: 1875237865823138561
+      OrcIdle_13: 3530910888451173942
+      OrcIdle_14: -8238965991203225000
+      OrcIdle_15: -1621815450618700446
+      OrcIdle_16: 7496925130750001645
+      OrcIdle_17: 203575206814377503
+      OrcIdle_18: 2409908550040327878
+      OrcIdle_19: 743034625097088725
+      OrcIdle_2: 6678244447728497291
+      OrcIdle_20: -252100141746250068
+      OrcIdle_21: -7792097817849721073
+      OrcIdle_22: -5811054034070675719
+      OrcIdle_23: -2615442194898463562
+      OrcIdle_24: -7704790607547678000
+      OrcIdle_25: 7927495640294389312
+      OrcIdle_26: -4471210223478885642
+      OrcIdle_27: -5690783553473985671
+      OrcIdle_28: -8029440877665249859
+      OrcIdle_29: -141516675848269224
+      OrcIdle_3: -3585259598540753788
+      OrcIdle_30: 5502576757307071216
+      OrcIdle_31: 4759347547589851196
+      OrcIdle_32: -4813533190466908241
+      OrcIdle_33: -6998095696152551826
+      OrcIdle_34: 5133611403441661463
+      OrcIdle_35: -3263117748054093430
+      OrcIdle_36: -1309914948914222038
+      OrcIdle_37: 4694266364602413062
+      OrcIdle_38: -2472732152281266966
+      OrcIdle_39: -6305910935618588088
+      OrcIdle_4: 1348757260511416634
+      OrcIdle_40: 2708127021981052274
+      OrcIdle_41: -1816894045982036756
+      OrcIdle_42: -2804233265032925026
+      OrcIdle_43: 5679507142738072292
+      OrcIdle_44: -8274125199337393984
+      OrcIdle_45: -1372197220828818077
+      OrcIdle_46: 5397342308391893706
+      OrcIdle_47: -5362678004053553562
+      OrcIdle_48: 5729695982973900605
+      OrcIdle_49: 4409836142583251515
+      OrcIdle_5: 3817656894833506142
+      OrcIdle_50: -1363480649243335564
+      OrcIdle_51: 6346903537620396427
+      OrcIdle_52: -6329977083883161053
+      OrcIdle_53: -6889026680495146553
+      OrcIdle_54: 7216167782820800243
+      OrcIdle_55: 2861800657127815247
+      OrcIdle_56: -5168162819051579492
+      OrcIdle_57: -4191314363456584585
+      OrcIdle_58: -852852043261727329
+      OrcIdle_59: -2534320194286280386
+      OrcIdle_6: 1058448555110182144
+      OrcIdle_60: 4374407269010159351
+      OrcIdle_61: -153433319179808571
+      OrcIdle_62: 1439278529751502767
+      OrcIdle_63: -533505844326213255
+      OrcIdle_7: -3922896263116129843
+      OrcIdle_8: 8362265957250460678
+      OrcIdle_9: -8412363724817733192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

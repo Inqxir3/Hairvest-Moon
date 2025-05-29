@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CentaurIdle_0: 8694195087365679211
+      CentaurIdle_1: -2175783594692303723
+      CentaurIdle_10: 4676503434913812211
+      CentaurIdle_11: 95127682391078914
+      CentaurIdle_12: 7632528896762867370
+      CentaurIdle_13: 3164657744896977268
+      CentaurIdle_14: -6301643718410029698
+      CentaurIdle_15: 787292476834580926
+      CentaurIdle_16: -3321370007652186859
+      CentaurIdle_17: 2708541397276275587
+      CentaurIdle_18: 7679688290651438781
+      CentaurIdle_19: 6655098729380533700
+      CentaurIdle_2: 2653092851010500286
+      CentaurIdle_20: -69792025744653536
+      CentaurIdle_21: 4981639611417068730
+      CentaurIdle_22: 4778219069586497548
+      CentaurIdle_23: 5701899079075203827
+      CentaurIdle_24: 7022664306604554685
+      CentaurIdle_25: 7717416139590867293
+      CentaurIdle_26: -5822505176038911558
+      CentaurIdle_27: -6775585429530489034
+      CentaurIdle_28: -8005717813148176697
+      CentaurIdle_29: 8585252706225243890
+      CentaurIdle_3: -1384552769298791140
+      CentaurIdle_30: -4663275726122435085
+      CentaurIdle_31: -8231509812658013537
+      CentaurIdle_32: 2887102259393836287
+      CentaurIdle_33: 4362376027437468580
+      CentaurIdle_34: 5671793221484525622
+      CentaurIdle_35: 6027875170762497587
+      CentaurIdle_36: 4510559265281948358
+      CentaurIdle_37: -6139057586458517566
+      CentaurIdle_38: -6231927387650805637
+      CentaurIdle_39: 1972936821085623147
+      CentaurIdle_4: -3905489157742948112
+      CentaurIdle_40: -1906989961175366135
+      CentaurIdle_41: -7419943318513162715
+      CentaurIdle_42: -1197477296720244678
+      CentaurIdle_43: 4845935015500791826
+      CentaurIdle_44: 3834892247848544183
+      CentaurIdle_45: -1010227860832154340
+      CentaurIdle_46: -8131731024099797875
+      CentaurIdle_47: -456604826655590549
+      CentaurIdle_48: 7829997604723991053
+      CentaurIdle_49: -2508681358066371233
+      CentaurIdle_5: -6066541183356044613
+      CentaurIdle_50: -7819731128594742147
+      CentaurIdle_51: 4888282460145240016
+      CentaurIdle_52: -1079527774472145624
+      CentaurIdle_53: -3974171587210608478
+      CentaurIdle_54: -4733628546162105575
+      CentaurIdle_55: -8904168889091036885
+      CentaurIdle_56: 4421655616322006737
+      CentaurIdle_57: -1073288748148980412
+      CentaurIdle_58: -3547794044526723294
+      CentaurIdle_59: 1551068186327511669
+      CentaurIdle_6: -9146903080281343365
+      CentaurIdle_60: -704875824634127355
+      CentaurIdle_61: 902904921177904051
+      CentaurIdle_62: 5155644169224694631
+      CentaurIdle_63: 5813069449589673307
+      CentaurIdle_7: 5795378682847967332
+      CentaurIdle_8: 5312515930431605562
+      CentaurIdle_9: 7094606643772502188
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

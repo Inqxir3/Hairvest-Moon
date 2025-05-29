@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_FarmGoatWalk_0: 5119656399509217175
+      Minifantasy_FarmGoatWalk_1: -4340400335772320841
+      Minifantasy_FarmGoatWalk_10: 5084942734304272709
+      Minifantasy_FarmGoatWalk_11: -1121251981640746031
+      Minifantasy_FarmGoatWalk_12: -7363734317654834771
+      Minifantasy_FarmGoatWalk_13: 3843490270195422993
+      Minifantasy_FarmGoatWalk_14: -8135901614730867105
+      Minifantasy_FarmGoatWalk_15: 7951796566324034638
+      Minifantasy_FarmGoatWalk_2: 942832506289781419
+      Minifantasy_FarmGoatWalk_3: -2727814415306586570
+      Minifantasy_FarmGoatWalk_4: 5497518629624957849
+      Minifantasy_FarmGoatWalk_5: -4099790779840489154
+      Minifantasy_FarmGoatWalk_6: -5879557779412905137
+      Minifantasy_FarmGoatWalk_7: 2589160923398356283
+      Minifantasy_FarmGoatWalk_8: 8535036888476881383
+      Minifantasy_FarmGoatWalk_9: 5223768389446759261
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

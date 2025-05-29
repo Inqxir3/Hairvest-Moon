@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ElfChargedAttack_0: 5065253566507758260
+      ElfChargedAttack_1: 4047412738197290432
+      ElfChargedAttack_10: 1621859742215034466
+      ElfChargedAttack_11: 1387165734945115285
+      ElfChargedAttack_12: 7682015498955745934
+      ElfChargedAttack_13: 5035347425998419030
+      ElfChargedAttack_14: 439368155601301794
+      ElfChargedAttack_15: 2456944571364096679
+      ElfChargedAttack_16: -3094936971598811073
+      ElfChargedAttack_17: 7780134685366175720
+      ElfChargedAttack_2: 815391822609483328
+      ElfChargedAttack_3: 9002065324165353477
+      ElfChargedAttack_4: 1223000691198760957
+      ElfChargedAttack_5: -4911878460364061178
+      ElfChargedAttack_6: -7203419341147917399
+      ElfChargedAttack_7: 4115150651007773370
+      ElfChargedAttack_8: -5863593184616046776
+      ElfChargedAttack_9: -6130322601167510536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

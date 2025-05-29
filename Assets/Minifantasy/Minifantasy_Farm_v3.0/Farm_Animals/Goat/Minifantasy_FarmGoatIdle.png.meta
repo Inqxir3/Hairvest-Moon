@@ -237,6 +237,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1309,7 +1335,55 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_FarmGoatIdle_0: 7139350469239392442
+      Minifantasy_FarmGoatIdle_1: 1255213178586541473
+      Minifantasy_FarmGoatIdle_10: 3014793416769511019
+      Minifantasy_FarmGoatIdle_11: 8885761045512747437
+      Minifantasy_FarmGoatIdle_12: -5447988314651431174
+      Minifantasy_FarmGoatIdle_13: -2068168840323298896
+      Minifantasy_FarmGoatIdle_14: 8602404709241307599
+      Minifantasy_FarmGoatIdle_15: -9164414910490198266
+      Minifantasy_FarmGoatIdle_16: -1087129396668408674
+      Minifantasy_FarmGoatIdle_17: -664145586894489951
+      Minifantasy_FarmGoatIdle_18: 8256808737046746915
+      Minifantasy_FarmGoatIdle_19: -8161551556400093674
+      Minifantasy_FarmGoatIdle_2: 3391479280116475076
+      Minifantasy_FarmGoatIdle_20: -1269607805243013397
+      Minifantasy_FarmGoatIdle_21: -4602192357119985720
+      Minifantasy_FarmGoatIdle_22: -5825832606953506854
+      Minifantasy_FarmGoatIdle_23: -5195860917337417423
+      Minifantasy_FarmGoatIdle_24: -2115264726448234829
+      Minifantasy_FarmGoatIdle_25: -8277071553541461772
+      Minifantasy_FarmGoatIdle_26: -1467389301532624529
+      Minifantasy_FarmGoatIdle_27: -4193102441479801220
+      Minifantasy_FarmGoatIdle_28: -1145231932614384169
+      Minifantasy_FarmGoatIdle_29: 3545034375111817191
+      Minifantasy_FarmGoatIdle_3: -8443017890197207538
+      Minifantasy_FarmGoatIdle_30: -6112840167788373368
+      Minifantasy_FarmGoatIdle_31: 4532166082897903882
+      Minifantasy_FarmGoatIdle_32: 2313267750349662258
+      Minifantasy_FarmGoatIdle_33: -3299183873812557296
+      Minifantasy_FarmGoatIdle_34: 3118136020927377342
+      Minifantasy_FarmGoatIdle_35: 5557071630714963607
+      Minifantasy_FarmGoatIdle_36: -7384285002215706322
+      Minifantasy_FarmGoatIdle_37: 514512555579803133
+      Minifantasy_FarmGoatIdle_38: -5597372245640371963
+      Minifantasy_FarmGoatIdle_39: -489283774006025133
+      Minifantasy_FarmGoatIdle_4: 5579193927419133855
+      Minifantasy_FarmGoatIdle_40: -2761960438810047382
+      Minifantasy_FarmGoatIdle_41: 3247313040665355498
+      Minifantasy_FarmGoatIdle_42: -8265746982519381937
+      Minifantasy_FarmGoatIdle_43: -366328067214517194
+      Minifantasy_FarmGoatIdle_44: -4797638414089442756
+      Minifantasy_FarmGoatIdle_45: 8855066383507719684
+      Minifantasy_FarmGoatIdle_46: 564089102854193139
+      Minifantasy_FarmGoatIdle_47: -6217199106625630816
+      Minifantasy_FarmGoatIdle_5: -7235830197577010041
+      Minifantasy_FarmGoatIdle_6: -3692692074043072028
+      Minifantasy_FarmGoatIdle_7: 5578567456985838278
+      Minifantasy_FarmGoatIdle_8: -5601387536493248920
+      Minifantasy_FarmGoatIdle_9: -3954720325413824426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

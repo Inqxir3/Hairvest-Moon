@@ -129,6 +129,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TrollDie_0: 4419203606615041256
+      TrollDie_1: 5341472460130348115
+      TrollDie_10: -7940521468317146155
+      TrollDie_11: -8253909650812705962
+      TrollDie_2: -845827406920366381
+      TrollDie_3: 3382985087755345789
+      TrollDie_4: 996883051436362086
+      TrollDie_5: 5296123440613002550
+      TrollDie_6: 86523700688697767
+      TrollDie_7: 1247936386340813610
+      TrollDie_8: -7748708286793608978
+      TrollDie_9: 5941797756805319129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

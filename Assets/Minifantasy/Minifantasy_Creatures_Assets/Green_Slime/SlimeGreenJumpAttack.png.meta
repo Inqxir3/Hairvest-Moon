@@ -129,6 +129,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -409,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SlimeGreenJumpAttack_0: 4717426999987346918
+      SlimeGreenJumpAttack_1: 6206882967954679181
+      SlimeGreenJumpAttack_10: 1739863174394350804
+      SlimeGreenJumpAttack_11: -3738646164673277203
+      SlimeGreenJumpAttack_2: 3436835570203657501
+      SlimeGreenJumpAttack_3: -5280486416497513625
+      SlimeGreenJumpAttack_4: 6626571344734509290
+      SlimeGreenJumpAttack_5: -3554588904099420112
+      SlimeGreenJumpAttack_6: 631871775041363718
+      SlimeGreenJumpAttack_7: -7092915656135548235
+      SlimeGreenJumpAttack_8: 3906825814314093983
+      SlimeGreenJumpAttack_9: 4974288618810052099
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

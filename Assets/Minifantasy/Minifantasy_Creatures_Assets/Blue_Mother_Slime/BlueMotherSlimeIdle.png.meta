@@ -189,6 +189,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -909,7 +935,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueMotherSlimeIdle_0: -3233607940550713473
+      BlueMotherSlimeIdle_1: 7978747318278546431
+      BlueMotherSlimeIdle_10: 1737489673648570490
+      BlueMotherSlimeIdle_11: -8042599776496440806
+      BlueMotherSlimeIdle_12: -1407146006181436320
+      BlueMotherSlimeIdle_13: 7606412782188517959
+      BlueMotherSlimeIdle_14: -4741841767725697060
+      BlueMotherSlimeIdle_15: 12131836483898217
+      BlueMotherSlimeIdle_16: -7620950960731590814
+      BlueMotherSlimeIdle_17: 5341502089957470903
+      BlueMotherSlimeIdle_18: 1777837772795637436
+      BlueMotherSlimeIdle_19: -2449595830037312293
+      BlueMotherSlimeIdle_2: 4317016689828922498
+      BlueMotherSlimeIdle_20: 4552993266907408728
+      BlueMotherSlimeIdle_21: -1589259610624955935
+      BlueMotherSlimeIdle_22: -2235493452970697442
+      BlueMotherSlimeIdle_23: -8249507447290128517
+      BlueMotherSlimeIdle_24: 6906179437556142134
+      BlueMotherSlimeIdle_25: -8238673069504442611
+      BlueMotherSlimeIdle_26: -5097699560538674635
+      BlueMotherSlimeIdle_27: 2104770937354508844
+      BlueMotherSlimeIdle_28: -6163675132727896029
+      BlueMotherSlimeIdle_29: 5234798502055493160
+      BlueMotherSlimeIdle_3: -7324761672551942098
+      BlueMotherSlimeIdle_30: 7559236331650098789
+      BlueMotherSlimeIdle_31: -7579126470628794018
+      BlueMotherSlimeIdle_4: -5830022577186494302
+      BlueMotherSlimeIdle_5: -366496058234011381
+      BlueMotherSlimeIdle_6: -4453000061552507417
+      BlueMotherSlimeIdle_7: 8683201087740057952
+      BlueMotherSlimeIdle_8: 9192700823953794120
+      BlueMotherSlimeIdle_9: -9059277233541998698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

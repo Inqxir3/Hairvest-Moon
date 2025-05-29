@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_FarmSheepWalk_0: -5292709051289753204
+      Minifantasy_FarmSheepWalk_1: 7406363245655386866
+      Minifantasy_FarmSheepWalk_10: -5355608118698796511
+      Minifantasy_FarmSheepWalk_11: -1712468058363130698
+      Minifantasy_FarmSheepWalk_12: 1457521457007323255
+      Minifantasy_FarmSheepWalk_13: -6302655400925063042
+      Minifantasy_FarmSheepWalk_14: -2917945015547845925
+      Minifantasy_FarmSheepWalk_15: 1200911362043587998
+      Minifantasy_FarmSheepWalk_2: -5221941079426400637
+      Minifantasy_FarmSheepWalk_3: -348533385697726600
+      Minifantasy_FarmSheepWalk_4: -7186163322555450848
+      Minifantasy_FarmSheepWalk_5: -6750281489132827222
+      Minifantasy_FarmSheepWalk_6: 5304251870463667884
+      Minifantasy_FarmSheepWalk_7: -1900483482434213786
+      Minifantasy_FarmSheepWalk_8: -2090366761793349830
+      Minifantasy_FarmSheepWalk_9: -8104051500364549224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

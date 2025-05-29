@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DwarfChargedAttack_0: -2748756206089943310
+      DwarfChargedAttack_1: -3600990699494577212
+      DwarfChargedAttack_10: 5337918002259722538
+      DwarfChargedAttack_11: -8442254589152650313
+      DwarfChargedAttack_12: -3569235121440987039
+      DwarfChargedAttack_13: 8565584260771884378
+      DwarfChargedAttack_14: -5869953752080352982
+      DwarfChargedAttack_15: 6162662575434115244
+      DwarfChargedAttack_16: -6396677067026961578
+      DwarfChargedAttack_17: 1572333584739130610
+      DwarfChargedAttack_2: -977894710381727779
+      DwarfChargedAttack_3: -1579761717707804287
+      DwarfChargedAttack_4: 663410384719931595
+      DwarfChargedAttack_5: 4686422340441059221
+      DwarfChargedAttack_6: 1929546714537034147
+      DwarfChargedAttack_7: -1844496632253721341
+      DwarfChargedAttack_8: 4827403809084446049
+      DwarfChargedAttack_9: -7536291028909936445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

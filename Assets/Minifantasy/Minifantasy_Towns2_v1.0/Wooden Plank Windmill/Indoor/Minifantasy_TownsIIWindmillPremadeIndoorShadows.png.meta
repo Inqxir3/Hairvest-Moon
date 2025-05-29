@@ -117,6 +117,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIWindmillPremadeIndoorShadows_0: -4565029789125284059
+      Minifantasy_TownsIIWindmillPremadeIndoorShadows_1: 3649230149532127625
+      Minifantasy_TownsIIWindmillPremadeIndoorShadows_2: -3031310211524492343
+      Minifantasy_TownsIIWindmillPremadeIndoorShadows_3: 4723339184049067440
+      Minifantasy_TownsIIWindmillPremadeIndoorShadows_4: -9161229076079199894
+      Minifantasy_TownsIIWindmillPremadeIndoorShadows_5: -5954422900740589528
+      Minifantasy_TownsIIWindmillPremadeIndoorShadows_6: 2411712707879234638
+      Minifantasy_TownsIIWindmillPremadeIndoorShadows_7: 5334802086276091165
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CentaurAttack_0: 2242173556227078166
+      CentaurAttack_1: 2999009388645854502
+      CentaurAttack_10: 6641620335777527574
+      CentaurAttack_11: -6555851290352755396
+      CentaurAttack_12: -5947604231975519623
+      CentaurAttack_13: -8688578197420714550
+      CentaurAttack_14: -4732046937623684683
+      CentaurAttack_15: -6271234745399672332
+      CentaurAttack_2: 5624899920450355733
+      CentaurAttack_3: 1495204596603928118
+      CentaurAttack_4: 9178750978459240689
+      CentaurAttack_5: -7579635502826705008
+      CentaurAttack_6: -2380863843323896096
+      CentaurAttack_7: 1313072836203473297
+      CentaurAttack_8: -6171179131079663189
+      CentaurAttack_9: 5861138224518909947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

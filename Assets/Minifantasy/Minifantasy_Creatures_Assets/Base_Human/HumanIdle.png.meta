@@ -285,6 +285,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1709,7 +1735,71 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HumanIdle_0: 928746104895799226
+      HumanIdle_1: -8987581541847270686
+      HumanIdle_10: -2451277838112029792
+      HumanIdle_11: -8441523793101904532
+      HumanIdle_12: 7256777532649191938
+      HumanIdle_13: -7633257173440213258
+      HumanIdle_14: -2362065904690418408
+      HumanIdle_15: 6154917050649697942
+      HumanIdle_16: -2348089778585837564
+      HumanIdle_17: -2808515080897781930
+      HumanIdle_18: 6858766997542630983
+      HumanIdle_19: 4801184877883203458
+      HumanIdle_2: 937060116841625122
+      HumanIdle_20: 7632849520310797399
+      HumanIdle_21: 1313638587213278221
+      HumanIdle_22: -5981471464520291728
+      HumanIdle_23: 7314859760112913520
+      HumanIdle_24: -9084833512317299946
+      HumanIdle_25: 5288601448957825250
+      HumanIdle_26: 6354049838071684241
+      HumanIdle_27: 887213738081044245
+      HumanIdle_28: 6315869506224271184
+      HumanIdle_29: 324779466807641356
+      HumanIdle_3: 5802590737869994659
+      HumanIdle_30: 1340087083417999582
+      HumanIdle_31: 2732089957733456487
+      HumanIdle_32: -8680380860399022262
+      HumanIdle_33: 5226453937406426730
+      HumanIdle_34: -4286674313570360177
+      HumanIdle_35: -1244223411516228819
+      HumanIdle_36: -2261693002124006702
+      HumanIdle_37: -8560094600507676353
+      HumanIdle_38: -7446588394547069804
+      HumanIdle_39: 4644226759704909614
+      HumanIdle_4: 6332101895278594808
+      HumanIdle_40: 2070766204897809536
+      HumanIdle_41: 6654262198427981526
+      HumanIdle_42: 6373501223332914071
+      HumanIdle_43: 5790073777061443882
+      HumanIdle_44: 6330611894914743010
+      HumanIdle_45: -5571907082833109579
+      HumanIdle_46: 5980825365595134330
+      HumanIdle_47: -2084961821451591481
+      HumanIdle_48: 9049432872811699961
+      HumanIdle_49: -8669547719794221005
+      HumanIdle_5: 8884657108451574959
+      HumanIdle_50: -6717628357371051042
+      HumanIdle_51: 3002161830805992150
+      HumanIdle_52: -8350706469336295100
+      HumanIdle_53: 5748587410946090543
+      HumanIdle_54: -741590006261294181
+      HumanIdle_55: -804135626193893832
+      HumanIdle_56: 4315333867505771443
+      HumanIdle_57: 6012695405481851623
+      HumanIdle_58: -8570312753700563091
+      HumanIdle_59: -660205014672585657
+      HumanIdle_6: -2770267263117625061
+      HumanIdle_60: -5230382314462472329
+      HumanIdle_61: 1251083292586702546
+      HumanIdle_62: -3602182986399738819
+      HumanIdle_63: -8611237460128367179
+      HumanIdle_7: -1980948219952665453
+      HumanIdle_8: -4669565283598448338
+      HumanIdle_9: -2915200134018328815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

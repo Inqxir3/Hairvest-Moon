@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TrollJump_0: -6997642903279997865
+      TrollJump_1: 5970273773035019077
+      TrollJump_10: 2401397815796963972
+      TrollJump_11: 2428172736611602980
+      TrollJump_12: -8343658905693394945
+      TrollJump_13: 4860095860300753879
+      TrollJump_14: 6890805425401535789
+      TrollJump_15: 7150679797501721474
+      TrollJump_16: 4467539340710617231
+      TrollJump_17: -1748335187234853213
+      TrollJump_18: 3810929040372257517
+      TrollJump_19: -7468814371365109125
+      TrollJump_2: 5278702671419284416
+      TrollJump_20: -1394386594734605628
+      TrollJump_21: -838966801609501629
+      TrollJump_22: -4044992834212040690
+      TrollJump_23: 7189193827112464120
+      TrollJump_3: -2454190088848912858
+      TrollJump_4: 4262874630913812411
+      TrollJump_5: -6289424153845911230
+      TrollJump_6: 8357866682592329399
+      TrollJump_7: 1717813685099731047
+      TrollJump_8: -6637762131605469620
+      TrollJump_9: 1504377482353838279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

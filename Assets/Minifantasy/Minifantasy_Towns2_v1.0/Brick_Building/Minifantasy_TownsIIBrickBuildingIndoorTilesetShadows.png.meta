@@ -147,6 +147,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +585,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_0: -1674946691445729711
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_1: 2187161002673653001
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_10: 629019477382623747
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_11: 4852072715215482859
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_12: -6491490897309333246
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_13: -8736849813142487312
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_14: 8186008244811892258
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_15: -860158543379118169
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_16: -2351887065011844984
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_17: -7076610638962164344
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_2: 7014578345495290714
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_3: 200388321314468224
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_4: -2063484955220218378
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_5: -4721018481873973177
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_6: 964882985916360510
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_7: -6251123104581414738
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_8: 8362054893713176575
+      Minifantasy_TownsIIBrickBuildingIndoorTilesetShadows_9: -994172555697484802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

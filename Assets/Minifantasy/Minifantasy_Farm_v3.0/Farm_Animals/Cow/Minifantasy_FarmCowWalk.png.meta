@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_FarmCowWalk_0: 1046086453820419040
+      Minifantasy_FarmCowWalk_1: -8060962152866639025
+      Minifantasy_FarmCowWalk_10: 2254835089253224009
+      Minifantasy_FarmCowWalk_11: -2938586496066086102
+      Minifantasy_FarmCowWalk_12: -2450970270933733297
+      Minifantasy_FarmCowWalk_13: 5775314889632888052
+      Minifantasy_FarmCowWalk_14: 7447831759139227995
+      Minifantasy_FarmCowWalk_15: 771561372973380088
+      Minifantasy_FarmCowWalk_2: -6315056194272186267
+      Minifantasy_FarmCowWalk_3: -977585399371295090
+      Minifantasy_FarmCowWalk_4: -6897940745946634498
+      Minifantasy_FarmCowWalk_5: -161114978401820665
+      Minifantasy_FarmCowWalk_6: 2094320828803282203
+      Minifantasy_FarmCowWalk_7: 7471633314793823293
+      Minifantasy_FarmCowWalk_8: -4568268662027182606
+      Minifantasy_FarmCowWalk_9: -8185092033053170479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

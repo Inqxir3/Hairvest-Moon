@@ -261,6 +261,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1509,7 +1535,63 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MinotaurAttack_0: -6736481775169091774
+      MinotaurAttack_1: -830855911201905467
+      MinotaurAttack_10: 6724220672438519102
+      MinotaurAttack_11: 8359827151760464044
+      MinotaurAttack_12: 2590211476283867982
+      MinotaurAttack_13: -1224814697438568224
+      MinotaurAttack_14: -5513417197203022127
+      MinotaurAttack_15: -7472038479584575888
+      MinotaurAttack_16: -346142680055596719
+      MinotaurAttack_17: -6806777045239428896
+      MinotaurAttack_18: 8466776037199623397
+      MinotaurAttack_19: 3033794892061982752
+      MinotaurAttack_2: 3711841702422704159
+      MinotaurAttack_20: 2494833133133377522
+      MinotaurAttack_21: -192079483102266592
+      MinotaurAttack_22: 2001242275578138320
+      MinotaurAttack_23: 268160000121444272
+      MinotaurAttack_24: 7353780167967442486
+      MinotaurAttack_25: -276718065023840526
+      MinotaurAttack_26: -7425593622399608458
+      MinotaurAttack_27: 4541973017583394049
+      MinotaurAttack_28: -7988405415248673914
+      MinotaurAttack_29: -4000233056213023817
+      MinotaurAttack_3: -4501676970775422105
+      MinotaurAttack_30: -2628619035175037672
+      MinotaurAttack_31: 2820723414879001627
+      MinotaurAttack_32: -3834690697320580572
+      MinotaurAttack_33: 5586756178393650438
+      MinotaurAttack_34: -9183106845014992371
+      MinotaurAttack_35: 6880776878939221712
+      MinotaurAttack_36: -5722879193755071039
+      MinotaurAttack_37: 5842682965079783607
+      MinotaurAttack_38: -2421607161896645703
+      MinotaurAttack_39: -1917771306510956920
+      MinotaurAttack_4: -3180360849017214703
+      MinotaurAttack_40: -7394668273550272519
+      MinotaurAttack_41: -6309827842753077206
+      MinotaurAttack_42: -4606485459847522494
+      MinotaurAttack_43: 3060078685116491901
+      MinotaurAttack_44: 4175618945781852746
+      MinotaurAttack_45: 5736864008848605086
+      MinotaurAttack_46: 6657658048227394095
+      MinotaurAttack_47: 6173583124779330680
+      MinotaurAttack_48: -355210319697477700
+      MinotaurAttack_49: 2047444473631759302
+      MinotaurAttack_5: 5210146830764680282
+      MinotaurAttack_50: -3575310085299240570
+      MinotaurAttack_51: -7878242769535319478
+      MinotaurAttack_52: 403329410725030716
+      MinotaurAttack_53: -3126899837290113162
+      MinotaurAttack_54: -698442055553817451
+      MinotaurAttack_55: -2358599224388135798
+      MinotaurAttack_6: -3855288772590839331
+      MinotaurAttack_7: 6511963294538626201
+      MinotaurAttack_8: 1774660564368692166
+      MinotaurAttack_9: 6813780455237677734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

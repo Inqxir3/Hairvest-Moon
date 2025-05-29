@@ -165,6 +165,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -709,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MinotaurJump_0: 600929743804492583
+      MinotaurJump_1: -8164013167914324899
+      MinotaurJump_10: -8676152103917869495
+      MinotaurJump_11: -3194816431877135555
+      MinotaurJump_12: -5316476486186740445
+      MinotaurJump_13: -1192727491029477534
+      MinotaurJump_14: -4765454559518306419
+      MinotaurJump_15: -5264297263016675645
+      MinotaurJump_16: -123372344377991271
+      MinotaurJump_17: -7581780011148880737
+      MinotaurJump_18: 7707514058865144902
+      MinotaurJump_19: -4742259892639750655
+      MinotaurJump_2: -6838816916343407872
+      MinotaurJump_20: 4395762734769333373
+      MinotaurJump_21: -1365184885396066308
+      MinotaurJump_22: 3655360626245694552
+      MinotaurJump_23: -432519166717605669
+      MinotaurJump_3: 3020451184558433597
+      MinotaurJump_4: -5845557063144138106
+      MinotaurJump_5: 6466773390204795646
+      MinotaurJump_6: -202990399469172316
+      MinotaurJump_7: -2033759979118952364
+      MinotaurJump_8: 1449972706512308662
+      MinotaurJump_9: 9182306504193055049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

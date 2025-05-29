@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GoblinWalk_0: -1523989251579011157
+      GoblinWalk_1: 8419001425889085733
+      GoblinWalk_10: -2110626133421511231
+      GoblinWalk_11: 8615620315486005833
+      GoblinWalk_12: 5759578169028958033
+      GoblinWalk_13: -8671528324612843873
+      GoblinWalk_14: -7940134362093324071
+      GoblinWalk_15: 212354802338259805
+      GoblinWalk_2: -7467181436417765047
+      GoblinWalk_3: -212545651032484168
+      GoblinWalk_4: -3830271164102726005
+      GoblinWalk_5: -5600978225382705115
+      GoblinWalk_6: 381775547124495534
+      GoblinWalk_7: 9076816735393835870
+      GoblinWalk_8: -6229402542441191610
+      GoblinWalk_9: 6188510885413049863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

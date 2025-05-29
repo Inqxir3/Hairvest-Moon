@@ -141,6 +141,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +535,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SkeletonDmg_0: 8131846024667023055
+      SkeletonDmg_1: 7388120425818548625
+      SkeletonDmg_10: -905090906433595326
+      SkeletonDmg_11: 5466939632379967976
+      SkeletonDmg_12: 5869018701985185109
+      SkeletonDmg_13: 6201480030186962416
+      SkeletonDmg_14: 2034930877113620175
+      SkeletonDmg_15: -7854697016789651680
+      SkeletonDmg_2: -4796111570189196726
+      SkeletonDmg_3: -8359636202227488421
+      SkeletonDmg_4: -1115784811617096647
+      SkeletonDmg_5: -3608338067492157692
+      SkeletonDmg_6: -2685050366849923378
+      SkeletonDmg_7: -820129038761323918
+      SkeletonDmg_8: -951970631519757088
+      SkeletonDmg_9: 6099259487113297640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
