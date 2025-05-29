@@ -20,7 +20,7 @@ public class FarmToolHandler : MonoBehaviour
     private bool isInteracting;
     private Vector3Int? targetTile;
 
-    private void Awake()
+    private void Start()
     {
         targetingSystem = TileTargetingSystem.Instance;
     }
