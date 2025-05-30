@@ -71,6 +71,9 @@ TagManager:
   - name: WalkInFront
     uniqueID: 1032253703
     locked: 0
+  - name: WorldSpaceVisuals
+    uniqueID: 2999784249
+    locked: 0
   - name: Collision
     uniqueID: 1068046037
     locked: 0
