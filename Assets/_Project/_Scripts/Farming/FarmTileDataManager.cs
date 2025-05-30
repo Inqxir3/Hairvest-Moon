@@ -63,13 +63,12 @@ namespace HairvestMoon.Farming
             data.isWatered = value;
 
             if (value)
-                data.waterHoursRemaining = HoursPerWatering;
+                data.waterMinutesRemaining = FarmTileData.MinutesPerWatering;
             else
-                data.waterHoursRemaining = 0f;
+                data.waterMinutesRemaining = 0f;
 
             UpdateWaterVisual(pos, data);
 
-            // Notify visual system immediately
             _waterVisualSystem.HandleWateredTile(pos, data);
         }
 
@@ -104,13 +103,25 @@ namespace HairvestMoon.Farming
     {
         public bool isTilled = false;
         public bool isWatered = false;
+
+        public float waterMinutesRemaining = 0f;
+        public const float MinutesPerWatering = 720f;
+
         public CropData plantedCrop = null;
-        public int growthDays = 0;
-        public float waterHoursRemaining = 0f;
+        public float wateredMinutesAccumulated = 0f;
+
+        public float GetGrowthProgressPercent()
+        {
+            if (plantedCrop == null || plantedCrop.growthDurationMinutes == 0f)
+                return 0f;
+
+            return Mathf.Clamp01(wateredMinutesAccumulated / plantedCrop.growthDurationMinutes);
+        }
+
 
         public bool HasRipeCrop()
         {
-            return plantedCrop != null && growthDays >= plantedCrop.growthDuration;
+            return plantedCrop != null && wateredMinutesAccumulated >= plantedCrop.growthDurationMinutes;
         }
     }
 }

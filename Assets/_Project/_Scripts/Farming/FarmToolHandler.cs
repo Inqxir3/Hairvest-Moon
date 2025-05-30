@@ -100,30 +100,14 @@ namespace HairvestMoon.Farming
             var tile = targetTile.Value;
             var data = FarmTileDataManager.Instance.GetTileData(tile);
 
-            switch (ToolSystem.CurrentTool)
+            switch (ToolSystem.Instance.CurrentTool)
             {
                 case ToolSystem.ToolType.Hoe:
-                    if (FarmTileDataManager.Instance.IsTileTillable(tile) && !data.isTilled)
-                    {
-                        FarmTileDataManager.Instance.SetTilled(tile, true);
-                        DebugUIOverlay.Instance.ShowLastAction("Tilled soil");
-                    }
-                    else
-                    {
-                        DebugUIOverlay.Instance.ShowLastAction("Can't till here");
-                    }
+                    TryTill(tile, data);
                     break;
 
                 case ToolSystem.ToolType.WateringCan:
-                    if (data.isTilled && !data.isWatered)
-                    {
-                        FarmTileDataManager.Instance.SetWatered(tile, true);
-                        DebugUIOverlay.Instance.ShowLastAction("Watered crop");
-                    }
-                    else
-                    {
-                        DebugUIOverlay.Instance.ShowLastAction("Nothing to water");
-                    }
+                    TryWater(tile, data);
                     break;
 
                 case ToolSystem.ToolType.Seed:
@@ -139,13 +123,40 @@ namespace HairvestMoon.Farming
                     break;
             }
         }
+        private void TryTill(Vector3Int tile, FarmTileData data)
+        {
+            if (FarmTileDataManager.Instance.IsTileTillable(tile) && !data.isTilled)
+            {
+                FarmTileDataManager.Instance.SetTilled(tile, true);
+                DebugUIOverlay.Instance.ShowLastAction("Tilled soil");
+            }
+            else
+            {
+                DebugUIOverlay.Instance.ShowLastAction("Can't till here");
+            }
+        }
+
+        private void TryWater(Vector3Int tile, FarmTileData data)
+        {
+            ToolSystem.Instance.ConsumeWaterFromCan();  // (Prepped for future water usage system)
+
+            if (!data.isTilled)
+            {
+                DebugUIOverlay.Instance.ShowLastAction("Water wasted — not tilled");
+                return;
+            }
+
+            FarmTileDataManager.Instance.SetWatered(tile, true);
+            DebugUIOverlay.Instance.ShowLastAction("Water applied");
+        }
+
 
         private void TryPlantSeed(Vector3Int tile, FarmTileData data)
         {
             if (data.isTilled && data.plantedCrop == null)
             {
                 data.plantedCrop = selectedSeed.cropData;
-                data.growthDays = 0;
+                data.wateredMinutesAccumulated = 0f;
                 DebugUIOverlay.Instance.ShowLastAction($"Planted {selectedSeed.cropData.cropName}");
             }
             else
@@ -160,7 +171,7 @@ namespace HairvestMoon.Farming
             {
                 DebugUIOverlay.Instance.ShowLastAction($"Harvested {data.plantedCrop.cropName}");
                 data.plantedCrop = null;
-                data.growthDays = 0;
+                data.wateredMinutesAccumulated = 0f;
             }
             else
             {

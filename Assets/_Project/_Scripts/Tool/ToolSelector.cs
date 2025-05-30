@@ -73,7 +73,7 @@ namespace HairvestMoon.Tool
 
         private void SetTool(ToolSystem.ToolType tool)
         {
-            ToolSystem.SetTool(tool);
+            ToolSystem.Instance.SetTool(tool);
             toolHotbar?.HighlightTool(tool);
         }
 

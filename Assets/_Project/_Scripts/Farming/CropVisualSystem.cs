@@ -18,15 +18,15 @@ namespace HairvestMoon.Farming
 
         private void OnEnable()
         {
-            GameTimeManager.Instance.OnDawn += RefreshCropVisuals;
+            GameTimeManager.Instance.OnTimeChanged += RefreshCropVisuals;
         }
 
         private void OnDisable()
         {
-            GameTimeManager.Instance.OnDawn -= RefreshCropVisuals;
+            GameTimeManager.Instance.OnTimeChanged -= RefreshCropVisuals;
         }
 
-        private void RefreshCropVisuals()
+        private void RefreshCropVisuals(int hour, int minute)
         {
             foreach (var entry in FarmTileDataManager.Instance.AllTileData)
             {
@@ -39,11 +39,15 @@ namespace HairvestMoon.Farming
                     continue;
                 }
 
-                int stage = Mathf.Clamp(data.growthDays, 0, data.plantedCrop.growthStages.Length - 1);
-                var sprite = data.plantedCrop.growthStages[stage];
+                float growthPercent = data.GetGrowthProgressPercent();
+
+                int stage = Mathf.Clamp(
+                    (int)(growthPercent * data.plantedCrop.growthStages.Length),
+                    0, data.plantedCrop.growthStages.Length - 1
+                );
 
                 Tile tile = ScriptableObject.CreateInstance<Tile>();
-                tile.sprite = sprite;
+                tile.sprite = data.plantedCrop.growthStages[stage];
                 cropTilemap.SetTile(pos, tile);
             }
         }

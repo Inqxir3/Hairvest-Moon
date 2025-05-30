@@ -1,14 +1,19 @@
 using HairvestMoon.Utility;
 using UnityEngine;
+#if UNITY_EDITOR
+    using UnityEditor;
+#endif
+
 
 namespace HairvestMoon.Tool
 {
-
     /// <summary>
-    /// Core tool system definitions and current tool tracking
+    /// Core tool system management: handles current tool state and tool capacity.
     /// </summary>
-    public static class ToolSystem
+    public class ToolSystem : MonoBehaviour
     {
+        public static ToolSystem Instance { get; private set; }
+
         public enum ToolType
         {
             None,
@@ -18,12 +23,63 @@ namespace HairvestMoon.Tool
             Harvest
         }
 
-        public static ToolType CurrentTool { get; private set; } = ToolType.None;
+        [Header("Watering Can Settings")]
+        public float waterCanCapacity = 100f;
+        public float waterPerUse = 1f;
 
-        public static void SetTool(ToolType tool)
+        public ToolType CurrentTool { get; private set; } = ToolType.None;
+
+        private void Awake()
+        {
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+        }
+
+        public void SetTool(ToolType tool)
         {
             CurrentTool = tool;
             DebugUIOverlay.Instance.ShowLastAction($"Tool: {CurrentTool}");
         }
+
+        public void ConsumeWaterFromCan()
+        {
+            waterCanCapacity -= waterPerUse;
+            waterCanCapacity = Mathf.Max(0f, waterCanCapacity);
+            DebugUIOverlay.Instance.ShowLastAction($"Water Remaining: {waterCanCapacity}");
+        }
+
+        public void RefillWaterCan(float refillAmount)
+        {
+            waterCanCapacity += refillAmount;
+            // Optional: Clamp to some max value if you want limits
+        }
+        public void RefillWaterToFull()
+        {
+            waterCanCapacity = 100f;  // we need to make this a constant or configurable value, consider modifications to max capacity later.
+        }
+
+
+
+        #if UNITY_EDITOR
+        [CustomEditor(typeof(ToolSystem))]
+        public class ToolSystemEditor : Editor
+        {
+            public override void OnInspectorGUI()
+            {
+                DrawDefaultInspector();
+
+                ToolSystem toolSystem = (ToolSystem)target;
+                if (GUILayout.Button("Refill Water (Dev Only)"))
+                {
+                    toolSystem.RefillWaterToFull();
+                }
+            }
+        }
+        #endif
+
     }
 }

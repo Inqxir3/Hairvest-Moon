@@ -11,37 +11,27 @@ namespace HairvestMoon.Farming
     {
         private void OnEnable()
         {
-            GameTimeManager.Instance.OnDawn += HandleDailyGrowthTick;
+            GameTimeManager.Instance.OnTimeChanged += HandleMinuteGrowthTick;
         }
 
         private void OnDisable()
         {
-            GameTimeManager.Instance.OnDawn -= HandleDailyGrowthTick;
+            GameTimeManager.Instance.OnTimeChanged -= HandleMinuteGrowthTick;
         }
 
-        private void HandleDailyGrowthTick()
+        private void HandleMinuteGrowthTick(int hour, int minute)
         {
             foreach (var entry in FarmTileDataManager.Instance.AllTileData)
             {
-                var pos = entry.Key;
                 var data = entry.Value;
 
-                if (!data.isTilled)
+                if (!data.isTilled || data.plantedCrop == null || !data.isWatered)
                     continue;
 
-                if (data.plantedCrop != null && data.isWatered)
-                {
-                    data.growthDays++;
-
-                    if (data.growthDays >= data.plantedCrop.growthDuration)
-                    {
-                        Debug.Log($"Crop at {pos} fully grown!");
-                        // Future: Mark as ready to harvest.
-                    }
-                }
-
-                // No water decay here — handled by WaterDecaySystem
+                float growthPerMinute = data.plantedCrop.growthRateModifier;
+                data.wateredMinutesAccumulated += growthPerMinute;
             }
         }
     }
+
 }
