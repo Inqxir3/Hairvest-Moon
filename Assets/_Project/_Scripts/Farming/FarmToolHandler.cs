@@ -1,5 +1,6 @@
 using HairvestMoon.Core;
 using HairvestMoon.Interaction;
+using HairvestMoon.Inventory;
 using HairvestMoon.Tool;
 using HairvestMoon.Utility;
 using UnityEngine;
@@ -123,6 +124,7 @@ namespace HairvestMoon.Farming
                     break;
             }
         }
+
         private void TryTill(Vector3Int tile, FarmTileData data)
         {
             if (FarmTileDataManager.Instance.IsTileTillable(tile) && !data.isTilled)
@@ -149,8 +151,7 @@ namespace HairvestMoon.Farming
             FarmTileDataManager.Instance.SetWatered(tile, true);
             DebugUIOverlay.Instance.ShowLastAction("Water applied");
         }
-
-
+        
         private void TryPlantSeed(Vector3Int tile, FarmTileData data)
         {
             if (data.isTilled && data.plantedCrop == null)
@@ -169,15 +170,30 @@ namespace HairvestMoon.Farming
         {
             if (data.HasRipeCrop())
             {
-                DebugUIOverlay.Instance.ShowLastAction($"Harvested {data.plantedCrop.cropName}");
-                data.plantedCrop = null;
-                data.wateredMinutesAccumulated = 0f;
+                var harvestedItem = data.plantedCrop.harvestedItem;
+                var yield = data.plantedCrop.yieldAmount;
+
+                bool added = InventorySystem.Instance.AddItem(harvestedItem, yield);
+
+                if (added)
+                {
+                    DebugUIOverlay.Instance.ShowLastAction($"Harvested {yield}x {harvestedItem.itemName}");
+                    data.plantedCrop = null;
+                    data.wateredMinutesAccumulated = 0f;
+                }
+                else
+                {
+                    DebugUIOverlay.Instance.ShowLastAction("Inventory Full - Harvest Failed");
+                }
+
+                InventorySystem.Instance.DebugPrintInventory(); // For quick testing
             }
             else
             {
                 DebugUIOverlay.Instance.ShowLastAction("Nothing to harvest");
             }
         }
+
 
         private void PositionSliderAtTarget()
         {

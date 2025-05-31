@@ -9,6 +9,9 @@ namespace HairvestMoon
         public float growthDurationMinutes;
         public float growthRateModifier = 1f;
         public Sprite[] growthStages;
+        public int yieldAmount = 1;
+        public ItemData harvestedItem;
+
 
         // Optional extras for the future:
         public int sellValue;
