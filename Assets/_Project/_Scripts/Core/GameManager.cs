@@ -22,16 +22,21 @@ namespace HairvestMoon.Core
 
         private void Start()
         {
-            _timeManager.OnDusk += () =>
-            {
-                _playerState.EnterWerewolfForm();
-            };
-
-            _timeManager.OnDawn += () =>
-            {
+            _timeManager.OnDusk += () => _playerState.EnterWerewolfForm();
+            _timeManager.OnDawn += () => {
                 GameStateManager.Instance.SetState(GameState.FreeRoam);
                 _playerState.ExitWerewolfForm();
             };
+
+            InputController.Instance.OnMenuToggle += HandleMenuToggle;
+        }
+
+        private void HandleMenuToggle()
+        {
+            if (GameStateManager.Instance.CurrentState == GameState.FreeRoam)
+                MainMenuUIManager.Instance.OpenMenu();
+            else if (GameStateManager.Instance.CurrentState == GameState.Menu)
+                MainMenuUIManager.Instance.CloseMenu();
         }
     }
 }

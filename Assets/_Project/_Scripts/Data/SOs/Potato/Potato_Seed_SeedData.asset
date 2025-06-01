@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da19ed76e4fc964fa5072fe620f41ed, type: 3}
+  m_Name: Potato_Seed_SeedData
+  m_EditorClassIdentifier: 
+  seedItem: {fileID: 11400000, guid: bdc1a73880e01d74ca9190e1c5bc684d, type: 2}
+  cropData: {fileID: 11400000, guid: 77b43f24b31086b49b9109c33b26a091, type: 2}

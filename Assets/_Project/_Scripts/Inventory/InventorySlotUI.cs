@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace HairvestMoon.Inventory
 {
-    public class StaticInventorySlot : MonoBehaviour
+    public class InventorySlotUI : MonoBehaviour
     {
         [SerializeField] private Image iconImage;
         [SerializeField] private TextMeshProUGUI nameText;

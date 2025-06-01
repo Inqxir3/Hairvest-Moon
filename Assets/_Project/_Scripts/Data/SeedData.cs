@@ -3,11 +3,10 @@ using UnityEngine.UI;
 
 namespace HairvestMoon
 {
-    [CreateAssetMenu(fileName = "NewSeed", menuName = "Crops/Seed")]
+    [CreateAssetMenu(menuName = "Data/Seed")]
     public class SeedData : ScriptableObject
     {
-        public string seedName;
+        public ItemData seedItem; 
         public CropData cropData;
-        public Sprite seedSprite;
     }
 }

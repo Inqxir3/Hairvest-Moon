@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Corn_Crop_CropData
   m_EditorClassIdentifier: 
   cropName: Corn
-  growthDurationMinutes: 1200
-  growthRateModifier: 1
+  cropIcon: {fileID: -2810629196521054685, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
   growthStages:
+  - {fileID: 928486610561660621, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: 7054052898260285097, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
   - {fileID: 1953912040312043488, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
   - {fileID: -6758262692919737198, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
   - {fileID: -3564233701335717565, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
-  yieldAmount: 1
+  growthDurationMinutes: 1200
+  harvestYield: 1
   harvestedItem: {fileID: 11400000, guid: b30e5f92371bc244e9cb6a5f9379e37d, type: 2}
-  sellValue: 47
-  regrowsAfterHarvest: 1

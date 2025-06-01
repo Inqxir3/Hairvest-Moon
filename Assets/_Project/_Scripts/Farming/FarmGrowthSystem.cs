@@ -28,8 +28,7 @@ namespace HairvestMoon.Farming
                 if (!data.isTilled || data.plantedCrop == null || !data.isWatered)
                     continue;
 
-                float growthPerMinute = data.plantedCrop.growthRateModifier;
-                data.wateredMinutesAccumulated += growthPerMinute;
+                data.wateredMinutesAccumulated += 1f;
             }
         }
     }

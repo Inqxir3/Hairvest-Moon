@@ -118,7 +118,6 @@ namespace HairvestMoon.Farming
             return Mathf.Clamp01(wateredMinutesAccumulated / plantedCrop.growthDurationMinutes);
         }
 
-
         public bool HasRipeCrop()
         {
             return plantedCrop != null && wateredMinutesAccumulated >= plantedCrop.growthDurationMinutes;

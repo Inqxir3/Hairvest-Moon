@@ -151,11 +151,25 @@ namespace HairvestMoon.Farming
             FarmTileDataManager.Instance.SetWatered(tile, true);
             DebugUIOverlay.Instance.ShowLastAction("Water applied");
         }
-        
+
         private void TryPlantSeed(Vector3Int tile, FarmTileData data)
         {
-            if (data.isTilled && data.plantedCrop == null)
+            if (data.isTilled && data.plantedCrop == null && selectedSeed != null)
             {
+                int seedCount = InventorySystem.Instance.GetQuantity(selectedSeed.seedItem);
+                if (seedCount <= 0)
+                {
+                    DebugUIOverlay.Instance.ShowLastAction("No seeds available");
+                    return;
+                }
+
+                bool removed = InventorySystem.Instance.RemoveItem(selectedSeed.seedItem, 1);
+                if (!removed)
+                {
+                    DebugUIOverlay.Instance.ShowLastAction("Failed to consume seed");
+                    return;
+                }
+
                 data.plantedCrop = selectedSeed.cropData;
                 data.wateredMinutesAccumulated = 0f;
                 DebugUIOverlay.Instance.ShowLastAction($"Planted {selectedSeed.cropData.cropName}");
@@ -171,7 +185,7 @@ namespace HairvestMoon.Farming
             if (data.HasRipeCrop())
             {
                 var harvestedItem = data.plantedCrop.harvestedItem;
-                var yield = data.plantedCrop.yieldAmount;
+                var yield = data.plantedCrop.harvestYield;
 
                 bool added = InventorySystem.Instance.AddItem(harvestedItem, yield);
 
@@ -185,8 +199,6 @@ namespace HairvestMoon.Farming
                 {
                     DebugUIOverlay.Instance.ShowLastAction("Inventory Full - Harvest Failed");
                 }
-
-                InventorySystem.Instance.DebugPrintInventory(); // For quick testing
             }
             else
             {
@@ -194,6 +206,10 @@ namespace HairvestMoon.Farming
             }
         }
 
+        public void SetSelectedSeed(SeedData newSeed)
+        {
+            selectedSeed = newSeed;
+        }
 
         private void PositionSliderAtTarget()
         {
@@ -208,5 +224,4 @@ namespace HairvestMoon.Farming
             progressSlider.localScale = new Vector3(progress, 1f, 1f);
         }
     }
-
 }

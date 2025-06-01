@@ -25,6 +25,7 @@ namespace HairvestMoon.Core
         public event Action<ControlMode> OnControlModeChanged;
         public event Action OnToolNext;
         public event Action OnToolPrevious;
+        public event Action OnMenuToggle;
 
         private InputSystem_Actions _input;
 
@@ -42,6 +43,9 @@ namespace HairvestMoon.Core
             _input = new InputSystem_Actions();
             _input.Player.SetCallbacks(this);
             _input.Player.Enable();
+
+
+            _input.Player.Pause.performed += OnPause;
 
             playerInput.onControlsChanged += HandleControlsChanged;
             GameStateManager.Instance.OnInputLockChanged += HandleInputLock;
@@ -154,6 +158,13 @@ namespace HairvestMoon.Core
             if (context.performed && !_inputLocked)
                 OnToolPrevious?.Invoke();
         }
+
         public void OnSprint(InputAction.CallbackContext context) { }
+
+        public void OnPause(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+                OnMenuToggle?.Invoke();
+        }
     }
 }

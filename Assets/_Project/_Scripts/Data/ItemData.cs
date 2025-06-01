@@ -3,15 +3,14 @@ using UnityEngine;
 
 namespace HairvestMoon
 {
-    [CreateAssetMenu(fileName = "NewItem", menuName = "Inventory/Item")]
+    [CreateAssetMenu(menuName = "Data/Item")]
     public class ItemData : ScriptableObject
     {
+        public string itemID;
         public string itemName;
+        public string description;
         public Sprite itemIcon;
         public ItemType itemType;
-        public int sellValue;
-
-        // Only used if itemType == Seed
-        public SeedData associatedSeed;
+        public int sellPrice;
     }
 }

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee21bbb5bffda44697ed8541bb763ac, type: 3}
+  m_Name: Beet_Crop_CropData
+  m_EditorClassIdentifier: 
+  cropName: Beet
+  cropIcon: {fileID: -1997631341, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  growthStages:
+  - {fileID: 3587576859124854096, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: -3657746594343932252, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: 5040600749477535373, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: -5493305639127696391, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: 911829301633750885, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  growthDurationMinutes: 800
+  harvestYield: 1
+  harvestedItem: {fileID: 11400000, guid: 26bebf907e3d34b4fb7b25e621dd6c1b, type: 2}

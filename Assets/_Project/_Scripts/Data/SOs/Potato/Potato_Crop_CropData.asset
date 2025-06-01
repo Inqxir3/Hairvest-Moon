@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee21bbb5bffda44697ed8541bb763ac, type: 3}
+  m_Name: Potato_Crop_CropData
+  m_EditorClassIdentifier: 
+  cropName: Potato
+  cropIcon: {fileID: -8040383059294580437, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  growthStages:
+  - {fileID: -6284936606863593846, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: -8630285636738604406, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: -6983727873654902819, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: -7400640253047530886, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  - {fileID: -4328877701979989219, guid: 80b481319a15aae44b393c52687c1cb0, type: 3}
+  growthDurationMinutes: 800
+  harvestYield: 1
+  harvestedItem: {fileID: 11400000, guid: 79ef38e4623202e468d8e2565ba01c8d, type: 2}

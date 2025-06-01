@@ -1,5 +1,7 @@
 using HairvestMoon.Utility;
 using UnityEngine;
+using HairvestMoon.Farming;
+
 #if UNITY_EDITOR
     using UnityEditor;
 #endif
@@ -43,6 +45,12 @@ namespace HairvestMoon.Tool
         {
             CurrentTool = tool;
             DebugUIOverlay.Instance.ShowLastAction($"Tool: {CurrentTool}");
+
+            if (tool == ToolType.Seed)
+                SeedSelectionUI.Instance.OpenSeedMenu();
+            else
+                SeedSelectionUI.Instance.CloseSeedMenu();
+
         }
 
         public void ConsumeWaterFromCan()
