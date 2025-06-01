@@ -1,0 +1,106 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace HairvestMoon.Inventory
+{
+    public class BackpackInventorySystem : MonoBehaviour
+    {
+        public static BackpackInventorySystem Instance { get; private set; }
+
+        public event Action OnBackpackChanged;
+
+        [System.Serializable]
+        public class BackpackSlot
+        {
+            public ItemData item;
+            public int quantity;
+        }
+
+        [Header("Backpack Settings")]
+        public List<BackpackSlot> backpack = new();
+        
+        [NonSerialized] public int maxBackpackSlots;
+
+        private void Awake()
+        {
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+        }
+
+        public bool AddItem(ItemData newItem, int amount = 1)
+        {
+            foreach (var slot in backpack)
+            {
+                if (slot.item == newItem)
+                {
+                    if (IsStackable(newItem))
+                    {
+                        slot.quantity += amount;
+                        OnBackpackChanged?.Invoke();
+                        return true;
+                    }
+                    break;
+                }
+            }
+
+            if (backpack.Count >= maxBackpackSlots)
+            {
+                Debug.Log("Backpack full.");
+                return false;
+            }
+
+            backpack.Add(new BackpackSlot { item = newItem, quantity = amount });
+            OnBackpackChanged?.Invoke();
+            return true;
+        }
+
+        private bool IsStackable(ItemData item)
+        {
+            return item.itemType == ItemType.QuestItem
+                || item.itemType == ItemType.Currency
+                || item.itemType == ItemType.Fertilizer;
+        }
+
+        public bool RemoveItem(ItemData item, int amount = 1)
+        {
+            for (int i = 0; i < backpack.Count; i++)
+            {
+                if (backpack[i].item == item)
+                {
+                    if (backpack[i].quantity < amount)
+                        return false;
+
+                    backpack[i].quantity -= amount;
+                    if (backpack[i].quantity <= 0)
+                        backpack.RemoveAt(i);
+
+                    OnBackpackChanged?.Invoke();
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public int GetQuantity(ItemData queryItem)
+        {
+            foreach (var slot in backpack)
+            {
+                if (slot.item == queryItem)
+                    return slot.quantity;
+            }
+            return 0;
+        }
+
+        public void ForceRefresh()
+        {
+            OnBackpackChanged?.Invoke();
+        }
+
+        public List<BackpackSlot> GetAllSlots() => backpack;
+    }
+}

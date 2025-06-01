@@ -1,4 +1,5 @@
 using HairvestMoon.Player;
+using HairvestMoon.UI;
 using UnityEngine;
 
 namespace HairvestMoon.Core

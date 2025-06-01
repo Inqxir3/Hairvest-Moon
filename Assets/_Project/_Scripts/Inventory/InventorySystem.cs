@@ -168,6 +168,11 @@ namespace HairvestMoon.Inventory
             return inventory;
         }
 
+        public void ForceRefresh()
+        {
+            OnInventoryChanged?.Invoke();
+        }
+
 
 
 

@@ -32,17 +32,17 @@ namespace HairvestMoon.Inventory
         {
             if (other.CompareTag("Player"))
             {
-                bool added = InventorySystem.Instance.AddItem(itemData, quantity);
-                if (added)
+                if (itemData.itemType == ItemType.Seed || itemData.itemType == ItemType.Crop)
                 {
-                    Debug.Log($"Picked up {quantity}x {itemData.itemID}");
-                    Destroy(gameObject);
+                    InventorySystem.Instance.AddItem(itemData, quantity);
                 }
                 else
                 {
-                    Debug.Log("Inventory full - could not pick up item");
+                    BackpackInventorySystem.Instance.AddItem(itemData, quantity);
                 }
+                Destroy(gameObject);
             }
         }
+
     }
 }
