@@ -32,6 +32,26 @@ namespace HairvestMoon.Inventory
             Instance = this;
         }
 
+        public bool CanAddItem(ItemData newItem, int amount = 1)
+        {
+            // Check for stackable items already in backpack
+            foreach (var slot in backpack)
+            {
+                if (slot.item == newItem)
+                {
+                    if (IsStackable(newItem))
+                    {
+                        return true; // stacking doesn't require slot space
+                    }
+                    break;
+                }
+            }
+
+            // Check slot limit for non-stackables
+            return backpack.Count < maxBackpackSlots;
+        }
+
+
         public bool AddItem(ItemData newItem, int amount = 1)
         {
             foreach (var slot in backpack)

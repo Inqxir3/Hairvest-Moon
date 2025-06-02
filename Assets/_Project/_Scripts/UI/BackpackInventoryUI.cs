@@ -1,6 +1,6 @@
-using HairvestMoon.Inventory;
 using System.Collections.Generic;
 using UnityEngine;
+using HairvestMoon.Inventory;
 
 namespace HairvestMoon.UI
 {
@@ -9,8 +9,13 @@ namespace HairvestMoon.UI
         [Header("UI References")]
         [SerializeField] private Transform backpackGridParent;
         [SerializeField] private GameObject backpackSlotPrefab;
+        [SerializeField] private GameObject emptyGridPrefab;
+        [SerializeField] private GameObject lockedGridPrefab;
+        [SerializeField] private ItemDescriptionUI itemDescriptionUI;
+        [SerializeField] private BackpackCapacityBarUI capacityBarUI;
 
         private readonly Dictionary<ItemData, BackpackSlotUI> slots = new();
+        private ItemData currentSelectedItem;
 
         private void OnEnable()
         {
@@ -27,20 +32,63 @@ namespace HairvestMoon.UI
         {
             foreach (Transform child in backpackGridParent)
                 Destroy(child.gameObject);
+
             slots.Clear();
 
-            foreach (var slot in BackpackInventorySystem.Instance.GetAllSlots())
+            int totalSlots = BackpackUpgradeManager.Instance.GetMaxUpgrades() * BackpackUpgradeManager.Instance.SlotsPerUpgrade + BackpackUpgradeManager.Instance.BaseSlots;
+            int unlockedSlots = BackpackUpgradeManager.Instance.GetCurrentSlots();
+
+            var allBackpackSlots = BackpackInventorySystem.Instance.GetAllSlots();
+            int filledSlots = allBackpackSlots.Count;
+
+            int filledIndex = 0;
+
+            for (int i = 0; i < totalSlots; i++)
             {
-                var slotGO = Instantiate(backpackSlotPrefab, backpackGridParent);
-                var uiSlot = slotGO.GetComponent<BackpackSlotUI>();
-                uiSlot.Initialize(slot.item, slot.quantity);
-                slots[slot.item] = uiSlot;
+                if (i < unlockedSlots)
+                {
+                    if (filledIndex < filledSlots)
+                    {
+                        var slotGO = Instantiate(backpackSlotPrefab, backpackGridParent);
+                        var slot = slotGO.GetComponent<BackpackSlotUI>();
+                        var backpackData = allBackpackSlots[filledIndex];
+                        slot.Initialize(backpackData.item, backpackData.quantity, OnSlotSelected);
+                        slots[backpackData.item] = slot;
+                        filledIndex++;
+                    }
+                    else
+                    {
+                        Instantiate(emptyGridPrefab, backpackGridParent);
+                    }
+                }
+                else
+                {
+                    Instantiate(lockedGridPrefab, backpackGridParent);
+                }
             }
         }
 
         public void RefreshUI()
         {
             BuildUI();
+            UpdateSelection(currentSelectedItem);
+        }
+
+        private void OnSlotSelected(ItemData selectedItem)
+        {
+            currentSelectedItem = selectedItem;
+            UpdateSelection(selectedItem);
+        }
+
+        private void UpdateSelection(ItemData selectedItem)
+        {
+            foreach (var pair in slots)
+                pair.Value.SetSelected(pair.Key == selectedItem);
+
+            if (selectedItem != null)
+                itemDescriptionUI.SetItem(selectedItem);
+            else
+                itemDescriptionUI.Clear();
         }
     }
 }

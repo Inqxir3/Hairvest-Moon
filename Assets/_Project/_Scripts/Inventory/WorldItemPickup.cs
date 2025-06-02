@@ -32,17 +32,33 @@ namespace HairvestMoon.Inventory
         {
             if (other.CompareTag("Player"))
             {
+                bool added = false;
+
                 if (itemData.itemType == ItemType.Seed || itemData.itemType == ItemType.Crop)
                 {
-                    InventorySystem.Instance.AddItem(itemData, quantity);
+                    added = InventorySystem.Instance.AddItem(itemData, quantity);
                 }
                 else
                 {
-                    BackpackInventorySystem.Instance.AddItem(itemData, quantity);
+                    if (BackpackInventorySystem.Instance.CanAddItem(itemData, quantity))
+                    {
+                        added = BackpackInventorySystem.Instance.AddItem(itemData, quantity);
+                    }
+                    else
+                    {
+                        Debug.Log("Cannot pick up item: Backpack full.");
+                        // (Optional) Show some floating feedback message to player.
+                    }
                 }
-                Destroy(gameObject);
+
+                if (added)
+                {
+                    Debug.Log($"Picked up {quantity}x {itemData.itemName}");
+                    Destroy(gameObject);
+                }
             }
         }
+
 
     }
 }

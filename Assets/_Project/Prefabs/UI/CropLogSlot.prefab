@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 6791350220204314611}
   - component: {fileID: 3129553781115551734}
   m_Layer: 0
-  m_Name: InventorySlot
+  m_Name: CropLogSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

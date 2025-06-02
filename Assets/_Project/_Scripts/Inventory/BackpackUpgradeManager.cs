@@ -8,8 +8,11 @@ namespace HairvestMoon.Inventory
 
         [Header("Upgrade Settings")]
         [SerializeField] private int baseSlots = 10;
-        [SerializeField] private int maxUpgrades = 5;
-        [SerializeField] private int slotsPerUpgrade = 5;
+        [SerializeField] private int maxUpgrades = 10;
+        [SerializeField] private int slotsPerUpgrade = 2;
+
+        public int SlotsPerUpgrade => slotsPerUpgrade;
+        public int BaseSlots => baseSlots;
 
         private int upgradeLevel = 0;
 
@@ -21,7 +24,10 @@ namespace HairvestMoon.Inventory
                 return;
             }
             Instance = this;
+        }
 
+        private void Start()
+        {
             ApplyUpgrade();
         }
 
