@@ -17,4 +17,5 @@ MonoBehaviour:
   description: Speeds up planting
   itemIcon: {fileID: 9211585275346177994, guid: 1f9d8d7163ce3194c90de9fdb00b666e, type: 3}
   itemType: 4
+  toolType: 3
   sellPrice: 2

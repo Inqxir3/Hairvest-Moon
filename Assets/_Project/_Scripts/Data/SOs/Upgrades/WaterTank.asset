@@ -17,4 +17,5 @@ MonoBehaviour:
   description: Extends the tank of the Water Can
   itemIcon: {fileID: -855942343913074080, guid: 5f5b7ac0c414f9d4aa8abbd1cf97fe31, type: 3}
   itemType: 4
+  toolType: 2
   sellPrice: 12

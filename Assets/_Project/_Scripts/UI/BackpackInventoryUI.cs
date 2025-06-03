@@ -14,10 +14,23 @@ namespace HairvestMoon.UI
         [SerializeField] private ItemDescriptionUI itemDescriptionUI;
         [SerializeField] private BackpackCapacityBarUI capacityBarUI;
 
+        [Header("Tool Slots")]
+        [SerializeField] private EquipSlotUI hoeToolSlot;
+        [SerializeField] private EquipSlotUI wateringToolSlot;
+        [SerializeField] private EquipSlotUI seedToolSlot;
+        [SerializeField] private EquipSlotUI harvestToolSlot;
+
+        [Header("Upgrade Slots")]
+        [SerializeField] private EquipSlotUI hoeUpgradeSlot;
+        [SerializeField] private EquipSlotUI wateringUpgradeSlot;
+        [SerializeField] private EquipSlotUI seedUpgradeSlot;
+        [SerializeField] private EquipSlotUI harvestUpgradeSlot;
+
         private readonly Dictionary<ItemData, BackpackSlotUI> slots = new();
         private ItemData currentSelectedItem;
 
-        private void OnEnable()
+
+        public void InitializeUI()
         {
             BackpackInventorySystem.Instance.OnBackpackChanged += RefreshUI;
             BuildUI();
@@ -78,7 +91,27 @@ namespace HairvestMoon.UI
         {
             currentSelectedItem = selectedItem;
             UpdateSelection(selectedItem);
+
+            if (BackpackEquipInstallManager.Instance.TryEquip(selectedItem))
+            {
+                Debug.Log("Installed " + selectedItem.itemName);
+                RefreshEquipSlots();
+            }
         }
+
+        private void RefreshEquipSlots()
+        {
+            hoeToolSlot.SetSlot(BackpackEquipSystem.Instance.hoeTool);
+            wateringToolSlot.SetSlot(BackpackEquipSystem.Instance.wateringTool);
+            seedToolSlot.SetSlot(BackpackEquipSystem.Instance.seedTool);
+            harvestToolSlot.SetSlot(BackpackEquipSystem.Instance.harvestTool);
+
+            hoeUpgradeSlot.SetSlot(BackpackEquipSystem.Instance.hoeUpgrade);
+            wateringUpgradeSlot.SetSlot(BackpackEquipSystem.Instance.wateringUpgrade);
+            seedUpgradeSlot.SetSlot(BackpackEquipSystem.Instance.seedUpgrade);
+            harvestUpgradeSlot.SetSlot(BackpackEquipSystem.Instance.harvestUpgrade);
+        }
+
 
         private void UpdateSelection(ItemData selectedItem)
         {

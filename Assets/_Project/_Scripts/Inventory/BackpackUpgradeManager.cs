@@ -16,17 +16,12 @@ namespace HairvestMoon.Inventory
 
         private int upgradeLevel = 0;
 
-        private void Awake()
+        public void InitializeSingleton()
         {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
             Instance = this;
         }
 
-        private void Start()
+        public void Initialize()
         {
             ApplyUpgrade();
         }

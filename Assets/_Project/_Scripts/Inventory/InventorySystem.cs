@@ -28,13 +28,8 @@ namespace HairvestMoon.Inventory
         public List<InventorySlot> inventory = new();
         public HashSet<ItemData> discoveredItems = new HashSet<ItemData>();
 
-        private void Awake()
+        public void InitializeSingleton()
         {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
             Instance = this;
         }
 

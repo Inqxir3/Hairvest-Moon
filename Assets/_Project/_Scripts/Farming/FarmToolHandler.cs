@@ -2,6 +2,7 @@ using HairvestMoon.Core;
 using HairvestMoon.Interaction;
 using HairvestMoon.Inventory;
 using HairvestMoon.Tool;
+using HairvestMoon.UI;
 using HairvestMoon.Utility;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -28,16 +29,13 @@ namespace HairvestMoon.Farming
         private bool isInteracting;
         private Vector3Int? targetTile;
 
-        private void Start()
+        public void Initialize()
         {
             targetingSystem = TileTargetingSystem.Instance;
-        }
-
-        private void OnEnable()
-        {
             interactAction.action.performed += OnInteractPerformed;
             interactAction.action.canceled += OnInteractCanceled;
         }
+
 
         private void OnDisable()
         {
@@ -103,19 +101,19 @@ namespace HairvestMoon.Farming
 
             switch (ToolSystem.Instance.CurrentTool)
             {
-                case ToolSystem.ToolType.Hoe:
+                case ToolType.Hoe:
                     TryTill(tile, data);
                     break;
 
-                case ToolSystem.ToolType.WateringCan:
+                case ToolType.WateringCan:
                     TryWater(tile, data);
                     break;
 
-                case ToolSystem.ToolType.Seed:
+                case ToolType.Seed:
                     TryPlantSeed(tile, data);
                     break;
 
-                case ToolSystem.ToolType.Harvest:
+                case ToolType.Harvest:
                     TryHarvest(tile, data);
                     break;
 
@@ -127,20 +125,25 @@ namespace HairvestMoon.Farming
 
         private void TryTill(Vector3Int tile, FarmTileData data)
         {
-            if (FarmTileDataManager.Instance.IsTileTillable(tile) && !data.isTilled)
+            FarmTileDataManager.Instance.SetTilled(tile, true);
+            DebugUIOverlay.Instance.ShowLastAction("Tile tilled");
+
+            // Apply Upgrade Behavior if selected
+            var hoeUpgrade = BackpackEquipSystem.Instance.hoeUpgrade;
+            var selectedOption = HoeSelectionUI.Instance.GetCurrentSelectedItem();
+
+            if (selectedOption != null && hoeUpgrade != null)
             {
-                FarmTileDataManager.Instance.SetTilled(tile, true);
-                DebugUIOverlay.Instance.ShowLastAction("Tilled soil");
-            }
-            else
-            {
-                DebugUIOverlay.Instance.ShowLastAction("Can't till here");
+                DebugUIOverlay.Instance.ShowLastAction($"Hoe Upgrade Used: {selectedOption.itemName}");
+
+                // Apply bonus tilling logic here:
+                ApplyExtraTilling(tile);
             }
         }
 
         private void TryWater(Vector3Int tile, FarmTileData data)
         {
-            ToolSystem.Instance.ConsumeWaterFromCan();  // (Prepped for future water usage system)
+            ToolSystem.Instance.ConsumeWaterFromCan();
 
             if (!data.isTilled)
             {
@@ -148,9 +151,34 @@ namespace HairvestMoon.Farming
                 return;
             }
 
+            // Always apply water normally
             FarmTileDataManager.Instance.SetWatered(tile, true);
             DebugUIOverlay.Instance.ShowLastAction("Water applied");
+
+            // Check if Fertilizer Sprayer is equipped
+            var wateringUpgrade = BackpackEquipSystem.Instance.wateringUpgrade;
+
+            if (wateringUpgrade != null)
+            {
+                // Read selected fertilizer from WateringSelectionUI
+                ItemData selectedFertilizer = WateringSelectionUI.Instance.GetCurrentSelectedItem();
+
+                if (selectedFertilizer != null)
+                {
+                    bool removed = BackpackInventorySystem.Instance.RemoveItem(selectedFertilizer, 1);
+                    if (removed)
+                    {
+                        DebugUIOverlay.Instance.ShowLastAction($"Fertilizer applied: {selectedFertilizer.itemName}");
+                        // You can expand here to actually apply fertilizer effects to tile data later.
+                    }
+                    else
+                    {
+                        DebugUIOverlay.Instance.ShowLastAction("No fertilizer available.");
+                    }
+                }
+            }
         }
+
 
         private void TryPlantSeed(Vector3Int tile, FarmTileData data)
         {
@@ -203,6 +231,23 @@ namespace HairvestMoon.Farming
             else
             {
                 DebugUIOverlay.Instance.ShowLastAction("Nothing to harvest");
+            }
+        }
+
+        private void ApplyExtraTilling(Vector3Int centerTile)
+        {
+            // Simple 3x3 till radius as an example:
+            for (int dx = -1; dx <= 1; dx++)
+            {
+                for (int dy = -1; dy <= 1; dy++)
+                {
+                    Vector3Int nearbyTile = new Vector3Int(centerTile.x + dx, centerTile.y + dy, 0);
+                    var tileData = FarmTileDataManager.Instance.GetTileData(nearbyTile);
+                    if (!tileData.isTilled)
+                    {
+                        FarmTileDataManager.Instance.SetTilled(nearbyTile, true);
+                    }
+                }
             }
         }
 

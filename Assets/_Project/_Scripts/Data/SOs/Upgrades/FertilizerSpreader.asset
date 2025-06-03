@@ -17,4 +17,5 @@ MonoBehaviour:
   description: Allows the water can to spread Fertilizer
   itemIcon: {fileID: -9191924470218883087, guid: 5f5b7ac0c414f9d4aa8abbd1cf97fe31, type: 3}
   itemType: 4
+  toolType: 2
   sellPrice: 40

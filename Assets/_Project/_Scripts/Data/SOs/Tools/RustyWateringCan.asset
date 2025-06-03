@@ -17,4 +17,5 @@ MonoBehaviour:
   description: Might Leak
   itemIcon: {fileID: 21300000, guid: 8dfb7eb4494cbe14eabf0fda5056d27d, type: 3}
   itemType: 2
+  toolType: 2
   sellPrice: 0

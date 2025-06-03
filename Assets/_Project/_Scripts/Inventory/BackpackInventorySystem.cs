@@ -22,13 +22,8 @@ namespace HairvestMoon.Inventory
         
         [NonSerialized] public int maxBackpackSlots;
 
-        private void Awake()
+        public void InitializeSingleton()
         {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
             Instance = this;
         }
 

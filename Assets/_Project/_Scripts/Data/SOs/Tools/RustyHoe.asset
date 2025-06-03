@@ -17,4 +17,5 @@ MonoBehaviour:
   description: A Rusty Hoe
   itemIcon: {fileID: 2626216719061117901, guid: 5f5b7ac0c414f9d4aa8abbd1cf97fe31, type: 3}
   itemType: 2
+  toolType: 1
   sellPrice: 0

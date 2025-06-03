@@ -1,4 +1,5 @@
 using HairvestMoon.Core;
+using HairvestMoon.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,13 +16,13 @@ namespace HairvestMoon.Tool
 
         [SerializeField] private ToolHotbarUI toolHotbar;
 
-        private ToolSystem.ToolType[] toolOrder = new[]
+        private ToolType[] toolOrder = new[]
         {
-        ToolSystem.ToolType.Hoe,
-        ToolSystem.ToolType.WateringCan,
-        ToolSystem.ToolType.Seed,
-        ToolSystem.ToolType.Harvest
-    };
+            ToolType.Hoe,
+            ToolType.WateringCan,
+            ToolType.Seed,
+            ToolType.Harvest
+        };
 
         private int currentIndex = 0;
 
@@ -71,13 +72,13 @@ namespace HairvestMoon.Tool
             SetTool(toolOrder[currentIndex]);
         }
 
-        private void SetTool(ToolSystem.ToolType tool)
+        private void SetTool(ToolType tool)
         {
             ToolSystem.Instance.SetTool(tool);
             toolHotbar?.HighlightTool(tool);
         }
 
-        public void SelectToolExternally(ToolSystem.ToolType tool)
+        public void SelectToolExternally(ToolType tool)
         {
             for (int i = 0; i < toolOrder.Length; i++)
             {

@@ -17,4 +17,5 @@ MonoBehaviour:
   description: Fertilizer to speed up crop growth
   itemIcon: {fileID: -2771170416874956216, guid: 48401b94f922b2d46a40f103d2eb0edb, type: 3}
   itemType: 3
+  toolType: 2
   sellPrice: 10
