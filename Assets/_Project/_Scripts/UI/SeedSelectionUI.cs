@@ -99,7 +99,6 @@ namespace HairvestMoon.UI
         public void OpenSeedMenu()
         {
             gameObject.SetActive(true);
-            BuildUI();
         }
 
         public void CloseSeedMenu()

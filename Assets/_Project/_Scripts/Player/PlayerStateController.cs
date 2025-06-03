@@ -28,11 +28,7 @@ namespace HairvestMoon.Player
 
         private PlayerFormData _currentFormData;
 
-        private void Awake()
-        {
-            Instance = this;
-            SwitchToForm(PlayerForm.Human);
-        }
+        public void InitializeSingleton() { Instance = this; SwitchToForm(PlayerForm.Human); }
 
         public void EnterWerewolfForm() => SwitchToForm(PlayerForm.Werewolf);
         public void ExitWerewolfForm() => SwitchToForm(PlayerForm.Human);

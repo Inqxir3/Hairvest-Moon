@@ -15,11 +15,7 @@ namespace HairvestMoon.Core
         [SerializeField] private GameTimeManager _timeManager;
         [SerializeField] private PlayerStateController _playerState;
 
-        private void Awake()
-        {
-            if (Instance != null) { Destroy(gameObject); return; }
-            Instance = this;
-        }
+        public void InitializeSingleton() { Instance = this; }
 
         private void Start()
         {

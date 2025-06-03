@@ -16,12 +16,7 @@ namespace HairvestMoon.Core
 
         public bool IsInputLocked { get; private set; } = false;
 
-        private void Awake()
-        {
-            if (Instance != null) { Destroy(gameObject); return; }
-            Instance = this;
-            SetState(GameState.FreeRoam);
-        }
+        public void InitializeSingleton() { Instance = this; SetState(GameState.FreeRoam); }
 
         public void SetState(GameState newState)
         {

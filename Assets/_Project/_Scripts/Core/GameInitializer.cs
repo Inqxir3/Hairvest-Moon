@@ -1,12 +1,28 @@
+using HairvestMoon.Core;
 using HairvestMoon.Farming;
+using HairvestMoon.Interaction;
 using HairvestMoon.Inventory;
+using HairvestMoon.Player;
 using HairvestMoon.Tool;
 using HairvestMoon.UI;
 using UnityEngine;
 
 public class GameInitializer : MonoBehaviour
 {
-    [Header("Systems")]
+    [Header("Core Game Systems")]
+    public GameManager gameManager;
+    public GameStateManager gameStateManager;
+    public GameTimeManager gameTimeManager;
+    public InputController inputController;
+    public PlayerStateController playerStateController;
+    public Player_Controller playerController;
+    public PlayerFacingController playerFacingController;
+    public TileTargetingSystem tileTargetingSystem;
+
+    [Header("Databases")]
+    public SeedDatabase seedDatabase;
+
+    [Header("Farming Core Systems")]
     public InventorySystem inventorySystem;
     public BackpackInventorySystem backpackInventorySystem;
     public BackpackEquipSystem backpackEquipSystem;
@@ -21,23 +37,37 @@ public class GameInitializer : MonoBehaviour
     public HarvestSelectionUI harvestSelectionUI;
     public SelectionTooltipUI selectionTooltipUI;
 
-    [Header("Gameplay")]
+    [Header("Gameplay Systems")]
     public ToolSystem toolSystem;
+    public ToolSelector toolSelector;
     public FarmToolHandler farmToolHandler;
 
     private void Awake()
     {
-        // PHASE 1: Data Systems
+        // PHASE 1 — Core Game Systems
+        gameStateManager.InitializeSingleton();
+        gameTimeManager.InitializeSingleton();
+        inputController.InitializeSingleton();
+        gameManager.InitializeSingleton();
+        playerStateController.InitializeSingleton();
+        playerController.InitializeSingleton();
+        playerFacingController.InitializeSingleton();
+        tileTargetingSystem.InitializeSingleton();
+
+        // PHASE 2 — Databases
+        seedDatabase.InitializeSingleton();
+
+        // PHASE 3 — Farming Systems
         inventorySystem.InitializeSingleton();
         backpackInventorySystem.InitializeSingleton();
         backpackEquipSystem.InitializeSingleton();
         backpackEquipInstallManager.InitializeSingleton();
         backpackUpgradeManager.InitializeSingleton();
 
-        // PHASE 2: Apply Upgrade logic AFTER inventory systems are ready
+        // PHASE 4 — Apply Backpack Upgrades AFTER inventory live
         backpackUpgradeManager.Initialize();
 
-        // PHASE 3: UI Systems (they can now safely subscribe to events)
+        // PHASE 5 — UI Systems
         backpackInventoryUI.InitializeUI();
         seedSelectionUI.InitializeUI();
         wateringSelectionUI.InitializeUI();
@@ -45,9 +75,15 @@ public class GameInitializer : MonoBehaviour
         harvestSelectionUI.InitializeUI();
         selectionTooltipUI.InitializeUI();
 
-        // PHASE 4: Gameplay systems
+        // Disable all selection UIs on boot
+        seedSelectionUI.CloseSeedMenu();
+        wateringSelectionUI.CloseWateringMenu();
+        hoeSelectionUI.CloseHoeMenu();
+        harvestSelectionUI.CloseHarvestMenu();
+
+        // PHASE 6 — Gameplay Systems
         toolSystem.InitializeSingleton();
+        toolSelector.InitializeSingleton();
         farmToolHandler.Initialize();
     }
 }
-

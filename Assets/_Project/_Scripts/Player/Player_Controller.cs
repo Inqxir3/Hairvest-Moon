@@ -27,11 +27,7 @@ namespace HairvestMoon.Player
         private readonly int _animeMoveUp = Animator.StringToHash("AN_Character_Farmer_Walk_Up");
         private readonly int _animeMoveDown = Animator.StringToHash("AN_Character_Farmer_Walk_Down");
 
-        private void Awake()
-        {
-            if (Instance == null) Instance = this;
-            else Destroy(gameObject);
-        }
+        public void InitializeSingleton() { Instance = this; }
 
         private void OnEnable()
         {

@@ -17,11 +17,7 @@ namespace HairvestMoon.Player
         private FacingDirection _lastMoveFacing = FacingDirection.Right;
         private FacingSource _currentSource = FacingSource.Movement;
 
-        private void Awake()
-        {
-            if (Instance != null) Destroy(gameObject);
-            else Instance = this;
-        }
+        public void InitializeSingleton() { Instance = this; }
 
         /// <summary>
         /// Updates the facing direction each frame based on input and control mode.

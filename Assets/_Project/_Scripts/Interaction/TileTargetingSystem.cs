@@ -27,7 +27,7 @@ namespace HairvestMoon.Interaction
         private Vector3Int? _currentTargetedTile;
         private Vector3Int _lastHighlighted;
 
-        private void Awake() => Instance = this;
+        public void InitializeSingleton() { Instance = this; }
 
         private void Update()
         {

@@ -13,15 +13,11 @@ namespace HairvestMoon.Farming
 
         public List<SeedData> AllSeeds => allSeeds;
 
-        private void Awake()
+        public void InitializeSingleton()
         {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
             Instance = this;
 
+            // Build dictionary now that list is loaded
             foreach (var seed in allSeeds)
             {
                 if (seed.seedItem != null)

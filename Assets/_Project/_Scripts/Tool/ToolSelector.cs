@@ -26,17 +26,10 @@ namespace HairvestMoon.Tool
 
         private int currentIndex = 0;
 
-        private void Awake()
+        public void InitializeSingleton()
         {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
             Instance = this;
-        }
-        private void Start()
-        {
+
             InputController.Instance.OnToolNext += HandleNext;
             InputController.Instance.OnToolPrevious += HandlePrevious;
             SetTool(toolOrder[currentIndex]);

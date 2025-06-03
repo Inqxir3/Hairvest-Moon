@@ -34,26 +34,30 @@ namespace HairvestMoon.Tool
             CurrentTool = tool;
             DebugUIOverlay.Instance.ShowLastAction($"Tool: {CurrentTool}");
 
+            // Close all selection UIs first
+            SeedSelectionUI.Instance?.CloseSeedMenu();
+            WateringSelectionUI.Instance?.CloseWateringMenu();
+            HoeSelectionUI.Instance?.CloseHoeMenu();
+            HarvestSelectionUI.Instance?.CloseHarvestMenu();
+
+            // Open only the active tool's selection UI
             switch (tool)
             {
                 case ToolType.Seed:
                     SeedSelectionUI.Instance.OpenSeedMenu();
                     break;
-
                 case ToolType.WateringCan:
                     WateringSelectionUI.Instance.OpenWateringMenu();
                     break;
-
                 case ToolType.Hoe:
                     HoeSelectionUI.Instance.OpenHoeMenu();
                     break;
-
                 case ToolType.Harvest:
                     HarvestSelectionUI.Instance.OpenHarvestMenu();
                     break;
             }
-
         }
+
 
         public void ConsumeWaterFromCan()
         {

@@ -31,11 +31,7 @@ namespace HairvestMoon.Core
         private float _timer;
         private bool _isNight = false;
 
-        private void Awake()
-        {
-            if (Instance != null) { Destroy(gameObject); return; }
-            Instance = this;
-        }
+        public void InitializeSingleton() { Instance = this; }
 
         private void Update()
         {

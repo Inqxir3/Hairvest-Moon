@@ -35,11 +35,19 @@ namespace HairvestMoon.Core
 
         private bool _inputLocked = false;
 
-        private void Awake()
+        public void InitializeSingleton()
         {
-            if (Instance != null) { Destroy(gameObject); return; }
             Instance = this;
+            InitInput();
+        }
 
+        private void OnDisable()
+        {
+            GameStateManager.Instance.OnInputLockChanged -= HandleInputLock;
+        }
+
+        private void InitInput()
+        {
             _input = new InputSystem_Actions();
             _input.Player.SetCallbacks(this);
             _input.Player.Enable();
@@ -49,11 +57,6 @@ namespace HairvestMoon.Core
 
             playerInput.onControlsChanged += HandleControlsChanged;
             GameStateManager.Instance.OnInputLockChanged += HandleInputLock;
-        }
-
-        private void OnDisable()
-        {
-            GameStateManager.Instance.OnInputLockChanged -= HandleInputLock;
         }
 
         private void HandleControlsChanged(PlayerInput input)
