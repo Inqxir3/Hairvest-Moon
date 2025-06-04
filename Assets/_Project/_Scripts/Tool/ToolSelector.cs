@@ -10,10 +10,8 @@ namespace HairvestMoon.Tool
     /// Handles tool selection via keyboard hotkeys and input actions for next/previous.
     /// Updates ToolSystem and notifies UI.
     /// </summary>
-    public class ToolSelector : MonoBehaviour
+    public class ToolSelector : MonoBehaviour, IBusListener
     {
-        public static ToolSelector Instance { get; private set; }
-
         [SerializeField] private ToolHotbarUI toolHotbar;
 
         private ToolType[] toolOrder = new[]
@@ -26,19 +24,16 @@ namespace HairvestMoon.Tool
 
         private int currentIndex = 0;
 
-        public void InitializeSingleton()
+        public void InitialSetTool()
         {
-            Instance = this;
-
-            InputController.Instance.OnToolNext += HandleNext;
-            InputController.Instance.OnToolPrevious += HandlePrevious;
             SetTool(toolOrder[currentIndex]);
         }
 
-        private void OnDisable()
+        public void RegisterBusListeners()
         {
-            InputController.Instance.OnToolNext -= HandleNext;
-            InputController.Instance.OnToolPrevious -= HandlePrevious;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.ToolNext += HandleNext;
+            bus.ToolPrevious += HandlePrevious;
         }
 
         private void Update()
@@ -50,8 +45,8 @@ namespace HairvestMoon.Tool
             if (Keyboard.current.digit4Key.wasPressedThisFrame) SetToolByIndex(3);
         }
 
-        private void HandleNext() => CycleTool(1);
-        private void HandlePrevious() => CycleTool(-1);
+        public void HandleNext() => CycleTool(1);
+        public void HandlePrevious() => CycleTool(-1);
 
         private void SetToolByIndex(int index)
         {
@@ -67,7 +62,7 @@ namespace HairvestMoon.Tool
 
         private void SetTool(ToolType tool)
         {
-            ToolSystem.Instance.SetTool(tool);
+            ServiceLocator.Get<ToolSystem>().SetTool(tool);
             toolHotbar?.HighlightTool(tool);
         }
 
@@ -83,6 +78,7 @@ namespace HairvestMoon.Tool
                 }
             }
         }
+
 
     }
 }

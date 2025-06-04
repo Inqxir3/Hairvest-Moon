@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using HairvestMoon.Inventory;
+using HairvestMoon.Core;
 
 namespace HairvestMoon.UI
 {
-    public class BackpackInventoryUI : MonoBehaviour
+    public class BackpackInventoryUI : MonoBehaviour, IBusListener
     {
         [Header("UI References")]
         [SerializeField] private Transform backpackGridParent;
@@ -32,13 +33,19 @@ namespace HairvestMoon.UI
 
         public void InitializeUI()
         {
-            BackpackInventorySystem.Instance.OnBackpackChanged += RefreshUI;
             BuildUI();
+        }
+
+        public void RegisterBusListeners()
+        {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged += RefreshUI;
         }
 
         private void OnDisable()
         {
-            BackpackInventorySystem.Instance.OnBackpackChanged -= RefreshUI;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged -= RefreshUI;
         }
 
         private void BuildUI()
@@ -48,10 +55,10 @@ namespace HairvestMoon.UI
 
             slots.Clear();
 
-            int totalSlots = BackpackUpgradeManager.Instance.GetMaxUpgrades() * BackpackUpgradeManager.Instance.SlotsPerUpgrade + BackpackUpgradeManager.Instance.BaseSlots;
-            int unlockedSlots = BackpackUpgradeManager.Instance.GetCurrentSlots();
+            int totalSlots = ServiceLocator.Get<BackpackUpgradeManager>().GetMaxUpgrades() * ServiceLocator.Get<BackpackUpgradeManager>().SlotsPerUpgrade + ServiceLocator.Get<BackpackUpgradeManager>().BaseSlots;
+            int unlockedSlots = ServiceLocator.Get<BackpackUpgradeManager>().GetCurrentSlots();
 
-            var allBackpackSlots = BackpackInventorySystem.Instance.GetAllSlots();
+            var allBackpackSlots = ServiceLocator.Get<BackpackInventorySystem>().GetAllSlots();
             int filledSlots = allBackpackSlots.Count;
 
             int filledIndex = 0;
@@ -92,7 +99,7 @@ namespace HairvestMoon.UI
             currentSelectedItem = selectedItem;
             UpdateSelection(selectedItem);
 
-            if (BackpackEquipInstallManager.Instance.TryEquip(selectedItem))
+            if (ServiceLocator.Get<BackpackEquipInstallManager>().TryEquip(selectedItem))
             {
                 Debug.Log("Installed " + selectedItem.itemName);
                 RefreshEquipSlots();
@@ -101,15 +108,15 @@ namespace HairvestMoon.UI
 
         private void RefreshEquipSlots()
         {
-            hoeToolSlot.SetSlot(BackpackEquipSystem.Instance.hoeTool);
-            wateringToolSlot.SetSlot(BackpackEquipSystem.Instance.wateringTool);
-            seedToolSlot.SetSlot(BackpackEquipSystem.Instance.seedTool);
-            harvestToolSlot.SetSlot(BackpackEquipSystem.Instance.harvestTool);
+            hoeToolSlot.SetSlot(ServiceLocator.Get<BackpackEquipSystem>().hoeTool);
+            wateringToolSlot.SetSlot(ServiceLocator.Get<BackpackEquipSystem>().wateringTool);
+            seedToolSlot.SetSlot(ServiceLocator.Get<BackpackEquipSystem>().seedTool);
+            harvestToolSlot.SetSlot(ServiceLocator.Get<BackpackEquipSystem>().harvestTool);
 
-            hoeUpgradeSlot.SetSlot(BackpackEquipSystem.Instance.hoeUpgrade);
-            wateringUpgradeSlot.SetSlot(BackpackEquipSystem.Instance.wateringUpgrade);
-            seedUpgradeSlot.SetSlot(BackpackEquipSystem.Instance.seedUpgrade);
-            harvestUpgradeSlot.SetSlot(BackpackEquipSystem.Instance.harvestUpgrade);
+            hoeUpgradeSlot.SetSlot(ServiceLocator.Get<BackpackEquipSystem>().hoeUpgrade);
+            wateringUpgradeSlot.SetSlot(ServiceLocator.Get<BackpackEquipSystem>().wateringUpgrade);
+            seedUpgradeSlot.SetSlot(ServiceLocator.Get<BackpackEquipSystem>().seedUpgrade);
+            harvestUpgradeSlot.SetSlot(ServiceLocator.Get<BackpackEquipSystem>().harvestUpgrade);
         }
 
 

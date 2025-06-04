@@ -1,11 +1,10 @@
+using HairvestMoon.Core;
 using UnityEngine;
 
 namespace HairvestMoon.Inventory
 {
     public class BackpackUpgradeManager : MonoBehaviour
     {
-        public static BackpackUpgradeManager Instance { get; private set; }
-
         [Header("Upgrade Settings")]
         [SerializeField] private int baseSlots = 10;
         [SerializeField] private int maxUpgrades = 10;
@@ -15,11 +14,6 @@ namespace HairvestMoon.Inventory
         public int BaseSlots => baseSlots;
 
         private int upgradeLevel = 0;
-
-        public void InitializeSingleton()
-        {
-            Instance = this;
-        }
 
         public void Initialize()
         {
@@ -43,13 +37,13 @@ namespace HairvestMoon.Inventory
         private void ApplyUpgrade()
         {
             int totalSlots = baseSlots + (upgradeLevel * slotsPerUpgrade);
-            BackpackInventorySystem.Instance.maxBackpackSlots = totalSlots;
-            BackpackInventorySystem.Instance.ForceRefresh();
+            ServiceLocator.Get<BackpackInventorySystem>().maxBackpackSlots = totalSlots;
+            ServiceLocator.Get<BackpackInventorySystem>().ForceRefresh();
         }
 
 
         public int GetUpgradeLevel() => upgradeLevel;
         public int GetMaxUpgrades() => maxUpgrades;
-        public int GetCurrentSlots() => BackpackInventorySystem.Instance.maxBackpackSlots;
+        public int GetCurrentSlots() => ServiceLocator.Get<BackpackInventorySystem>().maxBackpackSlots;
     }
 }

@@ -1,3 +1,4 @@
+using HairvestMoon.Core;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,8 +20,6 @@ namespace HairvestMoon.Player
 
     public class PlayerStateController : MonoBehaviour
     {
-        public static PlayerStateController Instance { get; private set; }
-
         public enum PlayerForm { Human, Werewolf }
         public PlayerForm CurrentForm { get; private set; }
 
@@ -28,7 +27,10 @@ namespace HairvestMoon.Player
 
         private PlayerFormData _currentFormData;
 
-        public void InitializeSingleton() { Instance = this; SwitchToForm(PlayerForm.Human); }
+        public void InitializePlayerState()
+        {
+            SwitchToForm(PlayerForm.Human);
+        }
 
         public void EnterWerewolfForm() => SwitchToForm(PlayerForm.Werewolf);
         public void ExitWerewolfForm() => SwitchToForm(PlayerForm.Human);
@@ -43,9 +45,12 @@ namespace HairvestMoon.Player
                 {
                     _currentFormData = form;
                     CurrentForm = newForm;
+
+                    ServiceLocator.Get<GameEventBus>().RaisePlayerFormChanged(CurrentForm);
                 }
             }
         }
+
 
         public Animator CurrentAnimator => _currentFormData.Animator;
         public SpriteRenderer CurrentSpriteRenderer => _currentFormData.Renderer;

@@ -1,3 +1,4 @@
+using HairvestMoon.Core;
 using HairvestMoon.Farming;
 using HairvestMoon.Inventory;
 using System.Collections.Generic;
@@ -5,72 +6,76 @@ using UnityEngine;
 
 namespace HairvestMoon.UI
 {
-    public class SeedSelectionUI : MonoBehaviour
+    public class SeedSelectionUI : MonoBehaviour, IBusListener
     {
         [Header("UI References")]
         [SerializeField] private GameObject seedSlotPrefab;
         [SerializeField] private Transform seedGridParent;
         [SerializeField] private FarmToolHandler farmToolHandler;
 
-        private List<SeedSelectionSlot> slots = new();
+        private List<UpgradeSelectionSlot> slots = new();
         private ItemData currentSelectedItem;
-
-        public static SeedSelectionUI Instance { get; private set; }
-
-        private void Awake()
-        {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-        }
 
         public void InitializeUI()
         {
-            InventorySystem.Instance.OnInventoryChanged += RefreshUI;
             BuildUI();
         }
+        public void RegisterBusListeners()
+        {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.InventoryChanged += RefreshUI;
+        }
+
 
         private void OnDisable()
         {
-            InventorySystem.Instance.OnInventoryChanged -= RefreshUI;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.InventoryChanged -= RefreshUI;
         }
 
         private void BuildUI()
         {
-            // Clear old
             foreach (Transform child in seedGridParent)
                 Destroy(child.gameObject);
+
             slots.Clear();
 
-            var discoveredSeeds = InventorySystem.Instance.GetDiscoveredItemsByType(ItemType.Seed);
+            // Build list of seeds the player has in stock
+            List<ItemData> seedsInInventory = new();
 
-            // Handle empty case
-            if (discoveredSeeds.Count == 0)
+            foreach (var seedData in ServiceLocator.Get<SeedDatabase>().AllSeeds)
+            {
+                int quantity = ServiceLocator.Get<InventorySystem>().GetQuantity(seedData.seedItem);
+                if (quantity > 0)
+                {
+                    seedsInInventory.Add(seedData.seedItem);
+                }
+            }
+
+            if (seedsInInventory.Count == 0)
             {
                 currentSelectedItem = null;
                 farmToolHandler.SetSelectedSeed(null);
                 return;
             }
 
-            // If we have no valid selection, auto-select first seed
-            if (currentSelectedItem == null || !discoveredSeeds.Contains(currentSelectedItem))
-            {
-                currentSelectedItem = discoveredSeeds[0];
-                SetSelectedSeed(currentSelectedItem);
-            }
-
-            foreach (var itemData in discoveredSeeds)
+            // Build UI for each owned seed
+            foreach (var item in seedsInInventory)
             {
                 var slotGO = Instantiate(seedSlotPrefab, seedGridParent);
-                var slot = slotGO.GetComponent<SeedSelectionSlot>();
-                slot.Initialize(itemData, OnSeedSelected);
-                slot.SetSelected(itemData == currentSelectedItem);
-                slots.Add(slot);
+                var slotUI = slotGO.GetComponent<UpgradeSelectionSlot>();
+                slotUI.Initialize(item, OnSeedSelected);
+                slotUI.SetSelected(item == currentSelectedItem);
+                slots.Add(slotUI);
+            }
+
+            // If no selection is active, auto-select first seed
+            if (currentSelectedItem == null)
+            {
+                OnSeedSelected(seedsInInventory[0]);
             }
         }
+
 
         private void OnSeedSelected(ItemData selectedItem)
         {
@@ -80,13 +85,13 @@ namespace HairvestMoon.UI
             // Update highlights
             foreach (var slot in slots)
             {
-                slot.SetSelected(slot.GetItemData() == currentSelectedItem);
+                slot.SetSelected(slot.Item == currentSelectedItem);
             }
         }
 
         private void SetSelectedSeed(ItemData selectedItem)
         {
-            SeedData seedData = SeedDatabase.Instance.GetSeedDataByItem(selectedItem);
+            SeedData seedData = ServiceLocator.Get<SeedDatabase>().GetSeedDataByItem(selectedItem);
             farmToolHandler.SetSelectedSeed(seedData);
         }
 

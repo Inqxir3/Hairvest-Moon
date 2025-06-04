@@ -7,23 +7,18 @@ namespace HairvestMoon.Core
     // Used to lock input, pause systems, manage cutscenes or tasks
     public class GameStateManager : MonoBehaviour
     {
-        public static GameStateManager Instance { get; private set; }
-
         public GameState CurrentState { get; private set; }
-
-        public event Action<GameState> OnGameStateChanged;
-        public event Action<bool> OnInputLockChanged;
 
         public bool IsInputLocked { get; private set; } = false;
 
-        public void InitializeSingleton() { Instance = this; SetState(GameState.FreeRoam); }
+        public void InitializeGameState() { SetState(GameState.FreeRoam); }
 
         public void SetState(GameState newState)
         {
             if (newState == CurrentState) return;
 
             CurrentState = newState;
-            OnGameStateChanged?.Invoke(CurrentState);
+            ServiceLocator.Get<GameEventBus>().RaiseGameStateChanged(CurrentState);
 
             HandleTimeControl();
             HandleInputLock();
@@ -32,9 +27,9 @@ namespace HairvestMoon.Core
         private void HandleTimeControl()
         {
             if (CurrentState == GameState.Menu || CurrentState == GameState.Dialogue || CurrentState == GameState.Cutscene)
-                GameTimeManager.Instance.FreezeTime();
+                ServiceLocator.Get<GameTimeManager>().FreezeTime();
             else
-                GameTimeManager.Instance.ResumeTime();
+                ServiceLocator.Get<GameTimeManager>().ResumeTime();
         }
 
         private void HandleInputLock()
@@ -43,7 +38,7 @@ namespace HairvestMoon.Core
             if (shouldLock != IsInputLocked)
             {
                 IsInputLocked = shouldLock;
-                OnInputLockChanged?.Invoke(IsInputLocked);
+                ServiceLocator.Get<GameEventBus>().RaiseInputLockChanged(IsInputLocked);
             }
         }
 

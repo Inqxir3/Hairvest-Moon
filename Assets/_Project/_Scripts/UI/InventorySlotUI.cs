@@ -1,3 +1,4 @@
+using HairvestMoon.Core;
 using HairvestMoon.Inventory;
 using TMPro;
 using UnityEngine;
@@ -20,12 +21,12 @@ namespace HairvestMoon.UI
 
         public void UpdateDisplay()
         {
-            bool discovered = InventorySystem.Instance.discoveredItems.Contains(item);
+            bool discovered = ServiceLocator.Get<InventorySystem>().discoveredItems.Contains(item);
             iconImage.sprite = discovered ? item.itemIcon : null;
             iconImage.color = discovered ? Color.white : Color.gray;
             nameText.text = discovered ? item.itemName : "????";
 
-            int quantity = InventorySystem.Instance.GetQuantity(item);
+            int quantity = ServiceLocator.Get<InventorySystem>().GetQuantity(item);
             quantityText.text = discovered ? quantity.ToString() : "";
         }
     }

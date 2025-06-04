@@ -6,10 +6,8 @@ using HairvestMoon.Inventory;
 namespace HairvestMoon.UI
 {
     ///
-    public class MainMenuUIManager : MonoBehaviour
+    public class MainMenuUIManager : MonoBehaviour, IBusListener
     {
-        public static MainMenuUIManager Instance { get; private set; }
-
         [Header("UI Panels")]
         [SerializeField] private GameObject inventoryPanel;
         [SerializeField] private GameObject cropLogPanel;
@@ -23,31 +21,38 @@ namespace HairvestMoon.UI
         private int currentTabIndex = 0;
         private GameObject[] allPanels;
 
-        private void Awake()
+        public void InitializeUI()
         {
-            if (Instance != null) { Destroy(gameObject); return; }
-            Instance = this;
-
             allPanels = new GameObject[] { inventoryPanel, cropLogPanel, mapPanel, questPanel, settingsPanel };
+            CloseMenu();
         }
 
-        private void Start()
+        public void RegisterBusListeners()
         {
-            CloseMenu();
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.MenuToggle += HandleMenuToggle;
         }
 
         public void OpenMenu()
         {
             gameObject.SetActive(true);
-            GameStateManager.Instance.SetState(GameState.Menu);
+            ServiceLocator.Get<GameStateManager>().SetState(GameState.Menu);
             OpenTab(0);
         }
 
         public void CloseMenu()
         {
             gameObject.SetActive(false);
-            if (GameStateManager.Instance.CurrentState == GameState.Menu)
-                GameStateManager.Instance.SetState(GameState.FreeRoam);
+            if (ServiceLocator.Get<GameStateManager>().CurrentState == GameState.Menu)
+                ServiceLocator.Get<GameStateManager>().SetState(GameState.FreeRoam);
+        }
+
+        private void HandleMenuToggle()
+        {
+            if (ServiceLocator.Get<GameStateManager>().CurrentState == GameState.Menu)
+                CloseMenu();
+            else
+                OpenMenu();
         }
 
         public void OpenTab(int index)

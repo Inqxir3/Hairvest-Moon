@@ -5,8 +5,6 @@ namespace HairvestMoon.Inventory
 {
     public class BackpackEquipSystem : MonoBehaviour
     {
-        public static BackpackEquipSystem Instance { get; private set; }
-
         [Header("Tool Equip Slots")]
         public ItemData hoeTool;
         public ItemData wateringTool;
@@ -18,11 +16,6 @@ namespace HairvestMoon.Inventory
         public ItemData wateringUpgrade;
         public ItemData seedUpgrade;
         public ItemData harvestUpgrade;
-
-        public void InitializeSingleton()
-        {
-            Instance = this;
-        }
 
         public void EquipTool(ItemData toolItem)
         {

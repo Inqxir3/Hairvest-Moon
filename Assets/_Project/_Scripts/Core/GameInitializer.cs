@@ -5,10 +5,14 @@ using HairvestMoon.Inventory;
 using HairvestMoon.Player;
 using HairvestMoon.Tool;
 using HairvestMoon.UI;
+using HairvestMoon.Utility;
 using UnityEngine;
 
 public class GameInitializer : MonoBehaviour
 {
+    [Header("Event Bus")]
+    public GameEventBus gameEventBus;
+
     [Header("Core Game Systems")]
     public GameManager gameManager;
     public GameStateManager gameStateManager;
@@ -36,54 +40,116 @@ public class GameInitializer : MonoBehaviour
     public HoeSelectionUI hoeSelectionUI;
     public HarvestSelectionUI harvestSelectionUI;
     public SelectionTooltipUI selectionTooltipUI;
+    public InventoryOverviewUI inventoryOverviewUI;
+    public BackpackCapacityBarUI backpackCapacityBarUI;
+    public MainMenuUIManager mainMenuUIManager;
 
     [Header("Gameplay Systems")]
     public ToolSystem toolSystem;
     public ToolSelector toolSelector;
     public FarmToolHandler farmToolHandler;
 
+    [Header("Debug Systems")]
+    public DebugUIOverlay debugUIOverlay;
+
+
     private void Awake()
     {
-        // PHASE 1 — Core Game Systems
-        gameStateManager.InitializeSingleton();
-        gameTimeManager.InitializeSingleton();
-        inputController.InitializeSingleton();
-        gameManager.InitializeSingleton();
-        playerStateController.InitializeSingleton();
-        playerController.InitializeSingleton();
-        playerFacingController.InitializeSingleton();
-        tileTargetingSystem.InitializeSingleton();
+        // Reset Service Locator
+        ServiceLocator.Clear();
 
-        // PHASE 2 — Databases
-        seedDatabase.InitializeSingleton();
+        // Core Systems
+        ServiceLocator.Register(this);
+        ServiceLocator.Register(gameManager);
+        ServiceLocator.Register(gameStateManager);
+        ServiceLocator.Register(gameTimeManager);
+        ServiceLocator.Register(inputController);
+        ServiceLocator.Register(playerStateController);
+        ServiceLocator.Register(playerController);
+        ServiceLocator.Register(playerFacingController);
+        ServiceLocator.Register(tileTargetingSystem);
 
-        // PHASE 3 — Farming Systems
-        inventorySystem.InitializeSingleton();
-        backpackInventorySystem.InitializeSingleton();
-        backpackEquipSystem.InitializeSingleton();
-        backpackEquipInstallManager.InitializeSingleton();
-        backpackUpgradeManager.InitializeSingleton();
+        // Databases
+        ServiceLocator.Register(seedDatabase);
 
-        // PHASE 4 — Apply Backpack Upgrades AFTER inventory live
-        backpackUpgradeManager.Initialize();
+        // Farming Systems
+        ServiceLocator.Register(inventorySystem);
+        ServiceLocator.Register(backpackInventorySystem);
+        ServiceLocator.Register(backpackEquipSystem);
+        ServiceLocator.Register(backpackEquipInstallManager);
+        ServiceLocator.Register(backpackUpgradeManager);
 
-        // PHASE 5 — UI Systems
+        // UI
+        ServiceLocator.Register(mainMenuUIManager);
+        ServiceLocator.Register(seedSelectionUI);
+        ServiceLocator.Register(wateringSelectionUI);
+        ServiceLocator.Register(hoeSelectionUI);
+        ServiceLocator.Register(harvestSelectionUI);
+        ServiceLocator.Register(selectionTooltipUI);
+        ServiceLocator.Register(backpackInventoryUI);
+        ServiceLocator.Register(inventoryOverviewUI);
+        ServiceLocator.Register(backpackCapacityBarUI);
+
+        // Gameplay
+        ServiceLocator.Register(toolSystem);
+        ServiceLocator.Register(toolSelector);
+        ServiceLocator.Register(farmToolHandler);
+
+        // Debug
+        ServiceLocator.Register(debugUIOverlay);
+
+        // Event Wiring
+        ServiceLocator.Register(gameEventBus);
+    }
+
+    private void Start()
+    {
+        InitializeUI();
+
+        InitializeGame();
+
+        RegisterAllBusListeners();
+    }
+
+    private void InitializeUI()
+    {
+        // Phase 1 — UI initialization
+        mainMenuUIManager.InitializeUI();
         backpackInventoryUI.InitializeUI();
         seedSelectionUI.InitializeUI();
         wateringSelectionUI.InitializeUI();
         hoeSelectionUI.InitializeUI();
         harvestSelectionUI.InitializeUI();
         selectionTooltipUI.InitializeUI();
+        inventoryOverviewUI.InitializeUI();
+        backpackCapacityBarUI.InitializeUI();
 
-        // Disable all selection UIs on boot
+        // Disable all selection menus initially
         seedSelectionUI.CloseSeedMenu();
         wateringSelectionUI.CloseWateringMenu();
         hoeSelectionUI.CloseHoeMenu();
         harvestSelectionUI.CloseHarvestMenu();
+    }
 
-        // PHASE 6 — Gameplay Systems
-        toolSystem.InitializeSingleton();
-        toolSelector.InitializeSingleton();
+    private void InitializeGame()
+    {
+        // Phase 2 — Backpack Upgrades
+        backpackUpgradeManager.Initialize();
+
+        // Phase 3 — Gameplay systems prep
         farmToolHandler.Initialize();
+        seedDatabase.InitializeSeedDatabase();
+        toolSelector.InitialSetTool();
+        inputController.InitInput();
+        gameStateManager.InitializeGameState();
+        playerStateController.InitializePlayerState();
+    }
+
+    private void RegisterAllBusListeners()
+    {
+        foreach (var listener in GetComponentsInChildren<IBusListener>(true))
+        {
+            listener.RegisterBusListeners();
+        }
     }
 }

@@ -3,10 +3,11 @@ using UnityEngine;
 using HairvestMoon.Inventory;
 using HairvestMoon.Farming;
 using HairvestMoon.UI;
+using HairvestMoon.Core;
 
 namespace HairvestMoon.UI
 {
-    public class HarvestSelectionUI : MonoBehaviour
+    public class HarvestSelectionUI : MonoBehaviour, IBusListener
     {
         [Header("UI References")]
         [SerializeField] private GameObject harvestSelectionSlotPrefab;
@@ -15,27 +16,21 @@ namespace HairvestMoon.UI
         private List<UpgradeSelectionSlot> slots = new();
         private ItemData currentSelectedHarvestOption;
 
-        public static HarvestSelectionUI Instance { get; private set; }
-
-        private void Awake()
-        {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-        }
-
         public void InitializeUI()
         {
             BuildUI();
-            BackpackInventorySystem.Instance.OnBackpackChanged += RefreshUI;
+        }
+
+        public void RegisterBusListeners()
+        {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged += RefreshUI;
         }
 
         private void OnDisable()
         {
-            BackpackInventorySystem.Instance.OnBackpackChanged -= RefreshUI;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged -= RefreshUI;
         }
 
         public void OpenHarvestMenu()
@@ -63,7 +58,7 @@ namespace HairvestMoon.UI
             slots.Add(slotUI);
 
             // If we have Harvest Upgrade equipped, enable selection
-            var harvestUpgrade = BackpackEquipSystem.Instance.harvestUpgrade;
+            var harvestUpgrade = ServiceLocator.Get<BackpackEquipSystem>().harvestUpgrade;
             if (harvestUpgrade != null)
             {
                 var upgradeGO = Instantiate(harvestSelectionSlotPrefab, gridParent);

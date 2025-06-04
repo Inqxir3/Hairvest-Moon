@@ -2,10 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using HairvestMoon.Farming;
 using HairvestMoon.Inventory;
+using HairvestMoon.Core;
 
 namespace HairvestMoon.UI
 {
-    public class InventoryOverviewUI : MonoBehaviour
+    public class InventoryOverviewUI : MonoBehaviour, IBusListener
     {
         [Header("UI References")]
         [SerializeField] private Transform cropGridParent;
@@ -15,24 +16,28 @@ namespace HairvestMoon.UI
         private readonly Dictionary<ItemData, InventorySlotUI> cropSlots = new();
         private readonly Dictionary<ItemData, InventorySlotUI> seedSlots = new();
 
-       
-        private void OnDisable()
+        public void InitializeUI()
         {
-            InventorySystem.Instance.OnInventoryChanged -= RefreshUI;
-        }
-
-        private void Start()
-        {
-            InventorySystem.Instance.OnInventoryChanged += RefreshUI;
-
             BuildUI();
             RefreshUI();
+        }
+
+        public void RegisterBusListeners()
+        {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.InventoryChanged += RefreshUI;
+        }
+
+        private void OnDisable()
+        {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.InventoryChanged -= RefreshUI;
         }
 
         private void BuildUI()
         {
             // Build Seeds
-            foreach (var seedData in SeedDatabase.Instance.AllSeeds)
+            foreach (var seedData in ServiceLocator.Get<SeedDatabase>().AllSeeds)
             {
                 var item = seedData.seedItem;
                 var slotGO = Instantiate(inventorySlotPrefab, seedGridParent);
@@ -42,7 +47,7 @@ namespace HairvestMoon.UI
             }
 
             // Build Crops
-            foreach (var seedData in SeedDatabase.Instance.AllSeeds)
+            foreach (var seedData in ServiceLocator.Get<SeedDatabase>().AllSeeds)
             {
                 if (seedData?.cropData?.harvestedItem == null) continue; // safety null check
 

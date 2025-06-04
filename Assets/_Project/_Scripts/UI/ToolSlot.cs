@@ -2,6 +2,7 @@ using HairvestMoon.Utility;
 using UnityEngine;
 using HairvestMoon.Tool;
 using UnityEngine.UI;
+using HairvestMoon.Core;
 
 namespace HairvestMoon.UI
 {
@@ -20,8 +21,8 @@ namespace HairvestMoon.UI
         {
             GetComponent<Button>().onClick.AddListener(() =>
             {
-                ToolSelector.Instance?.SelectToolExternally(tool);
-                DebugUIOverlay.Instance.ShowLastAction($"Tool: {tool}");
+                ServiceLocator.Get<ToolSelector>().SelectToolExternally(tool);
+                ServiceLocator.Get<DebugUIOverlay>().ShowLastAction($"Tool: {tool}");
             });
         }
 

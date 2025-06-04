@@ -1,4 +1,5 @@
 using HairvestMoon.Player;
+using HairvestMoon.Tool;
 using HairvestMoon.UI;
 using UnityEngine;
 
@@ -10,30 +11,25 @@ namespace HairvestMoon.Core
 
     public class GameManager : MonoBehaviour
     {
-        public static GameManager Instance { get; private set; }
-
         [SerializeField] private GameTimeManager _timeManager;
         [SerializeField] private PlayerStateController _playerState;
 
-        public void InitializeSingleton() { Instance = this; }
-
         private void Start()
         {
-            _timeManager.OnDusk += () => _playerState.EnterWerewolfForm();
-            _timeManager.OnDawn += () => {
-                GameStateManager.Instance.SetState(GameState.FreeRoam);
-                _playerState.ExitWerewolfForm();
-            };
-
-            InputController.Instance.OnMenuToggle += HandleMenuToggle;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.OnDawn += HandleDawn;
+            bus.OnDusk += HandleDusk;
         }
 
-        private void HandleMenuToggle()
+        public void HandleDusk()
         {
-            if (GameStateManager.Instance.CurrentState == GameState.FreeRoam)
-                MainMenuUIManager.Instance.OpenMenu();
-            else if (GameStateManager.Instance.CurrentState == GameState.Menu)
-                MainMenuUIManager.Instance.CloseMenu();
+            _playerState.EnterWerewolfForm();
+        }
+
+        public void HandleDawn()
+        {
+            ServiceLocator.Get<GameStateManager>().SetState(GameState.FreeRoam);
+            _playerState.ExitWerewolfForm();
         }
     }
 }

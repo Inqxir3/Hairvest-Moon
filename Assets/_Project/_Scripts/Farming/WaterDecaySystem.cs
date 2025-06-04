@@ -7,24 +7,17 @@ namespace HairvestMoon.Farming
     /// Handles hourly water decay.
     /// Subscribes to GameTimeManager.OnNewHour.
     /// </summary>
-    public class WaterDecaySystem : MonoBehaviour
+    public class WaterDecaySystem : MonoBehaviour, IBusListener
     {
-
-        [SerializeField] private WaterVisualSystem _waterVisualSystem;
-
-        private void OnEnable()
+        public void RegisterBusListeners()
         {
-            GameTimeManager.Instance.OnTimeChanged += HandleWaterDecayPerMinute;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.TimeChanged += OnWaterDecayTick;
         }
 
-        private void OnDisable()
+        private void OnWaterDecayTick(TimeChangedArgs args)
         {
-            GameTimeManager.Instance.OnTimeChanged -= HandleWaterDecayPerMinute;
-        }
-
-        private void HandleWaterDecayPerMinute(int hour, int minute)
-        {
-            foreach (var entry in FarmTileDataManager.Instance.AllTileData)
+            foreach (var entry in ServiceLocator.Get<FarmTileDataManager>().AllTileData)
             {
                 var pos = entry.Key;
                 var data = entry.Value;
@@ -37,11 +30,12 @@ namespace HairvestMoon.Farming
                 {
                     data.isWatered = false;
                     data.waterMinutesRemaining = 0f;
-                    FarmTileDataManager.Instance.UpdateWaterVisual(pos, data);
-                    _waterVisualSystem.HandleWateredTile(pos, data); // Ensure visual despawn
+                    ServiceLocator.Get<FarmTileDataManager>().UpdateWaterVisual(pos, data);
+                    ServiceLocator.Get<WaterVisualSystem>().HandleWateredTile(pos, data);
                 }
             }
         }
+
     }
 
 }

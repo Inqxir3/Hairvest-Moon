@@ -11,8 +11,6 @@ namespace HairvestMoon.Core
 
     public class InputController : MonoBehaviour, InputSystem_Actions.IPlayerActions
     {
-        public static InputController Instance { get; private set; }
-
         [SerializeField] private PlayerInput playerInput;
 
         public Vector2 MoveInput { get; private set; }
@@ -35,18 +33,7 @@ namespace HairvestMoon.Core
 
         private bool _inputLocked = false;
 
-        public void InitializeSingleton()
-        {
-            Instance = this;
-            InitInput();
-        }
-
-        private void OnDisable()
-        {
-            GameStateManager.Instance.OnInputLockChanged -= HandleInputLock;
-        }
-
-        private void InitInput()
+        public void InitInput()
         {
             _input = new InputSystem_Actions();
             _input.Player.SetCallbacks(this);
@@ -56,7 +43,6 @@ namespace HairvestMoon.Core
             _input.Player.Pause.performed += OnPause;
 
             playerInput.onControlsChanged += HandleControlsChanged;
-            GameStateManager.Instance.OnInputLockChanged += HandleInputLock;
         }
 
         private void HandleControlsChanged(PlayerInput input)
@@ -68,9 +54,10 @@ namespace HairvestMoon.Core
             {
                 Debug.Log($"[InputController] Switched control scheme: {scheme} → {newMode}");
                 CurrentMode = newMode;
-                OnControlModeChanged?.Invoke(CurrentMode);
+                ServiceLocator.Get<GameEventBus>().RaiseControlModeChanged(CurrentMode);
             }
         }
+
 
         private void Update()
         {
@@ -99,7 +86,7 @@ namespace HairvestMoon.Core
             }
         }
 
-        private void HandleInputLock(bool locked)
+        public void HandleInputLock(bool locked)
         {
             _inputLocked = locked;
         }
@@ -153,21 +140,21 @@ namespace HairvestMoon.Core
         public void OnNext(InputAction.CallbackContext context)
         {
             if (context.performed && !_inputLocked)
-                OnToolNext?.Invoke();
+                ServiceLocator.Get<GameEventBus>().RaiseToolNext();
         }
 
         public void OnPrevious(InputAction.CallbackContext context)
         {
             if (context.performed && !_inputLocked)
-                OnToolPrevious?.Invoke();
+                ServiceLocator.Get<GameEventBus>().RaiseToolPrevious();
         }
 
         public void OnSprint(InputAction.CallbackContext context) { }
-
         public void OnPause(InputAction.CallbackContext context)
         {
             if (context.performed)
-                OnMenuToggle?.Invoke();
+                ServiceLocator.Get<GameEventBus>().RaiseMenuToggle();
         }
+
     }
 }

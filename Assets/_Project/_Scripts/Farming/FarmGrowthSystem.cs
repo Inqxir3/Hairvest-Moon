@@ -7,24 +7,22 @@ namespace HairvestMoon.Farming
     /// Handles daily crop growth only.
     /// Subscribes to GameTimeManager.OnDawn to tick crops once per day.
     /// </summary>
-    public class FarmGrowthSystem : MonoBehaviour
+    public class FarmGrowthSystem : MonoBehaviour, IBusListener
     {
-        private void OnEnable()
+        public void RegisterBusListeners()
         {
-            GameTimeManager.Instance.OnTimeChanged += HandleMinuteGrowthTick;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.TimeChanged += OnMinuteGrowthTick;
         }
 
-        private void OnDisable()
+        private void OnMinuteGrowthTick(TimeChangedArgs args)
         {
-            GameTimeManager.Instance.OnTimeChanged -= HandleMinuteGrowthTick;
-        }
+            var hour = args.Hour;
+            var minute = args.Minute;
 
-        private void HandleMinuteGrowthTick(int hour, int minute)
-        {
-            foreach (var entry in FarmTileDataManager.Instance.AllTileData)
+            foreach (var entry in ServiceLocator.Get<FarmTileDataManager>().AllTileData)
             {
                 var data = entry.Value;
-
                 if (!data.isTilled || data.plantedCrop == null || !data.isWatered)
                     continue;
 

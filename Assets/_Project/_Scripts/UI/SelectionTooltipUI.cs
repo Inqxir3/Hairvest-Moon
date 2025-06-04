@@ -6,21 +6,9 @@ namespace HairvestMoon.UI
 {
     public class SelectionTooltipUI : MonoBehaviour
     {
-        public static SelectionTooltipUI Instance { get; private set; }
-
         [SerializeField] private GameObject tooltipPanel;
         [SerializeField] private TMP_Text nameText;
         [SerializeField] private TMP_Text descriptionText;
-
-        private void Awake()
-        {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-        }
 
         public void InitializeUI() { HideTooltip(); }
 

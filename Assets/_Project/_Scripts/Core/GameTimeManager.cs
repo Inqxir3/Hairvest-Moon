@@ -9,8 +9,6 @@ namespace HairvestMoon.Core
 
     public class GameTimeManager : MonoBehaviour
     {
-        public static GameTimeManager Instance { get; private set; }
-
         [Header("Time Settings")]
         [SerializeField] private float secondsPerGameMinute = 1f;
         [SerializeField] private int dawnHour = 6;
@@ -22,16 +20,8 @@ namespace HairvestMoon.Core
         public bool IsTimeFrozen { get; private set; } = false;
         public float TimeScale { get; private set; } = 1f;
 
-        public event Action OnNewDay;
-        public event Action OnDawn;
-        public event Action OnDusk;
-        public event Action OnNewHour;
-        public event Action<int, int> OnTimeChanged;
-
         private float _timer;
         private bool _isNight = false;
-
-        public void InitializeSingleton() { Instance = this; }
 
         private void Update()
         {
@@ -62,14 +52,14 @@ namespace HairvestMoon.Core
                 CheckTimeTriggers();
             }
 
-            OnTimeChanged?.Invoke(CurrentHour, CurrentMinute);
+            ServiceLocator.Get<GameEventBus>().RaiseTimeChanged(CurrentHour, CurrentMinute);
         }
 
 
         public void AdvanceDay()
         {
             Day++;
-            OnDawn?.Invoke();
+            ServiceLocator.Get<GameEventBus>().RaiseDawn();
         }
 
         private void CheckTimeTriggers()
@@ -77,12 +67,12 @@ namespace HairvestMoon.Core
             if (!_isNight && CurrentHour >= duskHour)
             {
                 _isNight = true;
-                OnDusk?.Invoke();
+                ServiceLocator.Get<GameEventBus>().RaiseDusk();
             }
             else if (_isNight && CurrentHour >= dawnHour && CurrentHour < duskHour)
             {
                 _isNight = false;
-                OnDawn?.Invoke();
+                ServiceLocator.Get<GameEventBus>().RaiseDawn();
             }
         }
 

@@ -31,7 +31,7 @@ namespace HairvestMoon.Farming
 
         public void Initialize()
         {
-            targetingSystem = TileTargetingSystem.Instance;
+            targetingSystem = ServiceLocator.Get<TileTargetingSystem>();
             interactAction.action.performed += OnInteractPerformed;
             interactAction.action.canceled += OnInteractCanceled;
         }
@@ -61,12 +61,12 @@ namespace HairvestMoon.Farming
 
         private void OnInteractPerformed(InputAction.CallbackContext context)
         {
-            if (!GameStateManager.Instance.IsFreeRoam()) return;
+            if (!ServiceLocator.Get<GameStateManager>().IsFreeRoam()) return;
 
             targetTile = targetingSystem.CurrentTargetedTile;
             if (!targetTile.HasValue)
             {
-                DebugUIOverlay.Instance.ShowLastAction("No valid tile");
+                ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("No valid tile");
                 return;
             }
 
@@ -85,7 +85,7 @@ namespace HairvestMoon.Farming
 
             if (currentHoldTime < interactionHoldDuration)
             {
-                DebugUIOverlay.Instance.ShowLastAction("Interaction cancelled");
+                ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("Interaction cancelled");
             }
         }
 
@@ -97,9 +97,9 @@ namespace HairvestMoon.Farming
             if (!targetTile.HasValue) return;
 
             var tile = targetTile.Value;
-            var data = FarmTileDataManager.Instance.GetTileData(tile);
+            var data = ServiceLocator.Get<FarmTileDataManager>().GetTileData(tile);
 
-            switch (ToolSystem.Instance.CurrentTool)
+            switch (ServiceLocator.Get<ToolSystem>().CurrentTool)
             {
                 case ToolType.Hoe:
                     TryTill(tile, data);
@@ -118,23 +118,23 @@ namespace HairvestMoon.Farming
                     break;
 
                 default:
-                    DebugUIOverlay.Instance.ShowLastAction("No tool selected");
+                    ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("No tool selected");
                     break;
             }
         }
 
         private void TryTill(Vector3Int tile, FarmTileData data)
-        {
-            FarmTileDataManager.Instance.SetTilled(tile, true);
-            DebugUIOverlay.Instance.ShowLastAction("Tile tilled");
+        {   
+            ServiceLocator.Get<FarmTileDataManager>().SetTilled(tile, true);
+            ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("Tile tilled");
 
             // Apply Upgrade Behavior if selected
-            var hoeUpgrade = BackpackEquipSystem.Instance.hoeUpgrade;
-            var selectedOption = HoeSelectionUI.Instance.GetCurrentSelectedItem();
+            var hoeUpgrade = ServiceLocator.Get<BackpackEquipSystem>().hoeUpgrade;
+            var selectedOption = ServiceLocator.Get<HoeSelectionUI>().GetCurrentSelectedItem();
 
             if (selectedOption != null && hoeUpgrade != null)
             {
-                DebugUIOverlay.Instance.ShowLastAction($"Hoe Upgrade Used: {selectedOption.itemName}");
+                ServiceLocator.Get<DebugUIOverlay>().ShowLastAction($"Hoe Upgrade Used: {selectedOption.itemName}");
 
                 // Apply bonus tilling logic here:
                 ApplyExtraTilling(tile);
@@ -143,37 +143,37 @@ namespace HairvestMoon.Farming
 
         private void TryWater(Vector3Int tile, FarmTileData data)
         {
-            ToolSystem.Instance.ConsumeWaterFromCan();
+            ServiceLocator.Get<ToolSystem>().ConsumeWaterFromCan();
 
             if (!data.isTilled)
             {
-                DebugUIOverlay.Instance.ShowLastAction("Water wasted — not tilled");
+                ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("Water wasted — not tilled");
                 return;
             }
 
             // Always apply water normally
-            FarmTileDataManager.Instance.SetWatered(tile, true);
-            DebugUIOverlay.Instance.ShowLastAction("Water applied");
+            ServiceLocator.Get<FarmTileDataManager>().SetWatered(tile, true);
+            ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("Water applied");
 
             // Check if Fertilizer Sprayer is equipped
-            var wateringUpgrade = BackpackEquipSystem.Instance.wateringUpgrade;
+            var wateringUpgrade = ServiceLocator.Get<BackpackEquipSystem>().wateringUpgrade;
 
             if (wateringUpgrade != null)
             {
                 // Read selected fertilizer from WateringSelectionUI
-                ItemData selectedFertilizer = WateringSelectionUI.Instance.GetCurrentSelectedItem();
+                ItemData selectedFertilizer = ServiceLocator.Get<WateringSelectionUI>().GetCurrentSelectedItem();
 
                 if (selectedFertilizer != null)
                 {
-                    bool removed = BackpackInventorySystem.Instance.RemoveItem(selectedFertilizer, 1);
+                    bool removed = ServiceLocator.Get<BackpackInventorySystem>().RemoveItem(selectedFertilizer, 1);
                     if (removed)
                     {
-                        DebugUIOverlay.Instance.ShowLastAction($"Fertilizer applied: {selectedFertilizer.itemName}");
+                        ServiceLocator.Get<DebugUIOverlay>().ShowLastAction($"Fertilizer applied: {selectedFertilizer.itemName}");
                         // You can expand here to actually apply fertilizer effects to tile data later.
                     }
                     else
                     {
-                        DebugUIOverlay.Instance.ShowLastAction("No fertilizer available.");
+                        ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("No fertilizer available.");
                     }
                 }
             }
@@ -184,27 +184,27 @@ namespace HairvestMoon.Farming
         {
             if (data.isTilled && data.plantedCrop == null && selectedSeed != null)
             {
-                int seedCount = InventorySystem.Instance.GetQuantity(selectedSeed.seedItem);
+                int seedCount = ServiceLocator.Get<InventorySystem>().GetQuantity(selectedSeed.seedItem);
                 if (seedCount <= 0)
                 {
-                    DebugUIOverlay.Instance.ShowLastAction("No seeds available");
+                    ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("No seeds available");
                     return;
                 }
 
-                bool removed = InventorySystem.Instance.RemoveItem(selectedSeed.seedItem, 1);
+                bool removed = ServiceLocator.Get<InventorySystem>().RemoveItem(selectedSeed.seedItem, 1);
                 if (!removed)
                 {
-                    DebugUIOverlay.Instance.ShowLastAction("Failed to consume seed");
+                    ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("Failed to consume seed");
                     return;
                 }
 
                 data.plantedCrop = selectedSeed.cropData;
                 data.wateredMinutesAccumulated = 0f;
-                DebugUIOverlay.Instance.ShowLastAction($"Planted {selectedSeed.cropData.cropName}");
+                ServiceLocator.Get<DebugUIOverlay>().ShowLastAction($"Planted {selectedSeed.cropData.cropName}");
             }
             else
             {
-                DebugUIOverlay.Instance.ShowLastAction("Can't plant here");
+                ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("Can't plant here");
             }
         }
 
@@ -215,22 +215,22 @@ namespace HairvestMoon.Farming
                 var harvestedItem = data.plantedCrop.harvestedItem;
                 var yield = data.plantedCrop.harvestYield;
 
-                bool added = InventorySystem.Instance.AddItem(harvestedItem, yield);
+                bool added = ServiceLocator.Get<InventorySystem>().AddItem(harvestedItem, yield);
 
                 if (added)
                 {
-                    DebugUIOverlay.Instance.ShowLastAction($"Harvested {yield}x {harvestedItem.itemName}");
+                    ServiceLocator.Get<DebugUIOverlay>().ShowLastAction($"Harvested {yield}x {harvestedItem.itemName}");
                     data.plantedCrop = null;
                     data.wateredMinutesAccumulated = 0f;
                 }
                 else
                 {
-                    DebugUIOverlay.Instance.ShowLastAction("Inventory Full - Harvest Failed");
+                    ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("Inventory Full - Harvest Failed");
                 }
             }
             else
             {
-                DebugUIOverlay.Instance.ShowLastAction("Nothing to harvest");
+                ServiceLocator.Get<DebugUIOverlay>().ShowLastAction("Nothing to harvest");
             }
         }
 
@@ -242,10 +242,10 @@ namespace HairvestMoon.Farming
                 for (int dy = -1; dy <= 1; dy++)
                 {
                     Vector3Int nearbyTile = new Vector3Int(centerTile.x + dx, centerTile.y + dy, 0);
-                    var tileData = FarmTileDataManager.Instance.GetTileData(nearbyTile);
+                    var tileData = ServiceLocator.Get<FarmTileDataManager>().GetTileData(nearbyTile);
                     if (!tileData.isTilled)
                     {
-                        FarmTileDataManager.Instance.SetTilled(nearbyTile, true);
+                        ServiceLocator.Get<FarmTileDataManager>().SetTilled(nearbyTile, true);
                     }
                 }
             }

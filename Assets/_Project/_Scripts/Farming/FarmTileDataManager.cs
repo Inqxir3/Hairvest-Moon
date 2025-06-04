@@ -1,3 +1,4 @@
+using HairvestMoon.Core;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -10,8 +11,6 @@ namespace HairvestMoon.Farming
     /// </summary>
     public class FarmTileDataManager : MonoBehaviour
     {
-        public static FarmTileDataManager Instance { get; private set; }
-
         private Dictionary<Vector3Int, FarmTileData> _tileDataMap = new();
 
         [Header("References")]
@@ -27,7 +26,6 @@ namespace HairvestMoon.Farming
 
         public Tilemap CropTilemap => cropTilemap;
         public Dictionary<Vector3Int, FarmTileData> AllTileData => _tileDataMap;
-
 
         public const float HoursPerWatering = 12f;
 
@@ -52,9 +50,9 @@ namespace HairvestMoon.Farming
             data.isTilled = value;
 
             tilledTilemap.SetTile(pos, value ? tilledTile : null);
-
-            // Watered visuals may be affected
             UpdateWaterVisual(pos, data);
+
+            ServiceLocator.Get<GameEventBus>().RaiseTileTilled(pos);
         }
 
         public void SetWatered(Vector3Int pos, bool value)
@@ -68,8 +66,9 @@ namespace HairvestMoon.Farming
                 data.waterMinutesRemaining = 0f;
 
             UpdateWaterVisual(pos, data);
-
             _waterVisualSystem.HandleWateredTile(pos, data);
+
+            ServiceLocator.Get<GameEventBus>().RaiseTileWatered(pos);
         }
 
 
@@ -81,19 +80,8 @@ namespace HairvestMoon.Farming
                 wateredTilemap.SetTile(pos, null);
         }
 
-
         public bool IsTilled(Vector3Int pos) => GetTileData(pos).isTilled;
         public bool IsWatered(Vector3Int pos) => GetTileData(pos).isWatered;
-
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-        }
     }
 
     /// <summary>

@@ -9,15 +9,11 @@ namespace HairvestMoon.Player
     /// </summary>
     public class PlayerFacingController : MonoBehaviour
     {
-        public static PlayerFacingController Instance { get; private set; }
-
         public enum FacingDirection { Up, Down, Left, Right }
         public FacingDirection CurrentFacing { get; private set; } = FacingDirection.Right;
 
         private FacingDirection _lastMoveFacing = FacingDirection.Right;
         private FacingSource _currentSource = FacingSource.Movement;
-
-        public void InitializeSingleton() { Instance = this; }
 
         /// <summary>
         /// Updates the facing direction each frame based on input and control mode.
@@ -25,7 +21,7 @@ namespace HairvestMoon.Player
         public void UpdateFacing(Vector2 moveInput, Vector2 lookInput, ControlMode mode)
         {
             bool isMoving = moveInput.sqrMagnitude > 0.01f;
-            bool lookInputActive = InputController.Instance.LookInputThisFrame;
+            bool lookInputActive = ServiceLocator.Get<InputController>().LookInputThisFrame;
 
             if (isMoving)
             {

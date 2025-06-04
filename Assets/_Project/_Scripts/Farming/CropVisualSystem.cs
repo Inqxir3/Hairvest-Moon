@@ -7,28 +7,25 @@ namespace HairvestMoon.Farming
     /// <summary>
     /// Handles rendering crop sprites based on growth stages after growth tick occurs.
     /// </summary>
-    public class CropVisualSystem : MonoBehaviour
+    public class CropVisualSystem : MonoBehaviour, IBusListener
     {
         private Tilemap cropTilemap;
 
         private void Start()
         {
-            cropTilemap = FarmTileDataManager.Instance.CropTilemap;
+            cropTilemap = ServiceLocator.Get<FarmTileDataManager>().CropTilemap;
         }
 
-        private void OnEnable()
+        public void RegisterBusListeners()
         {
-            GameTimeManager.Instance.OnTimeChanged += RefreshCropVisuals;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.TimeChanged += OnRefreshCropVisuals;
         }
 
-        private void OnDisable()
+        private void OnRefreshCropVisuals(TimeChangedArgs args)
         {
-            GameTimeManager.Instance.OnTimeChanged -= RefreshCropVisuals;
-        }
-
-        private void RefreshCropVisuals(int hour, int minute)
-        {
-            foreach (var entry in FarmTileDataManager.Instance.AllTileData)
+            var cropTilemap = ServiceLocator.Get<FarmTileDataManager>().CropTilemap;
+            foreach (var entry in ServiceLocator.Get<FarmTileDataManager>().AllTileData)
             {
                 var pos = entry.Key;
                 var data = entry.Value;
@@ -40,7 +37,6 @@ namespace HairvestMoon.Farming
                 }
 
                 float growthPercent = data.GetGrowthProgressPercent();
-
                 int stage = Mathf.Clamp(
                     (int)(growthPercent * data.plantedCrop.growthStages.Length),
                     0, data.plantedCrop.growthStages.Length - 1
@@ -51,5 +47,6 @@ namespace HairvestMoon.Farming
                 cropTilemap.SetTile(pos, tile);
             }
         }
+
     }
 }

@@ -1,5 +1,6 @@
 using HairvestMoon.Core;
 using HairvestMoon.Farming;
+using HairvestMoon.Inventory;
 using HairvestMoon.Player;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,6 @@ namespace HairvestMoon.Interaction
 {
     public class TileTargetingSystem : MonoBehaviour
     {
-        public static TileTargetingSystem Instance { get; private set; }
-
         [Header("References")]
         public Grid Grid;
         public Tilemap selectionHighlightTilemap;
@@ -27,16 +26,14 @@ namespace HairvestMoon.Interaction
         private Vector3Int? _currentTargetedTile;
         private Vector3Int _lastHighlighted;
 
-        public void InitializeSingleton() { Instance = this; }
-
         private void Update()
         {
-            Vector3 footPos = Player_Controller.Position + new Vector3(0, footPositionYOffset, 0);
+            Vector3 footPos = ServiceLocator.Get<Player_Controller>().Position + new Vector3(0, footPositionYOffset, 0);
             Vector3Int playerCell = Grid.WorldToCell(footPos);
 
             Vector3Int? targetTile = null;
 
-            if (InputController.Instance.CurrentMode == ControlMode.Mouse)
+            if (ServiceLocator.Get<InputController>().CurrentMode == ControlMode.Mouse)
             {
                 targetTile = GetMouseTargetTile(playerCell, footPos);
             }
@@ -74,7 +71,7 @@ namespace HairvestMoon.Interaction
             if (Mathf.Abs(offset.x) <= 1 && Mathf.Abs(offset.y) <= 1)
             {
                 float dist = Vector3.Distance(Grid.GetCellCenterWorld(cursorCell), worldPos);
-                if (dist <= mouseTargetMaxDistance && FarmTileDataManager.Instance.IsTileTillable(cursorCell))
+                if (dist <= mouseTargetMaxDistance && ServiceLocator.Get<FarmTileDataManager>().IsTileTillable(cursorCell))
                     return cursorCell;
             }
             return null;
@@ -82,7 +79,7 @@ namespace HairvestMoon.Interaction
 
         private Vector3Int? GetArcTargetTile(Vector3Int origin, Vector3 originWorld)
         {
-            var facing = PlayerFacingController.Instance.CurrentFacing;
+            var facing = ServiceLocator.Get<PlayerFacingController>().CurrentFacing;
             var arcTiles = GetArcTiles(origin, facing);
 
             Vector3Int? best = null;
@@ -90,7 +87,7 @@ namespace HairvestMoon.Interaction
 
             foreach (var cell in arcTiles)
             {
-                if (!FarmTileDataManager.Instance.IsTileTillable(cell)) continue;
+                if (!ServiceLocator.Get<FarmTileDataManager>().IsTileTillable(cell)) continue;
 
                 float dist = Vector3.Distance(Grid.GetCellCenterWorld(cell), originWorld);
                 if (dist < bestScore)
@@ -128,9 +125,9 @@ namespace HairvestMoon.Interaction
             if (!drawDebugGizmos || Grid == null || !Application.isPlaying) return;
 
             Gizmos.color = gizmoColor;
-            Vector3 footPos = Player_Controller.Position + new Vector3(0, footPositionYOffset, 0);
+            Vector3 footPos = ServiceLocator.Get<Player_Controller>().Position + new Vector3(0, footPositionYOffset, 0);
             Vector3Int playerCell = Grid.WorldToCell(footPos);
-            var arc = GetArcTiles(playerCell, PlayerFacingController.Instance.CurrentFacing);
+            var arc = GetArcTiles(playerCell, ServiceLocator.Get<PlayerFacingController>().CurrentFacing);
             foreach (var cell in arc)
             {
                 Vector3 world = Grid.GetCellCenterWorld(cell);

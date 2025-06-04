@@ -2,6 +2,8 @@ using HairvestMoon.Utility;
 using UnityEngine;
 using HairvestMoon.Farming;
 using HairvestMoon.UI;
+using HairvestMoon.Core;
+
 
 
 #if UNITY_EDITOR
@@ -16,44 +18,37 @@ namespace HairvestMoon.Tool
     /// </summary>
     public partial class ToolSystem : MonoBehaviour
     {
-        public static ToolSystem Instance { get; private set; }
-
         [Header("Watering Can Settings")]
         public float waterCanCapacity = 100f;
         public float waterPerUse = 1f;
 
         public ToolType CurrentTool { get; private set; } = ToolType.None;
 
-        public void InitializeSingleton()
-        {
-            Instance = this;
-        }
-
         public void SetTool(ToolType tool)
         {
             CurrentTool = tool;
-            DebugUIOverlay.Instance.ShowLastAction($"Tool: {CurrentTool}");
+            ServiceLocator.Get<DebugUIOverlay>().ShowLastAction($"Tool: {CurrentTool}");
 
             // Close all selection UIs first
-            SeedSelectionUI.Instance?.CloseSeedMenu();
-            WateringSelectionUI.Instance?.CloseWateringMenu();
-            HoeSelectionUI.Instance?.CloseHoeMenu();
-            HarvestSelectionUI.Instance?.CloseHarvestMenu();
+            ServiceLocator.Get<SeedSelectionUI>()?.CloseSeedMenu();
+            ServiceLocator.Get<WateringSelectionUI>()?.CloseWateringMenu();
+            ServiceLocator.Get<HoeSelectionUI>()?.CloseHoeMenu();
+            ServiceLocator.Get<HarvestSelectionUI>()?.CloseHarvestMenu();
 
             // Open only the active tool's selection UI
             switch (tool)
             {
                 case ToolType.Seed:
-                    SeedSelectionUI.Instance.OpenSeedMenu();
+                    ServiceLocator.Get<SeedSelectionUI>().OpenSeedMenu();
                     break;
                 case ToolType.WateringCan:
-                    WateringSelectionUI.Instance.OpenWateringMenu();
+                    ServiceLocator.Get<WateringSelectionUI>().OpenWateringMenu();
                     break;
                 case ToolType.Hoe:
-                    HoeSelectionUI.Instance.OpenHoeMenu();
+                    ServiceLocator.Get<HoeSelectionUI>().OpenHoeMenu();
                     break;
                 case ToolType.Harvest:
-                    HarvestSelectionUI.Instance.OpenHarvestMenu();
+                    ServiceLocator.Get<HarvestSelectionUI>().OpenHarvestMenu();
                     break;
             }
         }
@@ -63,7 +58,7 @@ namespace HairvestMoon.Tool
         {
             waterCanCapacity -= waterPerUse;
             waterCanCapacity = Mathf.Max(0f, waterCanCapacity);
-            DebugUIOverlay.Instance.ShowLastAction($"Water Remaining: {waterCanCapacity}");
+            ServiceLocator.Get<DebugUIOverlay>().ShowLastAction($"Water Remaining: {waterCanCapacity}");
         }
 
         public void RefillWaterCan(float refillAmount)

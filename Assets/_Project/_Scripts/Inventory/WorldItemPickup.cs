@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using HairvestMoon.Core;
+using UnityEngine;
 
 namespace HairvestMoon.Inventory
 {
@@ -36,13 +37,13 @@ namespace HairvestMoon.Inventory
 
                 if (itemData.itemType == ItemType.Seed || itemData.itemType == ItemType.Crop)
                 {
-                    added = InventorySystem.Instance.AddItem(itemData, quantity);
+                    added = ServiceLocator.Get<InventorySystem>().AddItem(itemData, quantity);
                 }
                 else
                 {
-                    if (BackpackInventorySystem.Instance.CanAddItem(itemData, quantity))
+                    if (ServiceLocator.Get<BackpackInventorySystem>().CanAddItem(itemData, quantity))
                     {
-                        added = BackpackInventorySystem.Instance.AddItem(itemData, quantity);
+                        added = ServiceLocator.Get<BackpackInventorySystem>().AddItem(itemData, quantity);
                     }
                     else
                     {

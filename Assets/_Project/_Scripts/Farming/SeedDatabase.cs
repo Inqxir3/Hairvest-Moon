@@ -5,18 +5,14 @@ namespace HairvestMoon.Farming
 {
     public class SeedDatabase : MonoBehaviour
     {
-        public static SeedDatabase Instance { get; private set; }
-
         [SerializeField] private List<SeedData> allSeeds;
 
         private Dictionary<ItemData, SeedData> lookup = new();
 
         public List<SeedData> AllSeeds => allSeeds;
 
-        public void InitializeSingleton()
+        public void InitializeSeedDatabase()
         {
-            Instance = this;
-
             // Build dictionary now that list is loaded
             foreach (var seed in allSeeds)
             {

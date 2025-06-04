@@ -11,31 +11,21 @@ public class WaterVisualSystem : MonoBehaviour
 
     private Dictionary<Vector3Int, WaterSliderInstance> activeSliders = new();
 
-    private void OnEnable()
-    {
-        GameTimeManager.Instance.OnTimeChanged += RefreshSliders;
-    }
-
-    private void OnDisable()
-    {
-        GameTimeManager.Instance.OnTimeChanged -= RefreshSliders;
-    }
-
     private void Update()
     {
         foreach (var entry in activeSliders)
         {
             var pos = entry.Key;
-            var data = FarmTileDataManager.Instance.GetTileData(pos);
+            var data = ServiceLocator.Get<FarmTileDataManager>().GetTileData(pos);
 
             float progress = data.waterMinutesRemaining / FarmTileData.MinutesPerWatering;
             entry.Value.SetFill(Mathf.Clamp01(progress));
         }
     }
 
-    private void RefreshSliders(int hour, int minute)
+    public void RefreshSliders(int hour, int minute)
     {
-        foreach (var entry in FarmTileDataManager.Instance.AllTileData)
+        foreach (var entry in ServiceLocator.Get<FarmTileDataManager>().AllTileData)
         {
             var pos = entry.Key;
             var data = entry.Value;

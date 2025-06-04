@@ -1,10 +1,11 @@
 using UnityEngine;
 using HairvestMoon.Inventory;
 using System.Collections.Generic;
+using HairvestMoon.Core;
 
 namespace HairvestMoon.UI
 {
-    public class HoeSelectionUI : MonoBehaviour
+    public class HoeSelectionUI : MonoBehaviour, IBusListener
     {
         [Header("UI References")]
         [SerializeField] private GameObject hoeSelectionSlotPrefab;
@@ -13,27 +14,21 @@ namespace HairvestMoon.UI
         private List<UpgradeSelectionSlot> slots = new();
         private ItemData currentSelectedHoeOption;
 
-        public static HoeSelectionUI Instance { get; private set; }
-
-        private void Awake()
-        {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-        }
-
         public void InitializeUI()
         {
             BuildUI();
-            BackpackInventorySystem.Instance.OnBackpackChanged += RefreshUI;
+        }
+
+        public void RegisterBusListeners()
+        {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged += RefreshUI;
         }
 
         private void OnDisable()
         {
-            BackpackInventorySystem.Instance.OnBackpackChanged -= RefreshUI;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged -= RefreshUI;
         }
 
         public void OpenHoeMenu()
@@ -61,7 +56,7 @@ namespace HairvestMoon.UI
             slots.Add(slotUI);
 
             // If we have Hoe Upgrade equipped, enable selection
-            var hoeUpgrade = BackpackEquipSystem.Instance.hoeUpgrade;
+            var hoeUpgrade = ServiceLocator.Get<BackpackEquipSystem>().hoeUpgrade;
             if (hoeUpgrade != null)
             {
                 var upgradeGO = Instantiate(hoeSelectionSlotPrefab, gridParent);

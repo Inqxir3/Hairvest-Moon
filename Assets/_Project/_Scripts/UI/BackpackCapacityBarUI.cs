@@ -1,28 +1,35 @@
+using HairvestMoon.Core;
 using HairvestMoon.Inventory;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace HairvestMoon.UI
 {
-    public class BackpackCapacityBarUI : MonoBehaviour
+    public class BackpackCapacityBarUI : MonoBehaviour, IBusListener
     {
         [SerializeField] private Image fillImage;
 
-        private void Start()
+        public void InitializeUI()
         {
-            BackpackInventorySystem.Instance.OnBackpackChanged += Refresh;
             Refresh();
         }
 
-        private void OnDestroy()
+        public void RegisterBusListeners()
         {
-            BackpackInventorySystem.Instance.OnBackpackChanged -= Refresh;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged += Refresh;
+        }
+
+        private void OnDisable()
+        {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged -= Refresh;
         }
 
         private void Refresh()
         {
-            int current = BackpackInventorySystem.Instance.GetAllSlots().Count;
-            int total = BackpackUpgradeManager.Instance.GetCurrentSlots();
+            int current = ServiceLocator.Get<BackpackInventorySystem>().GetAllSlots().Count;
+            int total = ServiceLocator.Get<BackpackUpgradeManager>().GetCurrentSlots();
 
             float fillAmount = (float)current / total;
             fillImage.fillAmount = fillAmount;

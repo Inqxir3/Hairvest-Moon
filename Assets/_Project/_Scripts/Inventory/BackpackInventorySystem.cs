@@ -1,3 +1,4 @@
+using HairvestMoon.Core;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,6 @@ namespace HairvestMoon.Inventory
 {
     public class BackpackInventorySystem : MonoBehaviour
     {
-        public static BackpackInventorySystem Instance { get; private set; }
-
-        public event Action OnBackpackChanged;
-
         [System.Serializable]
         public class BackpackSlot
         {
@@ -21,11 +18,6 @@ namespace HairvestMoon.Inventory
         public List<BackpackSlot> backpack = new();
         
         [NonSerialized] public int maxBackpackSlots;
-
-        public void InitializeSingleton()
-        {
-            Instance = this;
-        }
 
         public bool CanAddItem(ItemData newItem, int amount = 1)
         {
@@ -56,7 +48,7 @@ namespace HairvestMoon.Inventory
                     if (IsStackable(newItem))
                     {
                         slot.quantity += amount;
-                        OnBackpackChanged?.Invoke();
+                        NotifyBackpackChanged();
                         return true;
                     }
                     break;
@@ -70,7 +62,7 @@ namespace HairvestMoon.Inventory
             }
 
             backpack.Add(new BackpackSlot { item = newItem, quantity = amount });
-            OnBackpackChanged?.Invoke();
+            NotifyBackpackChanged();
             return true;
         }
 
@@ -94,7 +86,7 @@ namespace HairvestMoon.Inventory
                     if (backpack[i].quantity <= 0)
                         backpack.RemoveAt(i);
 
-                    OnBackpackChanged?.Invoke();
+                    NotifyBackpackChanged();
                     return true;
                 }
             }
@@ -113,7 +105,12 @@ namespace HairvestMoon.Inventory
 
         public void ForceRefresh()
         {
-            OnBackpackChanged?.Invoke();
+            NotifyBackpackChanged();
+        }
+
+        private void NotifyBackpackChanged()
+        {
+            ServiceLocator.Get<GameEventBus>().RaiseBackpackChanged();
         }
 
         public List<BackpackSlot> GetAllSlots() => backpack;

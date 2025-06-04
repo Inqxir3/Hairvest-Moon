@@ -4,21 +4,19 @@ using UnityEngine;
 namespace HairvestMoon.Player
 {
     [SelectionBase]
-    public class Player_Controller : MonoBehaviour
+    public class Player_Controller : MonoBehaviour, IBusListener
     {
-        public static Vector3 Position => Instance?.transform.position ?? Vector3.zero;
+        public Vector3 Position => transform.position;
 
         [Header("Dependencies")]
         [SerializeField] private Rigidbody2D _rb;
 
-        private static Player_Controller Instance;
-
         private bool _canMove = true;
         private Vector2 _moveDir = Vector2.zero;
 
-        private Animator _animator => PlayerStateController.Instance.CurrentAnimator;
-        private SpriteRenderer _spriteRenderer => PlayerStateController.Instance.CurrentSpriteRenderer;
-        private float MoveSpeed => PlayerStateController.Instance.MoveSpeed;
+        private Animator _animator => ServiceLocator.Get<PlayerStateController>().CurrentAnimator;
+        private SpriteRenderer _spriteRenderer => ServiceLocator.Get<PlayerStateController>().CurrentSpriteRenderer;
+        private float MoveSpeed => ServiceLocator.Get<PlayerStateController>().MoveSpeed;
 
         private readonly int _animeIdleSide = Animator.StringToHash("AN_Character_Farmer_Idle_Side");
         private readonly int _animeIdleUp = Animator.StringToHash("AN_Character_Farmer_Idle_Up");
@@ -27,29 +25,24 @@ namespace HairvestMoon.Player
         private readonly int _animeMoveUp = Animator.StringToHash("AN_Character_Farmer_Walk_Up");
         private readonly int _animeMoveDown = Animator.StringToHash("AN_Character_Farmer_Walk_Down");
 
-        public void InitializeSingleton() { Instance = this; }
 
-        private void OnEnable()
+        public void RegisterBusListeners()
         {
-            GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
-        }
-
-        private void OnDisable()
-        {
-            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.GameStateChanged += OnGameStateChanged;
         }
 
         private void Update()
         {
-            _moveDir = _canMove ? InputController.Instance.MoveInput : Vector2.zero;
+            _moveDir = _canMove ? ServiceLocator.Get<InputController>().MoveInput : Vector2.zero;
 
-            PlayerFacingController.Instance.UpdateFacing(
+            ServiceLocator.Get<PlayerFacingController>().UpdateFacing(
                 _moveDir,
-                InputController.Instance.LookInput,
-                InputController.Instance.CurrentMode
+                ServiceLocator.Get<InputController>().LookInput,
+                ServiceLocator.Get<InputController>().CurrentMode
             );
 
-            UpdateAnimation(PlayerFacingController.Instance.CurrentFacing);
+            UpdateAnimation(ServiceLocator.Get<PlayerFacingController>().CurrentFacing);
         }
 
         private void FixedUpdate()
@@ -57,8 +50,9 @@ namespace HairvestMoon.Player
             _rb.linearVelocity = _moveDir.normalized * MoveSpeed * Time.fixedDeltaTime;
         }
 
-        private void OnGameStateChanged(GameState newState)
+        private void OnGameStateChanged(GameStateChangedArgs args)
         {
+            var newState = args.State;
             _canMove = newState == GameState.FreeRoam;
         }
 

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using HairvestMoon.Farming;
+using HairvestMoon.Core;
 
 namespace HairvestMoon.Inventory
 {
@@ -12,10 +13,6 @@ namespace HairvestMoon.Inventory
     /// </summary>
     public class InventorySystem : MonoBehaviour
     {
-        public static InventorySystem Instance { get; private set; }
-
-        public event Action OnInventoryChanged;
-
         [System.Serializable]
         public class InventorySlot
         {
@@ -27,11 +24,6 @@ namespace HairvestMoon.Inventory
         public int maxSlots = 20;
         public List<InventorySlot> inventory = new();
         public HashSet<ItemData> discoveredItems = new HashSet<ItemData>();
-
-        public void InitializeSingleton()
-        {
-            Instance = this;
-        }
 
         public void MarkDiscovered(ItemData item)
         {
@@ -52,7 +44,7 @@ namespace HairvestMoon.Inventory
                     if (slot.item == newItem)
                     {
                         slot.quantity += amount;
-                        OnInventoryChanged?.Invoke();
+                        NotifyInventoryChanged();
                         return true;
                     }
                 }
@@ -60,7 +52,7 @@ namespace HairvestMoon.Inventory
                 var newSlot = new InventorySlot { item = newItem, quantity = amount };
                 inventory.Add(newSlot);
                 MarkDiscovered(newItem);
-                OnInventoryChanged?.Invoke();
+                NotifyInventoryChanged();
                 return true;
             }
 
@@ -70,7 +62,7 @@ namespace HairvestMoon.Inventory
                 if (slot.item == newItem)
                 {
                     slot.quantity += amount;
-                    OnInventoryChanged?.Invoke();
+                    NotifyInventoryChanged();
                     return true;
                 }
             }
@@ -80,7 +72,7 @@ namespace HairvestMoon.Inventory
                 var newSlot = new InventorySlot { item = newItem, quantity = amount };
                 inventory.Add(newSlot);
                 MarkDiscovered(newItem);
-                OnInventoryChanged?.Invoke();
+                NotifyInventoryChanged();
                 return true;
             }
 
@@ -123,7 +115,7 @@ namespace HairvestMoon.Inventory
                     if (slot.quantity <= 0)
                         inventory.Remove(slot);
 
-                    OnInventoryChanged?.Invoke();
+                    NotifyInventoryChanged();
                     return true;
                 }
             }
@@ -165,7 +157,12 @@ namespace HairvestMoon.Inventory
 
         public void ForceRefresh()
         {
-            OnInventoryChanged?.Invoke();
+            NotifyInventoryChanged();
+        }
+
+        private void NotifyInventoryChanged()
+        {
+            ServiceLocator.Get<GameEventBus>().RaiseInventoryChanged();
         }
 
 
@@ -184,7 +181,7 @@ namespace HairvestMoon.Inventory
         [ContextMenu("Debug Add Test Seeds")]
         public void DebugAddTestSeeds()
         {
-            foreach (var seedData in SeedDatabase.Instance.AllSeeds)
+            foreach (var seedData in ServiceLocator.Get<SeedDatabase>().AllSeeds)
             {
                 AddItem(seedData.seedItem, 5);
             }

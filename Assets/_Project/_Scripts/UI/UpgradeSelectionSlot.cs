@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using HairvestMoon.Inventory;
+using HairvestMoon.Core;
 
 namespace HairvestMoon.UI
 {
@@ -36,12 +38,12 @@ namespace HairvestMoon.UI
 
         private void OnMouseEnter()
         {
-            SelectionTooltipUI.Instance.ShowTooltip(Item);
+            ServiceLocator.Get<SelectionTooltipUI>().ShowTooltip(Item);
         }
 
         private void OnMouseExit()
         {
-            SelectionTooltipUI.Instance.HideTooltip();
+            ServiceLocator.Get<SelectionTooltipUI>().HideTooltip();
         }
     }
 }

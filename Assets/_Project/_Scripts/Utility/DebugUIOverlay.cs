@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using HairvestMoon.Core;
 using HairvestMoon.Player;
+using HairvestMoon.Farming;
 
 namespace HairvestMoon.Utility
 {
@@ -18,56 +19,35 @@ namespace HairvestMoon.Utility
         [SerializeField] private TextMeshProUGUI toolText;
         [SerializeField] private TextMeshProUGUI lastActionText;
 
-        public static DebugUIOverlay Instance { get; private set; }
+        private GameTimeManager _gameTimeManager;
+        private PlayerStateController _playerStateController;
+        private FarmToolHandler _farmToolHandler;
 
-        private void Awake() => Instance = this;
-
-        private void Start()
+        public void Initialize()
         {
-            if (GameTimeManager.Instance != null)
-            {
-                UpdateTimeText(GameTimeManager.Instance.CurrentHour, GameTimeManager.Instance.CurrentMinute);
-                GameTimeManager.Instance.OnTimeChanged += UpdateTimeText;
-            }
-
-            if (GameStateManager.Instance != null)
-            {
-                UpdateStateText(GameStateManager.Instance.CurrentState);
-                GameStateManager.Instance.OnGameStateChanged += UpdateStateText;
-            }
+            _gameTimeManager = ServiceLocator.Get<GameTimeManager>();
+            _playerStateController = ServiceLocator.Get<PlayerStateController>();
+            _farmToolHandler = ServiceLocator.Get<FarmToolHandler>();
         }
 
         private void Update()
         {
-            if (GameTimeManager.Instance != null)
-                dayText.text = $"Day: {GameTimeManager.Instance.Day}";
+           dayText.text = $"Day: {_gameTimeManager.Day}";
 
-            if (PlayerStateController.Instance != null)
-                formText.text = $"Form: {PlayerStateController.Instance.CurrentForm}";
-
-            //toolText.text = $"Tool: {FarmToolHandler.CurrentSlot}";
+           formText.text = $"Form: {_playerStateController.CurrentForm}";
         }
 
-        private void UpdateTimeText(int hour, int minute)
+        public void UpdateTimeText(int hour, int minute)
         {
             timeText.text = $"Time: {hour:00}:{minute:00}";
         }
 
-        private void UpdateStateText(GameState state)
+        public void UpdateStateText(GameState state)
         {
             stateText.text = $"GameState: {state}";
         }
 
         public void ShowLastAction(string text) => lastActionText.text = $"Last Action: {text}";
-
-        private void OnDestroy()
-        {
-            if (GameTimeManager.Instance != null)
-                GameTimeManager.Instance.OnTimeChanged -= UpdateTimeText;
-
-            if (GameStateManager.Instance != null)
-                GameStateManager.Instance.OnGameStateChanged -= UpdateStateText;
-        }
     }
 
 

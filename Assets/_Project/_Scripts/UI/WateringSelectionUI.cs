@@ -2,10 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using HairvestMoon.Inventory;
 using HairvestMoon.Farming;
+using HairvestMoon.Core;
 
 namespace HairvestMoon.UI
 {
-    public class WateringSelectionUI : MonoBehaviour
+    public class WateringSelectionUI : MonoBehaviour, IBusListener
     {
         [Header("UI References")]
         [SerializeField] private GameObject waterSelectionSlotPrefab;
@@ -15,27 +16,23 @@ namespace HairvestMoon.UI
         private List<UpgradeSelectionSlot> slots = new();
         private ItemData currentSelectedWatering;
 
-        public static WateringSelectionUI Instance { get; private set; }
-
-        private void Awake()
-        {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-            Instance = this;
-        }
-
         public void InitializeUI()
         {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged += RefreshUI;
             BuildUI();
-            BackpackInventorySystem.Instance.OnBackpackChanged += RefreshUI;
+        }
+
+        public void RegisterBusListeners()
+        {
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged += RefreshUI;
         }
 
         private void OnDisable()
         {
-            BackpackInventorySystem.Instance.OnBackpackChanged -= RefreshUI;
+            var bus = ServiceLocator.Get<GameEventBus>();
+            bus.BackpackChanged -= RefreshUI;
         }
 
         public void OpenWateringMenu()
@@ -63,10 +60,10 @@ namespace HairvestMoon.UI
             slots.Add(slotUI);
 
             // If we have a Fertilizer Sprayer equipped, enable fertilizer selection
-            var wateringUpgrade = BackpackEquipSystem.Instance.wateringUpgrade;
+            var wateringUpgrade = ServiceLocator.Get<BackpackEquipSystem>().wateringUpgrade;
             if (wateringUpgrade != null)
             {
-                var allBackpackSlots = BackpackInventorySystem.Instance.GetAllSlots();
+                var allBackpackSlots = ServiceLocator.Get<BackpackInventorySystem>().GetAllSlots();
 
                 foreach (var slot in allBackpackSlots)
                 {
